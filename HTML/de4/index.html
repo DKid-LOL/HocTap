@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <link rel="stylesheet" href="mysite.css">
+        <script type="text/javascript" src="myscript.js"></script>
+
+    </head>
+    <body>
+        <div class="main_login">
+            <form action="nextpage.html" onsubmit="return onLogin()">
+                <h2>Login</h2>
+                <table>
+                    <tr>
+                        <td><label>Username: </label></td>
+                        <td><input type="text" id="userName" placeholder="Input username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password: </label></td>
+                        <td><input type="password" id="password" placeholder="Input password" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form> 
+        </div>
+    </body>
+</html>

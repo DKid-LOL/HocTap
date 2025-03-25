@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="application/javascript">
+      function clickMeEvent(obj) {
+        if (obj.innerHTML == "Click Me") {
+          obj.innerHTML = "Click Me<br>Click Me Again";
+          return;
+        }
+        if (obj.innerHTML == "Click Me<br>Click Me Again") {
+          obj.innerHTML = "Thank You";  
+          return; 
+        }
+        if (obj.innerHTML == "Thank You") {
+        obj.innerHTML = "Goodbye";  
+          return; 
+        }
+        if (obj.innerHTML == "Goodbye") {
+          obj.style.display = "none";
+          return;
+        }
+      }
+      </script>
+       
+</head>
+<body>
+    <div onclick="clickMeEvent(this)">Click Me</div>
+</body>
+</html>

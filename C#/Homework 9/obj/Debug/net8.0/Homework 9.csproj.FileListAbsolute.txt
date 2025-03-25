@@ -1,0 +1,14 @@
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.AssemblyInfoInputs.cache
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.AssemblyInfo.cs
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.csproj.CoreCompileInputs.cache
+C:\PhamAnh\HocTap\C#\Homework 9\bin\Debug\net8.0\Homework 9.exe
+C:\PhamAnh\HocTap\C#\Homework 9\bin\Debug\net8.0\Homework 9.deps.json
+C:\PhamAnh\HocTap\C#\Homework 9\bin\Debug\net8.0\Homework 9.runtimeconfig.json
+C:\PhamAnh\HocTap\C#\Homework 9\bin\Debug\net8.0\Homework 9.dll
+C:\PhamAnh\HocTap\C#\Homework 9\bin\Debug\net8.0\Homework 9.pdb
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.dll
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\refint\Homework 9.dll
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.pdb
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\Homework 9.genruntimeconfig.cache
+C:\PhamAnh\HocTap\C#\Homework 9\obj\Debug\net8.0\ref\Homework 9.dll

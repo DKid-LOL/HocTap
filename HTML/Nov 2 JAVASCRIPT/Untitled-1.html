@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vẽ hình tam giác</title>
+</head>
+<body>
+    <script>
+        // Số lượng hàng của tam giác
+        var x = 5;
+        var line = "";
+        for (var i = 1; i <=x; i++) {
+            for(var j=x*2; j<=i*2-1; j++) {
+                line += "&nbsp&nbsp";
+            }
+            for (var j = 1; j <= i*2-1; j++) {
+                line += "* ";
+            }
+            line += ("<br>");
+        }
+        document.write(line)
+    </script>
+</body>
+</html>

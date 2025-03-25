@@ -1,0 +1,17 @@
+.textcenter {
+    background-color: aqua;
+    width: 353px;
+    height: 514px;
+    margin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.H {
+    background-color: pink;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

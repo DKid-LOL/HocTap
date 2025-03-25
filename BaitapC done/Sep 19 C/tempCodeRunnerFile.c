@@ -1,0 +1,1 @@
+    printf("Danh sach nhan vien co so thich \"%s\":\n", cungsothich);

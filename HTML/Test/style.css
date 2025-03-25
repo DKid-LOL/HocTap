@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #0bee29;
+    color: #0e2ee7;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #e90bc1;
+    color: #f00c0c;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #10e737;
+    margin: 10px;
+}
+.product {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+img {
+    width: 480px;
+    height: 640px;
+}
+#bruh {
+    text-align: center;
+    color: cyan;
+}

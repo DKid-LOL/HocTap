@@ -1,0 +1,14 @@
+header {
+    color: #0e2ee7;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+li {
+    margin-left: 50px;
+}
+ul {
+    font-size: 30px;
+}

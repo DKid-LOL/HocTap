@@ -1,0 +1,9 @@
+<!ELEMENT Students (Student+)>
+<!ATTLIST Students
+          xmlns CDATA #IMPLIED
+          xmlns:xsi CDATA #IMPLIED>
+<!ELEMENT Student (ID, FullName, BirthDate, Major)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT FullName (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
+<!ELEMENT Major (#PCDATA)>

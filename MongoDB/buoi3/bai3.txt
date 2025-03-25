@@ -1,0 +1,593 @@
+use order
+switched to db order
+db.order.insertMany([{"id":1,"customer":"John","amount":248,"date":"8/13/2022"},
+{"id":2,"customer":"Mary","amount":412,"date":"7/20/2023"},
+{"id":3,"customer":"John","amount":490,"date":"12/3/2023"},
+{"id":4,"customer":"Mary","amount":113,"date":"7/13/2024"},
+{"id":5,"customer":"Mary","amount":404,"date":"9/24/2023"},
+{"id":6,"customer":"John","amount":418,"date":"5/23/2022"},
+{"id":7,"customer":"Alice","amount":112,"date":"8/10/2022"},
+{"id":8,"customer":"Mary","amount":402,"date":"7/8/2024"},
+{"id":9,"customer":"Mary","amount":175,"date":"1/5/2023"},
+{"id":10,"customer":"Mary","amount":375,"date":"10/29/2024"},
+{"id":11,"customer":"John","amount":194,"date":"6/24/2022"},
+{"id":12,"customer":"Alice","amount":460,"date":"2/7/2025"},
+{"id":13,"customer":"Alice","amount":233,"date":"3/11/2025"},
+{"id":14,"customer":"John","amount":280,"date":"8/11/2024"},
+{"id":15,"customer":"Alice","amount":474,"date":"2/19/2024"},
+{"id":16,"customer":"Alice","amount":446,"date":"8/1/2023"},
+{"id":17,"customer":"John","amount":440,"date":"10/27/2024"},
+{"id":18,"customer":"John","amount":84,"date":"7/16/2022"},
+{"id":19,"customer":"Mary","amount":156,"date":"7/28/2023"},
+{"id":20,"customer":"Mary","amount":466,"date":"1/20/2025"},
+{"id":21,"customer":"John","amount":294,"date":"4/10/2024"},
+{"id":22,"customer":"Mary","amount":439,"date":"7/5/2023"},
+{"id":23,"customer":"Alice","amount":172,"date":"8/17/2023"},
+{"id":24,"customer":"John","amount":343,"date":"3/2/2025"},
+{"id":25,"customer":"Mary","amount":361,"date":"10/4/2022"},
+{"id":26,"customer":"Alice","amount":235,"date":"4/8/2024"},
+{"id":27,"customer":"Mary","amount":459,"date":"1/17/2024"},
+{"id":28,"customer":"Alice","amount":230,"date":"2/28/2023"},
+{"id":29,"customer":"Alice","amount":66,"date":"2/2/2023"},
+{"id":30,"customer":"Alice","amount":151,"date":"10/16/2023"},
+{"id":31,"customer":"John","amount":260,"date":"12/27/2024"},
+{"id":32,"customer":"Mary","amount":52,"date":"12/25/2024"},
+{"id":33,"customer":"Mary","amount":489,"date":"8/23/2022"},
+{"id":34,"customer":"Alice","amount":149,"date":"6/3/2024"},
+{"id":35,"customer":"Mary","amount":131,"date":"6/23/2023"},
+{"id":36,"customer":"John","amount":420,"date":"8/18/2024"},
+{"id":37,"customer":"John","amount":173,"date":"11/22/2022"},
+{"id":38,"customer":"Alice","amount":387,"date":"5/30/2022"},
+{"id":39,"customer":"Alice","amount":364,"date":"6/20/2022"},
+{"id":40,"customer":"Alice","amount":387,"date":"2/26/2023"},
+{"id":41,"customer":"Alice","amount":377,"date":"4/30/2024"},
+{"id":42,"customer":"Mary","amount":121,"date":"11/17/2022"},
+{"id":43,"customer":"Mary","amount":218,"date":"11/4/2024"},
+{"id":44,"customer":"Alice","amount":413,"date":"10/29/2022"},
+{"id":45,"customer":"John","amount":354,"date":"7/21/2023"},
+{"id":46,"customer":"John","amount":458,"date":"1/17/2025"},
+{"id":47,"customer":"Mary","amount":117,"date":"10/6/2023"},
+{"id":48,"customer":"John","amount":253,"date":"8/5/2022"},
+{"id":49,"customer":"Mary","amount":151,"date":"4/10/2024"},
+{"id":50,"customer":"John","amount":296,"date":"7/30/2022"},
+{"id":51,"customer":"John","amount":494,"date":"1/14/2024"},
+{"id":52,"customer":"Mary","amount":474,"date":"9/21/2024"},
+{"id":53,"customer":"Mary","amount":280,"date":"9/6/2024"},
+{"id":54,"customer":"Mary","amount":106,"date":"8/7/2023"},
+{"id":55,"customer":"John","amount":368,"date":"9/1/2022"},
+{"id":56,"customer":"Alice","amount":134,"date":"5/27/2023"},
+{"id":57,"customer":"John","amount":461,"date":"12/14/2024"},
+{"id":58,"customer":"John","amount":254,"date":"9/20/2022"},
+{"id":59,"customer":"John","amount":184,"date":"1/2/2025"},
+{"id":60,"customer":"Alice","amount":118,"date":"3/8/2025"},
+{"id":61,"customer":"John","amount":54,"date":"10/13/2023"},
+{"id":62,"customer":"John","amount":175,"date":"1/5/2025"},
+{"id":63,"customer":"John","amount":433,"date":"9/19/2022"},
+{"id":64,"customer":"John","amount":85,"date":"1/20/2024"},
+{"id":65,"customer":"Mary","amount":69,"date":"4/19/2023"},
+{"id":66,"customer":"Mary","amount":407,"date":"8/18/2023"},
+{"id":67,"customer":"John","amount":289,"date":"10/26/2023"},
+{"id":68,"customer":"Alice","amount":373,"date":"12/13/2024"},
+{"id":69,"customer":"John","amount":444,"date":"1/2/2024"},
+{"id":70,"customer":"John","amount":89,"date":"3/10/2024"},
+{"id":71,"customer":"John","amount":67,"date":"4/8/2023"},
+{"id":72,"customer":"Mary","amount":383,"date":"8/12/2022"},
+{"id":73,"customer":"Alice","amount":224,"date":"10/22/2023"},
+{"id":74,"customer":"John","amount":349,"date":"9/18/2022"},
+{"id":75,"customer":"John","amount":114,"date":"9/19/2024"},
+{"id":76,"customer":"Alice","amount":477,"date":"6/2/2023"},
+{"id":77,"customer":"John","amount":83,"date":"3/9/2023"},
+{"id":78,"customer":"Alice","amount":228,"date":"8/12/2024"},
+{"id":79,"customer":"John","amount":496,"date":"3/29/2023"},
+{"id":80,"customer":"John","amount":218,"date":"10/1/2023"},
+{"id":81,"customer":"John","amount":50,"date":"9/3/2023"},
+{"id":82,"customer":"Alice","amount":396,"date":"5/5/2024"},
+{"id":83,"customer":"Alice","amount":278,"date":"10/24/2022"},
+{"id":84,"customer":"Mary","amount":104,"date":"9/16/2023"},
+{"id":85,"customer":"Mary","amount":156,"date":"6/10/2023"},
+{"id":86,"customer":"John","amount":187,"date":"5/8/2023"},
+{"id":87,"customer":"Mary","amount":81,"date":"7/20/2024"},
+{"id":88,"customer":"John","amount":444,"date":"9/12/2022"},
+{"id":89,"customer":"Alice","amount":435,"date":"7/6/2023"},
+{"id":90,"customer":"Mary","amount":186,"date":"6/29/2024"},
+{"id":91,"customer":"Mary","amount":351,"date":"6/11/2023"},
+{"id":92,"customer":"John","amount":238,"date":"4/25/2024"},
+{"id":93,"customer":"John","amount":247,"date":"1/17/2024"},
+{"id":94,"customer":"John","amount":422,"date":"4/10/2023"},
+{"id":95,"customer":"Mary","amount":373,"date":"8/12/2023"},
+{"id":96,"customer":"Mary","amount":136,"date":"1/6/2024"},
+{"id":97,"customer":"John","amount":263,"date":"10/13/2022"},
+{"id":98,"customer":"Mary","amount":248,"date":"9/27/2022"},
+{"id":99,"customer":"Mary","amount":430,"date":"7/8/2022"},
+{"id":100,"customer":"John","amount":88,"date":"9/18/2022"},
+{"id":101,"customer":"Alice","amount":438,"date":"10/15/2023"},
+{"id":102,"customer":"Mary","amount":330,"date":"3/15/2024"},
+{"id":103,"customer":"Alice","amount":192,"date":"6/7/2022"},
+{"id":104,"customer":"Mary","amount":330,"date":"10/12/2024"},
+{"id":105,"customer":"Mary","amount":97,"date":"8/20/2023"},
+{"id":106,"customer":"Alice","amount":187,"date":"2/18/2024"},
+{"id":107,"customer":"Mary","amount":96,"date":"6/18/2023"},
+{"id":108,"customer":"Alice","amount":207,"date":"7/18/2023"},
+{"id":109,"customer":"Alice","amount":231,"date":"1/28/2024"},
+{"id":110,"customer":"Alice","amount":113,"date":"7/19/2022"},
+{"id":111,"customer":"Mary","amount":270,"date":"1/29/2023"},
+{"id":112,"customer":"Alice","amount":405,"date":"3/5/2023"},
+{"id":113,"customer":"Mary","amount":175,"date":"6/3/2024"},
+{"id":114,"customer":"Mary","amount":228,"date":"8/21/2023"},
+{"id":115,"customer":"Alice","amount":474,"date":"5/20/2023"},
+{"id":116,"customer":"Alice","amount":68,"date":"4/10/2023"},
+{"id":117,"customer":"Alice","amount":86,"date":"3/6/2023"},
+{"id":118,"customer":"Mary","amount":168,"date":"4/6/2023"},
+{"id":119,"customer":"Mary","amount":290,"date":"4/26/2023"},
+{"id":120,"customer":"John","amount":173,"date":"4/9/2023"},
+{"id":121,"customer":"Alice","amount":80,"date":"9/7/2022"},
+{"id":122,"customer":"John","amount":157,"date":"1/2/2023"},
+{"id":123,"customer":"Alice","amount":175,"date":"8/21/2023"},
+{"id":124,"customer":"Alice","amount":52,"date":"7/12/2023"},
+{"id":125,"customer":"Mary","amount":350,"date":"9/25/2023"},
+{"id":126,"customer":"Mary","amount":400,"date":"3/16/2023"},
+{"id":127,"customer":"Alice","amount":167,"date":"2/3/2023"},
+{"id":128,"customer":"John","amount":96,"date":"12/2/2022"},
+{"id":129,"customer":"John","amount":113,"date":"2/23/2025"},
+{"id":130,"customer":"John","amount":260,"date":"2/29/2024"},
+{"id":131,"customer":"John","amount":339,"date":"7/25/2023"},
+{"id":132,"customer":"Mary","amount":418,"date":"6/3/2023"},
+{"id":133,"customer":"Mary","amount":311,"date":"9/17/2023"},
+{"id":134,"customer":"John","amount":260,"date":"1/11/2024"},
+{"id":135,"customer":"Mary","amount":270,"date":"12/8/2023"},
+{"id":136,"customer":"Mary","amount":102,"date":"1/7/2024"},
+{"id":137,"customer":"Alice","amount":341,"date":"7/28/2024"},
+{"id":138,"customer":"John","amount":218,"date":"9/6/2023"},
+{"id":139,"customer":"Mary","amount":87,"date":"6/16/2024"},
+{"id":140,"customer":"Mary","amount":492,"date":"2/19/2025"},
+{"id":141,"customer":"John","amount":212,"date":"7/14/2023"},
+{"id":142,"customer":"Alice","amount":381,"date":"1/25/2025"},
+{"id":143,"customer":"Alice","amount":202,"date":"1/22/2023"},
+{"id":144,"customer":"John","amount":492,"date":"8/10/2022"},
+{"id":145,"customer":"Alice","amount":93,"date":"5/14/2023"},
+{"id":146,"customer":"Alice","amount":302,"date":"2/11/2025"},
+{"id":147,"customer":"Alice","amount":312,"date":"12/21/2023"},
+{"id":148,"customer":"Mary","amount":288,"date":"3/10/2023"},
+{"id":149,"customer":"John","amount":494,"date":"7/19/2023"},
+{"id":150,"customer":"John","amount":209,"date":"7/27/2022"},
+{"id":151,"customer":"Alice","amount":436,"date":"10/31/2022"},
+{"id":152,"customer":"Alice","amount":305,"date":"6/16/2022"},
+{"id":153,"customer":"Alice","amount":473,"date":"12/2/2024"},
+{"id":154,"customer":"Alice","amount":189,"date":"2/20/2024"},
+{"id":155,"customer":"Alice","amount":355,"date":"5/3/2023"},
+{"id":156,"customer":"John","amount":186,"date":"11/14/2023"},
+{"id":157,"customer":"Mary","amount":482,"date":"10/6/2024"},
+{"id":158,"customer":"John","amount":251,"date":"11/25/2022"},
+{"id":159,"customer":"John","amount":469,"date":"6/23/2023"},
+{"id":160,"customer":"Alice","amount":341,"date":"3/14/2024"},
+{"id":161,"customer":"John","amount":437,"date":"6/4/2022"},
+{"id":162,"customer":"Mary","amount":254,"date":"11/2/2024"},
+{"id":163,"customer":"Mary","amount":427,"date":"4/6/2024"},
+{"id":164,"customer":"Alice","amount":135,"date":"12/14/2024"},
+{"id":165,"customer":"Mary","amount":453,"date":"7/17/2024"},
+{"id":166,"customer":"Mary","amount":275,"date":"2/13/2024"},
+{"id":167,"customer":"John","amount":296,"date":"4/10/2023"},
+{"id":168,"customer":"John","amount":321,"date":"4/1/2024"},
+{"id":169,"customer":"John","amount":254,"date":"12/10/2023"},
+{"id":170,"customer":"Mary","amount":94,"date":"11/3/2024"},
+{"id":171,"customer":"John","amount":134,"date":"10/16/2023"},
+{"id":172,"customer":"Alice","amount":242,"date":"3/20/2024"},
+{"id":173,"customer":"John","amount":106,"date":"5/29/2023"},
+{"id":174,"customer":"Mary","amount":72,"date":"12/12/2023"},
+{"id":175,"customer":"Alice","amount":299,"date":"1/23/2023"},
+{"id":176,"customer":"Mary","amount":152,"date":"3/16/2025"},
+{"id":177,"customer":"John","amount":193,"date":"5/28/2024"},
+{"id":178,"customer":"Mary","amount":144,"date":"3/3/2025"},
+{"id":179,"customer":"Mary","amount":298,"date":"5/4/2024"},
+{"id":180,"customer":"Mary","amount":244,"date":"5/4/2024"},
+{"id":181,"customer":"John","amount":449,"date":"7/22/2022"},
+{"id":182,"customer":"Mary","amount":279,"date":"12/27/2024"},
+{"id":183,"customer":"John","amount":269,"date":"7/29/2022"},
+{"id":184,"customer":"John","amount":269,"date":"11/17/2022"},
+{"id":185,"customer":"Mary","amount":243,"date":"1/30/2023"},
+{"id":186,"customer":"Alice","amount":462,"date":"6/29/2023"},
+{"id":187,"customer":"John","amount":71,"date":"7/20/2022"},
+{"id":188,"customer":"Mary","amount":173,"date":"9/29/2023"},
+{"id":189,"customer":"John","amount":496,"date":"10/12/2022"},
+{"id":190,"customer":"Alice","amount":400,"date":"6/17/2022"},
+{"id":191,"customer":"Mary","amount":135,"date":"4/20/2023"},
+{"id":192,"customer":"Alice","amount":335,"date":"12/6/2024"},
+{"id":193,"customer":"Alice","amount":441,"date":"1/18/2024"},
+{"id":194,"customer":"Mary","amount":168,"date":"8/3/2022"},
+{"id":195,"customer":"John","amount":449,"date":"6/25/2024"},
+{"id":196,"customer":"John","amount":204,"date":"2/4/2025"},
+{"id":197,"customer":"Mary","amount":155,"date":"8/16/2022"},
+{"id":198,"customer":"Mary","amount":474,"date":"9/14/2023"},
+{"id":199,"customer":"Mary","amount":482,"date":"9/29/2022"},
+{"id":200,"customer":"Alice","amount":201,"date":"3/6/2023"}])
+    '20': ObjectId('67dd73074c5520579944b061'),
+    '137': ObjectId('67dd73074c5520579944b0d6'),
+    '138': ObjectId('67dd73074c5520579944b0d7'),
+    '139': ObjectId('67dd73074c5520579944b0d8'),
+    '140': ObjectId('67dd73074c5520579944b0d9'),
+    '141': ObjectId('67dd73074c5520579944b0da'),
+    '142': ObjectId('67dd73074c5520579944b0db'),
+    '143': ObjectId('67dd73074c5520579944b0dc'),
+    '144': ObjectId('67dd73074c5520579944b0dd'),
+    '145': ObjectId('67dd73074c5520579944b0de'),
+    '146': ObjectId('67dd73074c5520579944b0df'),
+    '147': ObjectId('67dd73074c5520579944b0e0'),
+    '148': ObjectId('67dd73074c5520579944b0e1'),
+    '149': ObjectId('67dd73074c5520579944b0e2'),
+    '150': ObjectId('67dd73074c5520579944b0e3'),
+    '151': ObjectId('67dd73074c5520579944b0e4'),
+    '152': ObjectId('67dd73074c5520579944b0e5'),
+    '153': ObjectId('67dd73074c5520579944b0e6'),
+    '154': ObjectId('67dd73074c5520579944b0e7'),
+    '155': ObjectId('67dd73074c5520579944b0e8'),
+    '156': ObjectId('67dd73074c5520579944b0e9'),
+    '157': ObjectId('67dd73074c5520579944b0ea'),
+    '158': ObjectId('67dd73074c5520579944b0eb'),
+    '159': ObjectId('67dd73074c5520579944b0ec'),
+    '160': ObjectId('67dd73074c5520579944b0ed'),
+    '161': ObjectId('67dd73074c5520579944b0ee'),
+    '162': ObjectId('67dd73074c5520579944b0ef'),
+    '163': ObjectId('67dd73074c5520579944b0f0'),
+    '164': ObjectId('67dd73074c5520579944b0f1'),
+    '165': ObjectId('67dd73074c5520579944b0f2'),
+    '166': ObjectId('67dd73074c5520579944b0f3'),
+    '167': ObjectId('67dd73074c5520579944b0f4'),
+    '168': ObjectId('67dd73074c5520579944b0f5'),
+    '169': ObjectId('67dd73074c5520579944b0f6'),
+    '170': ObjectId('67dd73074c5520579944b0f7'),
+    '171': ObjectId('67dd73074c5520579944b0f8'),
+    '172': ObjectId('67dd73074c5520579944b0f9'),
+    '173': ObjectId('67dd73074c5520579944b0fa'),
+    '174': ObjectId('67dd73074c5520579944b0fb'),
+    '175': ObjectId('67dd73074c5520579944b0fc'),
+    '176': ObjectId('67dd73074c5520579944b0fd'),
+    '177': ObjectId('67dd73074c5520579944b0fe'),
+    '178': ObjectId('67dd73074c5520579944b0ff'),
+    '179': ObjectId('67dd73074c5520579944b100'),
+    '180': ObjectId('67dd73074c5520579944b101'),
+    '181': ObjectId('67dd73074c5520579944b102'),
+    '182': ObjectId('67dd73074c5520579944b103'),
+    '183': ObjectId('67dd73074c5520579944b104'),
+    '184': ObjectId('67dd73074c5520579944b105'),
+    '185': ObjectId('67dd73074c5520579944b106'),
+    '186': ObjectId('67dd73074c5520579944b107'),
+    '187': ObjectId('67dd73074c5520579944b108'),
+    '188': ObjectId('67dd73074c5520579944b109'),
+    '189': ObjectId('67dd73074c5520579944b10a'),
+    '190': ObjectId('67dd73074c5520579944b10b'),
+    '191': ObjectId('67dd73074c5520579944b10c'),
+    '192': ObjectId('67dd73074c5520579944b10d'),
+    '193': ObjectId('67dd73074c5520579944b10e'),
+    '194': ObjectId('67dd73074c5520579944b10f'),
+    '195': ObjectId('67dd73074c5520579944b110'),
+    '196': ObjectId('67dd73074c5520579944b111'),
+    '197': ObjectId('67dd73074c5520579944b112'),
+    '198': ObjectId('67dd73074c5520579944b113'),
+    '199': ObjectId('67dd73074c5520579944b114')
+  }
+}
+db.orders.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } }
+])
+db.orders.aggregate([
+    { $group: { id: "$customer", total_orders: { $count: {} } } }
+])
+MongoServerError[Location40234]: The field 'id' must be an accumulator object
+db.orders.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } }
+])
+db.order.find()
+{
+  _id: ObjectId('67dd73074c5520579944b04d'),
+  id: 1,
+  customer: 'John',
+  amount: 248,
+  date: '8/13/2022'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b04e'),
+  id: 2,
+  customer: 'Mary',
+  amount: 412,
+  date: '7/20/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b04f'),
+  id: 3,
+  customer: 'John',
+  amount: 490,
+  date: '12/3/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b050'),
+  id: 4,
+  customer: 'Mary',
+  amount: 113,
+  date: '7/13/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b051'),
+  id: 5,
+  customer: 'Mary',
+  amount: 404,
+  date: '9/24/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b052'),
+  id: 6,
+  customer: 'John',
+  amount: 418,
+  date: '5/23/2022'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b053'),
+  id: 7,
+  customer: 'Alice',
+  amount: 112,
+  date: '8/10/2022'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b054'),
+  id: 8,
+  customer: 'Mary',
+  amount: 402,
+  date: '7/8/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b055'),
+  id: 9,
+  customer: 'Mary',
+  amount: 175,
+  date: '1/5/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b056'),
+  id: 10,
+  customer: 'Mary',
+  amount: 375,
+  date: '10/29/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b057'),
+  id: 11,
+  customer: 'John',
+  amount: 194,
+  date: '6/24/2022'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b058'),
+  id: 12,
+  customer: 'Alice',
+  amount: 460,
+  date: '2/7/2025'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b059'),
+  id: 13,
+  customer: 'Alice',
+  amount: 233,
+  date: '3/11/2025'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05a'),
+  id: 14,
+  customer: 'John',
+  amount: 280,
+  date: '8/11/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05b'),
+  id: 15,
+  customer: 'Alice',
+  amount: 474,
+  date: '2/19/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05c'),
+  id: 16,
+  customer: 'Alice',
+  amount: 446,
+  date: '8/1/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05d'),
+  id: 17,
+  customer: 'John',
+  amount: 440,
+  date: '10/27/2024'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05e'),
+  id: 18,
+  customer: 'John',
+  amount: 84,
+  date: '7/16/2022'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b05f'),
+  id: 19,
+  customer: 'Mary',
+  amount: 156,
+  date: '7/28/2023'
+}
+{
+  _id: ObjectId('67dd73074c5520579944b060'),
+  id: 20,
+  customer: 'Mary',
+  amount: 466,
+  date: '1/20/2025'
+}
+Type "it" for more
+db.orders.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } }
+])
+db.order.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } }
+])
+{
+  _id: 'John',
+  total_orders: 71
+}
+{
+  _id: 'Mary',
+  total_orders: 70
+}
+{
+  _id: 'Alice',
+  total_orders: 59
+}
+db.order.aggregate([
+    { $group: { _id: "$customer", total_spent: { $sum: "$amount" } } }
+])
+{
+  _id: 'Mary',
+  total_spent: 18531
+}
+{
+  _id: 'John',
+  total_spent: 19478
+}
+{
+  _id: 'Alice',
+  total_spent: 16439
+}
+db.order.aggregate([
+    {
+        $group: {
+            _id: "$customer",
+            total_spent: { $sum: "$amount" },
+            total_orders: { $count: {} }
+        }
+    },
+    {
+        $addFields: {
+            category: {
+                $switch: {
+                    branches: [
+                        { case: { $gt: ["$total_spent", 500] }, then: "VIP" },
+                        { case: { $gte: ["$total_spent", 200] }, then: "Regular" }
+                    ],
+                    default: "New"
+                }
+            }
+        }
+    }
+])
+{
+  _id: 'Mary',
+  total_spent: 18531,
+  total_orders: 70,
+  category: 'VIP'
+}
+{
+  _id: 'John',
+  total_spent: 19478,
+  total_orders: 71,
+  category: 'VIP'
+}
+{
+  _id: 'Alice',
+  total_spent: 16439,
+  total_orders: 59,
+  category: 'VIP'
+}
+db.order.aggregate([
+    {
+        $group: {
+            _id: "$customer",
+            total_spent: { $sum: "$amount" }
+        }
+    },
+    { $match: { total_spent: { $gt: 500 } } }
+])
+{
+  _id: 'Mary',
+  total_spent: 18531
+}
+{
+  _id: 'Alice',
+  total_spent: 16439
+}
+{
+  _id: 'John',
+  total_spent: 19478
+}
+db.orders.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } },
+    { $sort: { total_orders: -1 } },
+    { $limit: 1 }
+])
+db.order.aggregate([
+    { $group: { _id: "$customer", total_orders: { $count: {} } } },
+    { $sort: { total_orders: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: 'John',
+  total_orders: 71
+}
+db.order.aggregate([
+    { $group: { _id: "$customer", avg_order_value: { $avg: "$amount" } } },
+    { $sort: { avg_order_value: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: 'Alice',
+  avg_order_value: 278.6271186440678
+}
+db.order.aggregate([
+    { $group: { _id: "$customer", total_spent: { $sum: "$amount" } } },
+    { $sort: { total_spent: -1 } }
+])
+{
+  _id: 'John',
+  total_spent: 19478
+}
+{
+  _id: 'Mary',
+  total_spent: 18531
+}
+{
+  _id: 'Alice',
+  total_spent: 16439
+}
+db.order.aggregate([
+    {
+        $group: {
+            _id: "$customer",
+            total_orders: { $count: {} },
+            total_spent: { $sum: "$amount" }
+        }
+    },
+    {
+        $addFields: {
+            category: {
+                $switch: {
+                    branches: [
+                        { case: { $gt: ["$total_spent", 500] }, then: "VIP" },
+                        { case: { $gte: ["$total_spent", 200] }, then: "Regular" }
+                    ],
+                    default: "New"
+                }
+            }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            customer: "$_id",
+            total_orders: 1,
+            category: 1
+        }
+    }
+])
+{
+  total_orders: 71,
+  category: 'VIP',
+  customer: 'John'
+}
+{
+  total_orders: 70,
+  category: 'VIP',
+  customer: 'Mary'
+}

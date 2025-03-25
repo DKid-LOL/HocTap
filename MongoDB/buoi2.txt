@@ -1,0 +1,1105 @@
+use company
+switched to db company
+db.employees.insertMany([
+    { employee_id: 101, name: "Nguyen Van A", age: 25, department: "IT", salary: 12000000, hire_date: ISODate("2020-05-15") },
+    { employee_id: 102, name: "Tran Thi B", age: 30, department: "Finance", salary: 9000000, hire_date: ISODate("2019-08-21") },
+    { employee_id: 103, name: "Le Van C", age: 45, department: "IT", salary: 15000000, hire_date: ISODate("2015-03-10") },
+    { employee_id: 104, name: "Pham Thi D", age: 40, department: "HR", salary: 8000000, hire_date: ISODate("2018-12-01") },
+    { employee_id: 105, name: "Hoang Van E", age: 55, department: "Marketing", salary: 11000000, hire_date: ISODate("2010-06-20") },
+    { employee_id: 106, name: "Bui Thi F", age: 35, department: "IT", salary: 7000000, hire_date: ISODate("2021-07-15") }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67dac82577a3aaf1bf4f3887'),
+    '1': ObjectId('67dac82577a3aaf1bf4f3888'),
+    '2': ObjectId('67dac82577a3aaf1bf4f3889'),
+    '3': ObjectId('67dac82577a3aaf1bf4f388a'),
+    '4': ObjectId('67dac82577a3aaf1bf4f388b'),
+    '5': ObjectId('67dac82577a3aaf1bf4f388c')
+  }
+}
+db.employees.find().pretty()
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f3887'),
+  employee_id: 101,
+  name: 'Nguyen Van A',
+  age: 25,
+  department: 'IT',
+  salary: 12000000,
+  hire_date: 2020-05-15T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f3888'),
+  employee_id: 102,
+  name: 'Tran Thi B',
+  age: 30,
+  department: 'Finance',
+  salary: 9000000,
+  hire_date: 2019-08-21T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f3889'),
+  employee_id: 103,
+  name: 'Le Van C',
+  age: 45,
+  department: 'IT',
+  salary: 15000000,
+  hire_date: 2015-03-10T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f388a'),
+  employee_id: 104,
+  name: 'Pham Thi D',
+  age: 40,
+  department: 'HR',
+  salary: 8000000,
+  hire_date: 2018-12-01T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f388b'),
+  employee_id: 105,
+  name: 'Hoang Van E',
+  age: 55,
+  department: 'Marketing',
+  salary: 11000000,
+  hire_date: 2010-06-20T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f388c'),
+  employee_id: 106,
+  name: 'Bui Thi F',
+  age: 35,
+  department: 'IT',
+  salary: 7000000,
+  hire_date: 2021-07-15T00:00:00.000Z
+}
+db.employees.find({ department: "IT" }).pretty()
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f3887'),
+  employee_id: 101,
+  name: 'Nguyen Van A',
+  age: 25,
+  department: 'IT',
+  salary: 12000000,
+  hire_date: 2020-05-15T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f3889'),
+  employee_id: 103,
+  name: 'Le Van C',
+  age: 45,
+  department: 'IT',
+  salary: 15000000,
+  hire_date: 2015-03-10T00:00:00.000Z
+}
+{
+  _id: ObjectId('67dac82577a3aaf1bf4f388c'),
+  employee_id: 106,
+  name: 'Bui Thi F',
+  age: 35,
+  department: 'IT',
+  salary: 7000000,
+  hire_date: 2021-07-15T00:00:00.000Z
+}
+db.employees.updateMany(
+    { salary: { $lt: 10000000 } },
+    { $mul: { salary: 1.1 } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0
+}
+db.employees.updateOne(
+    { employee_id: 102 },
+    { $set: { department: "HR" } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.employees.deleteOne({ employee_id: 105 })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.employees.deleteMany({ age: { $gt: 50 } })
+{
+  acknowledged: true,
+  deletedCount: 0
+}
+use test
+switched to db test
+use business
+switched to db business
+db.customers.insertMany([
+    { 
+        customer_id: 201, 
+        name: "Nguyen Van A", 
+        email: "a.nguyen@example.com", 
+        phone: "0987654321", 
+        address: "Hanoi, Vietnam", 
+        orders: [
+            { order_id: 1001, amount: 1500000, status: "Pending" },
+            { order_id: 1002, amount: 500000, status: "Delivered" }
+        ]
+    },
+    { 
+        customer_id: 202, 
+        name: "Tran Thi B", 
+        email: "b.tran@example.com", 
+        phone: "0971234567", 
+        address: "Ho Chi Minh, Vietnam", 
+        orders: [
+            { order_id: 1003, amount: 2000000, status: "Shipped" }
+        ]
+    },
+    { 
+        customer_id: 203, 
+        name: "Le Van C", 
+        email: "c.le@example.com", 
+        phone: "0912345678", 
+        address: "Da Nang, Vietnam", 
+        orders: []
+    },
+    { 
+        customer_id: 204, 
+        name: "Pham Thi D", 
+        email: "d.pham@example.com", 
+        phone: "0982223344", 
+        address: "Hai Phong, Vietnam", 
+        orders: [
+            { order_id: 1004, amount: 1200000, status: "Pending" }
+        ]
+    },
+    { 
+        customer_id: 205, 
+        name: "Hoang Van E", 
+        email: "e.hoang@example.com", 
+        phone: "0967890123", 
+        address: "Can Tho, Vietnam", 
+        orders: [
+            { order_id: 1005, amount: 800000, status: "Delivered" }
+        ]
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67dac8f277a3aaf1bf4f388d'),
+    '1': ObjectId('67dac8f277a3aaf1bf4f388e'),
+    '2': ObjectId('67dac8f277a3aaf1bf4f388f'),
+    '3': ObjectId('67dac8f277a3aaf1bf4f3890'),
+    '4': ObjectId('67dac8f277a3aaf1bf4f3891')
+  }
+}
+db.customers.find().pretty()
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388d'),
+  customer_id: 201,
+  name: 'Nguyen Van A',
+  email: 'a.nguyen@example.com',
+  phone: '0987654321',
+  address: 'Hanoi, Vietnam',
+  orders: [
+    {
+      order_id: 1001,
+      amount: 1500000,
+      status: 'Pending'
+    },
+    {
+      order_id: 1002,
+      amount: 500000,
+      status: 'Delivered'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388e'),
+  customer_id: 202,
+  name: 'Tran Thi B',
+  email: 'b.tran@example.com',
+  phone: '0971234567',
+  address: 'Ho Chi Minh, Vietnam',
+  orders: [
+    {
+      order_id: 1003,
+      amount: 2000000,
+      status: 'Shipped'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388f'),
+  customer_id: 203,
+  name: 'Le Van C',
+  email: 'c.le@example.com',
+  phone: '0912345678',
+  address: 'Da Nang, Vietnam',
+  orders: []
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f3890'),
+  customer_id: 204,
+  name: 'Pham Thi D',
+  email: 'd.pham@example.com',
+  phone: '0982223344',
+  address: 'Hai Phong, Vietnam',
+  orders: [
+    {
+      order_id: 1004,
+      amount: 1200000,
+      status: 'Pending'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f3891'),
+  customer_id: 205,
+  name: 'Hoang Van E',
+  email: 'e.hoang@example.com',
+  phone: '0967890123',
+  address: 'Can Tho, Vietnam',
+  orders: [
+    {
+      order_id: 1005,
+      amount: 800000,
+      status: 'Delivered'
+    }
+  ]
+}
+db.customers.find({ phone: /098/ }).pretty()
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388d'),
+  customer_id: 201,
+  name: 'Nguyen Van A',
+  email: 'a.nguyen@example.com',
+  phone: '0987654321',
+  address: 'Hanoi, Vietnam',
+  orders: [
+    {
+      order_id: 1001,
+      amount: 1500000,
+      status: 'Pending'
+    },
+    {
+      order_id: 1002,
+      amount: 500000,
+      status: 'Delivered'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f3890'),
+  customer_id: 204,
+  name: 'Pham Thi D',
+  email: 'd.pham@example.com',
+  phone: '0982223344',
+  address: 'Hai Phong, Vietnam',
+  orders: [
+    {
+      order_id: 1004,
+      amount: 1200000,
+      status: 'Pending'
+    }
+  ]
+}
+db.customers.find({ "orders.amount": { $gt: 1000000 } }).pretty()
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388d'),
+  customer_id: 201,
+  name: 'Nguyen Van A',
+  email: 'a.nguyen@example.com',
+  phone: '0987654321',
+  address: 'Hanoi, Vietnam',
+  orders: [
+    {
+      order_id: 1001,
+      amount: 1500000,
+      status: 'Pending'
+    },
+    {
+      order_id: 1002,
+      amount: 500000,
+      status: 'Delivered'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f388e'),
+  customer_id: 202,
+  name: 'Tran Thi B',
+  email: 'b.tran@example.com',
+  phone: '0971234567',
+  address: 'Ho Chi Minh, Vietnam',
+  orders: [
+    {
+      order_id: 1003,
+      amount: 2000000,
+      status: 'Shipped'
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac8f277a3aaf1bf4f3890'),
+  customer_id: 204,
+  name: 'Pham Thi D',
+  email: 'd.pham@example.com',
+  phone: '0982223344',
+  address: 'Hai Phong, Vietnam',
+  orders: [
+    {
+      order_id: 1004,
+      amount: 1200000,
+      status: 'Pending'
+    }
+  ]
+}
+db.customers.updateMany(
+    { "orders.status": "Pending" },
+    { $set: { "orders.$[].status": "Shipped" } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.customers.deleteMany({ orders: { $size: 0 } })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+use test
+switched to db test
+use library
+switched to db library
+db.books.insertMany([
+    { 
+        isbn: "978-604-1234567", 
+        title: "Mắt Biếc", 
+        author: "Nguyễn Nhật Ánh", 
+        year: 1990, 
+        genre: "Fiction", 
+        available: true
+    },
+    { 
+        isbn: "978-604-9876543", 
+        title: "Harry Potter and the Philosopher's Stone", 
+        author: "J.K. Rowling", 
+        year: 1997, 
+        genre: "Fantasy", 
+        available: true
+    },
+    { 
+        isbn: "978-032-1356680", 
+        title: "The Pragmatic Programmer", 
+        author: "Andrew Hunt", 
+        year: 1999, 
+        genre: "Technology", 
+        available: true
+    },
+    { 
+        isbn: "978-044-1013593", 
+        title: "Dune", 
+        author: "Frank Herbert", 
+        year: 1965, 
+        genre: "Science Fiction", 
+        available: false
+    },
+    { 
+        isbn: "978-034-5339683", 
+        title: "The Hobbit", 
+        author: "J.R.R. Tolkien", 
+        year: 1937, 
+        genre: "Fantasy", 
+        available: true
+    },
+    { 
+        isbn: "978-055-3386790", 
+        title: "The Martian", 
+        author: "Andy Weir", 
+        year: 2014, 
+        genre: "Science Fiction", 
+        available: true
+    },
+    { 
+        isbn: "978-198-4822166", 
+        title: "Project Hail Mary", 
+        author: "Andy Weir", 
+        year: 2021, 
+        genre: "Science Fiction", 
+        available: true
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67dac95177a3aaf1bf4f3892'),
+    '1': ObjectId('67dac95177a3aaf1bf4f3893'),
+    '2': ObjectId('67dac95177a3aaf1bf4f3894'),
+    '3': ObjectId('67dac95177a3aaf1bf4f3895'),
+    '4': ObjectId('67dac95177a3aaf1bf4f3896'),
+    '5': ObjectId('67dac95177a3aaf1bf4f3897'),
+    '6': ObjectId('67dac95177a3aaf1bf4f3898')
+  }
+}
+db.books.find().pretty()
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3892'),
+  isbn: '978-604-1234567',
+  title: 'Mắt Biếc',
+  author: 'Nguyễn Nhật Ánh',
+  year: 1990,
+  genre: 'Fiction',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3893'),
+  isbn: '978-604-9876543',
+  title: "Harry Potter and the Philosopher's Stone",
+  author: 'J.K. Rowling',
+  year: 1997,
+  genre: 'Fantasy',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3894'),
+  isbn: '978-032-1356680',
+  title: 'The Pragmatic Programmer',
+  author: 'Andrew Hunt',
+  year: 1999,
+  genre: 'Technology',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3895'),
+  isbn: '978-044-1013593',
+  title: 'Dune',
+  author: 'Frank Herbert',
+  year: 1965,
+  genre: 'Science Fiction',
+  available: false
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3896'),
+  isbn: '978-034-5339683',
+  title: 'The Hobbit',
+  author: 'J.R.R. Tolkien',
+  year: 1937,
+  genre: 'Fantasy',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3897'),
+  isbn: '978-055-3386790',
+  title: 'The Martian',
+  author: 'Andy Weir',
+  year: 2014,
+  genre: 'Science Fiction',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3898'),
+  isbn: '978-198-4822166',
+  title: 'Project Hail Mary',
+  author: 'Andy Weir',
+  year: 2021,
+  genre: 'Science Fiction',
+  available: true
+}
+db.books.find({ author: "Nguyễn Nhật Ánh" }).pretty()
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3892'),
+  isbn: '978-604-1234567',
+  title: 'Mắt Biếc',
+  author: 'Nguyễn Nhật Ánh',
+  year: 1990,
+  genre: 'Fiction',
+  available: true
+}
+db.books.find({ genre: "Science Fiction", year: { $gt: 2000 } }).pretty()
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3897'),
+  isbn: '978-055-3386790',
+  title: 'The Martian',
+  author: 'Andy Weir',
+  year: 2014,
+  genre: 'Science Fiction',
+  available: true
+}
+{
+  _id: ObjectId('67dac95177a3aaf1bf4f3898'),
+  isbn: '978-198-4822166',
+  title: 'Project Hail Mary',
+  author: 'Andy Weir',
+  year: 2021,
+  genre: 'Science Fiction',
+  available: true
+}
+db.books.updateOne(
+    { isbn: "978-604-1234567" },
+    { $set: { available: false } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.books.deleteMany({ year: { $lt: 1980 } })
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+use test
+switched to db test
+use school
+switched to db school
+db.classes.insertMany([
+    { 
+        class_id: 201, 
+        name: "Lớp 10A1", 
+        teacher: "Nguyễn Thị Hoa", 
+        students: [
+            { student_id: 301, name: "Lê Văn Minh", age: 15 },
+            { student_id: 302, name: "Trần Thị Lan", age: 14 },
+            { student_id: 303, name: "Phạm Hữu Nam", age: 15 }
+        ]
+    },
+    { 
+        class_id: 202, 
+        name: "Lớp 10A2", 
+        teacher: "Trần Văn An", 
+        students: [
+            { student_id: 304, name: "Nguyễn Đức Huy", age: 16 },
+            { student_id: 305, name: "Lê Thị Mai", age: 14 }
+        ]
+    },
+    { 
+        class_id: 203, 
+        name: "Lớp 11B1", 
+        teacher: "Hoàng Văn Long", 
+        students: [
+            { student_id: 306, name: "Nguyễn Văn Bình", age: 17 },
+            { student_id: 307, name: "Võ Thanh Hằng", age: 16 },
+            { student_id: 308, name: "Lê Hoài Anh", age: 17 },
+            { student_id: 309, name: "Đỗ Tuấn Kiệt", age: 16 },
+            { student_id: 310, name: "Phan Minh Tâm", age: 17 }
+        ]
+    },
+    { 
+        class_id: 204, 
+        name: "Lớp 11B2", 
+        teacher: "Đặng Thị Hồng", 
+        students: [
+            { student_id: 311, name: "Bùi Anh Tuấn", age: 16 }
+        ]
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67dac9cd77a3aaf1bf4f3899'),
+    '1': ObjectId('67dac9cd77a3aaf1bf4f389a'),
+    '2': ObjectId('67dac9cd77a3aaf1bf4f389b'),
+    '3': ObjectId('67dac9cd77a3aaf1bf4f389c')
+  }
+}
+db.classes.find().pretty()
+{
+  _id: ObjectId('67dac9cd77a3aaf1bf4f3899'),
+  class_id: 201,
+  name: 'Lớp 10A1',
+  teacher: 'Nguyễn Thị Hoa',
+  students: [
+    {
+      student_id: 301,
+      name: 'Lê Văn Minh',
+      age: 15
+    },
+    {
+      student_id: 302,
+      name: 'Trần Thị Lan',
+      age: 14
+    },
+    {
+      student_id: 303,
+      name: 'Phạm Hữu Nam',
+      age: 15
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac9cd77a3aaf1bf4f389a'),
+  class_id: 202,
+  name: 'Lớp 10A2',
+  teacher: 'Trần Văn An',
+  students: [
+    {
+      student_id: 304,
+      name: 'Nguyễn Đức Huy',
+      age: 16
+    },
+    {
+      student_id: 305,
+      name: 'Lê Thị Mai',
+      age: 14
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac9cd77a3aaf1bf4f389b'),
+  class_id: 203,
+  name: 'Lớp 11B1',
+  teacher: 'Hoàng Văn Long',
+  students: [
+    {
+      student_id: 306,
+      name: 'Nguyễn Văn Bình',
+      age: 17
+    },
+    {
+      student_id: 307,
+      name: 'Võ Thanh Hằng',
+      age: 16
+    },
+    {
+      student_id: 308,
+      name: 'Lê Hoài Anh',
+      age: 17
+    },
+    {
+      student_id: 309,
+      name: 'Đỗ Tuấn Kiệt',
+      age: 16
+    },
+    {
+      student_id: 310,
+      name: 'Phan Minh Tâm',
+      age: 17
+    }
+  ]
+}
+{
+  _id: ObjectId('67dac9cd77a3aaf1bf4f389c'),
+  class_id: 204,
+  name: 'Lớp 11B2',
+  teacher: 'Đặng Thị Hồng',
+  students: [
+    {
+      student_id: 311,
+      name: 'Bùi Anh Tuấn',
+      age: 16
+    }
+  ]
+}
+db.classes.find({ teacher: "Trần Văn An" }).pretty()
+{
+  _id: ObjectId('67dac9cd77a3aaf1bf4f389a'),
+  class_id: 202,
+  name: 'Lớp 10A2',
+  teacher: 'Trần Văn An',
+  students: [
+    {
+      student_id: 304,
+      name: 'Nguyễn Đức Huy',
+      age: 16
+    },
+    {
+      student_id: 305,
+      name: 'Lê Thị Mai',
+      age: 14
+    }
+  ]
+}
+db.classes.updateOne(
+    { class_id: 202 },
+    { $push: { students: { student_id: 312, name: "Lý Gia Bảo", age: 15 } } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.classes.updateOne(
+    { "students.student_id": 302 },
+    { $set: { "students.$.age": 16 } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.classes.deleteMany({ "students.4": { $exists: false } })
+{
+  acknowledged: true,
+  deletedCount: 3
+}
+use test
+switched to db test
+use events
+switched to db events
+db.event_list.insertMany([
+    { 
+        event_id: 401, 
+        name: "Hội Thảo Công Nghệ 2024", 
+        date: ISODate("2024-12-10T09:00:00Z"), 
+        location: "Trung tâm Hội nghị", 
+        attendees: [
+            { attendee_id: 501, name: "Nguyễn Văn A" },
+            { attendee_id: 502, name: "Trần Thị B" },
+            { attendee_id: 503, name: "Lê Văn C" }
+        ]
+    },
+    { 
+        event_id: 402, 
+        name: "Ngày Hội Việc Làm", 
+        date: ISODate("2024-10-15T08:30:00Z"), 
+        location: "Đại học Bách Khoa", 
+        attendees: [
+            { attendee_id: 504, name: "Hoàng Minh D" },
+            { attendee_id: 505, name: "Phạm Thu E" },
+            { attendee_id: 506, name: "Đinh Văn F" },
+            { attendee_id: 507, name: "Trịnh Hoài G" },
+            { attendee_id: 508, name: "Vũ Thị H" }
+        ]
+    },
+    { 
+        event_id: 403, 
+        name: "Hội Chợ Sách", 
+        date: ISODate("2024-12-05T10:00:00Z"), 
+        location: "Nhà Văn Hóa Thanh Niên", 
+        attendees: [
+            { attendee_id: 509, name: "Lương Thanh I" },
+            { attendee_id: 510, name: "Ngô Bảo J" },
+            { attendee_id: 511, name: "Đặng Hải K" },
+            { attendee_id: 512, name: "Bùi Văn L" },
+            { attendee_id: 513, name: "Lê Thị M" },
+            { attendee_id: 514, name: "Nguyễn Hoàng N" },
+            { attendee_id: 515, name: "Trần Văn O" },
+            { attendee_id: 516, name: "Đỗ Hữu P" },
+            { attendee_id: 517, name: "Võ Thị Q" },
+            { attendee_id: 518, name: "Phan Thanh R" }
+        ]
+    },
+    { 
+        event_id: 404, 
+        name: "Triển Lãm Nghệ Thuật", 
+        date: ISODate("2024-08-20T14:00:00Z"), 
+        location: "Bảo tàng Mỹ Thuật", 
+        attendees: [
+            { attendee_id: 519, name: "Hồ Văn S" },
+            { attendee_id: 520, name: "Lý Hoài T" },
+            { attendee_id: 521, name: "Tống Nhật U" }
+        ]
+    },
+    { 
+        event_id: 405, 
+        name: "Hội Nghị Doanh Nghiệp", 
+        date: ISODate("2024-12-15T13:30:00Z"), 
+        location: "Khách sạn Grand", 
+        attendees: [
+            { attendee_id: 522, name: "Vương Quốc V" },
+            { attendee_id: 523, name: "Tạ Thanh W" },
+            { attendee_id: 524, name: "Trịnh Thị X" },
+            { attendee_id: 525, name: "Phạm Hồng Y" },
+            { attendee_id: 526, name: "Nguyễn Văn Z" }
+        ]
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67daca5577a3aaf1bf4f389d'),
+    '1': ObjectId('67daca5577a3aaf1bf4f389e'),
+    '2': ObjectId('67daca5577a3aaf1bf4f389f'),
+    '3': ObjectId('67daca5577a3aaf1bf4f38a0'),
+    '4': ObjectId('67daca5577a3aaf1bf4f38a1')
+  }
+}
+db.event_list.find().pretty()
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f389d'),
+  event_id: 401,
+  name: 'Hội Thảo Công Nghệ 2024',
+  date: 2024-12-10T09:00:00.000Z,
+  location: 'Trung tâm Hội nghị',
+  attendees: [
+    {
+      attendee_id: 501,
+      name: 'Nguyễn Văn A'
+    },
+    {
+      attendee_id: 502,
+      name: 'Trần Thị B'
+    },
+    {
+      attendee_id: 503,
+      name: 'Lê Văn C'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f389e'),
+  event_id: 402,
+  name: 'Ngày Hội Việc Làm',
+  date: 2024-10-15T08:30:00.000Z,
+  location: 'Đại học Bách Khoa',
+  attendees: [
+    {
+      attendee_id: 504,
+      name: 'Hoàng Minh D'
+    },
+    {
+      attendee_id: 505,
+      name: 'Phạm Thu E'
+    },
+    {
+      attendee_id: 506,
+      name: 'Đinh Văn F'
+    },
+    {
+      attendee_id: 507,
+      name: 'Trịnh Hoài G'
+    },
+    {
+      attendee_id: 508,
+      name: 'Vũ Thị H'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f389f'),
+  event_id: 403,
+  name: 'Hội Chợ Sách',
+  date: 2024-12-05T10:00:00.000Z,
+  location: 'Nhà Văn Hóa Thanh Niên',
+  attendees: [
+    {
+      attendee_id: 509,
+      name: 'Lương Thanh I'
+    },
+    {
+      attendee_id: 510,
+      name: 'Ngô Bảo J'
+    },
+    {
+      attendee_id: 511,
+      name: 'Đặng Hải K'
+    },
+    {
+      attendee_id: 512,
+      name: 'Bùi Văn L'
+    },
+    {
+      attendee_id: 513,
+      name: 'Lê Thị M'
+    },
+    {
+      attendee_id: 514,
+      name: 'Nguyễn Hoàng N'
+    },
+    {
+      attendee_id: 515,
+      name: 'Trần Văn O'
+    },
+    {
+      attendee_id: 516,
+      name: 'Đỗ Hữu P'
+    },
+    {
+      attendee_id: 517,
+      name: 'Võ Thị Q'
+    },
+    {
+      attendee_id: 518,
+      name: 'Phan Thanh R'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f38a0'),
+  event_id: 404,
+  name: 'Triển Lãm Nghệ Thuật',
+  date: 2024-08-20T14:00:00.000Z,
+  location: 'Bảo tàng Mỹ Thuật',
+  attendees: [
+    {
+      attendee_id: 519,
+      name: 'Hồ Văn S'
+    },
+    {
+      attendee_id: 520,
+      name: 'Lý Hoài T'
+    },
+    {
+      attendee_id: 521,
+      name: 'Tống Nhật U'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f38a1'),
+  event_id: 405,
+  name: 'Hội Nghị Doanh Nghiệp',
+  date: 2024-12-15T13:30:00.000Z,
+  location: 'Khách sạn Grand',
+  attendees: [
+    {
+      attendee_id: 522,
+      name: 'Vương Quốc V'
+    },
+    {
+      attendee_id: 523,
+      name: 'Tạ Thanh W'
+    },
+    {
+      attendee_id: 524,
+      name: 'Trịnh Thị X'
+    },
+    {
+      attendee_id: 525,
+      name: 'Phạm Hồng Y'
+    },
+    {
+      attendee_id: 526,
+      name: 'Nguyễn Văn Z'
+    }
+  ]
+}
+db.event_list.find({
+    date: { 
+        $gte: ISODate("2024-12-01T00:00:00Z"), 
+        $lt: ISODate("2025-01-01T00:00:00Z") 
+    }
+}).pretty()
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f389d'),
+  event_id: 401,
+  name: 'Hội Thảo Công Nghệ 2024',
+  date: 2024-12-10T09:00:00.000Z,
+  location: 'Trung tâm Hội nghị',
+  attendees: [
+    {
+      attendee_id: 501,
+      name: 'Nguyễn Văn A'
+    },
+    {
+      attendee_id: 502,
+      name: 'Trần Thị B'
+    },
+    {
+      attendee_id: 503,
+      name: 'Lê Văn C'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f389f'),
+  event_id: 403,
+  name: 'Hội Chợ Sách',
+  date: 2024-12-05T10:00:00.000Z,
+  location: 'Nhà Văn Hóa Thanh Niên',
+  attendees: [
+    {
+      attendee_id: 509,
+      name: 'Lương Thanh I'
+    },
+    {
+      attendee_id: 510,
+      name: 'Ngô Bảo J'
+    },
+    {
+      attendee_id: 511,
+      name: 'Đặng Hải K'
+    },
+    {
+      attendee_id: 512,
+      name: 'Bùi Văn L'
+    },
+    {
+      attendee_id: 513,
+      name: 'Lê Thị M'
+    },
+    {
+      attendee_id: 514,
+      name: 'Nguyễn Hoàng N'
+    },
+    {
+      attendee_id: 515,
+      name: 'Trần Văn O'
+    },
+    {
+      attendee_id: 516,
+      name: 'Đỗ Hữu P'
+    },
+    {
+      attendee_id: 517,
+      name: 'Võ Thị Q'
+    },
+    {
+      attendee_id: 518,
+      name: 'Phan Thanh R'
+    }
+  ]
+}
+{
+  _id: ObjectId('67daca5577a3aaf1bf4f38a1'),
+  event_id: 405,
+  name: 'Hội Nghị Doanh Nghiệp',
+  date: 2024-12-15T13:30:00.000Z,
+  location: 'Khách sạn Grand',
+  attendees: [
+    {
+      attendee_id: 522,
+      name: 'Vương Quốc V'
+    },
+    {
+      attendee_id: 523,
+      name: 'Tạ Thanh W'
+    },
+    {
+      attendee_id: 524,
+      name: 'Trịnh Thị X'
+    },
+    {
+      attendee_id: 525,
+      name: 'Phạm Hồng Y'
+    },
+    {
+      attendee_id: 526,
+      name: 'Nguyễn Văn Z'
+    }
+  ]
+}
+db.event_list.updateOne(
+    { event_id: 401 },
+    { $set: { location: "Hội Trường A" } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.event_list.deleteMany({ "attendees.9": { $exists: false } })
+{
+  acknowledged: true,
+  deletedCount: 4
+}
+use test
+switched to db test

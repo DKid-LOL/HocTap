@@ -1,0 +1,708 @@
+db.sales.drop()
+true
+use sales
+switched to db sales
+db.sales.insertMany([{"id":1,"date":"1/15/2025","product":"Phone","quantity":2},
+{"id":2,"date":"1/30/2025","product":"Laptop","quantity":7},
+{"id":3,"date":"12/14/2024","product":"Laptop","quantity":8},
+{"id":4,"date":"7/2/2024","product":"Phone","quantity":6},
+{"id":5,"date":"11/27/2024","product":"Phone","quantity":5},
+{"id":6,"date":"1/10/2025","product":"Laptop","quantity":7},
+{"id":7,"date":"8/24/2024","product":"Laptop","quantity":4},
+{"id":8,"date":"1/18/2025","product":"Phone","quantity":4},
+{"id":9,"date":"5/1/2024","product":"Laptop","quantity":10},
+{"id":10,"date":"1/12/2025","product":"Phone","quantity":6},
+{"id":11,"date":"4/8/2024","product":"Laptop","quantity":6},
+{"id":12,"date":"7/19/2024","product":"Laptop","quantity":9},
+{"id":13,"date":"2/5/2025","product":"Phone","quantity":1},
+{"id":14,"date":"10/21/2024","product":"Phone","quantity":10},
+{"id":15,"date":"7/7/2024","product":"Phone","quantity":2},
+{"id":16,"date":"9/10/2024","product":"Phone","quantity":4},
+{"id":17,"date":"10/10/2024","product":"Laptop","quantity":1},
+{"id":18,"date":"9/24/2024","product":"Phone","quantity":5},
+{"id":19,"date":"12/8/2024","product":"Laptop","quantity":6},
+{"id":20,"date":"11/5/2024","product":"Laptop","quantity":8},
+{"id":21,"date":"7/22/2024","product":"Laptop","quantity":4},
+{"id":22,"date":"12/31/2024","product":"Laptop","quantity":6},
+{"id":23,"date":"4/15/2024","product":"Phone","quantity":1},
+{"id":24,"date":"10/13/2024","product":"Laptop","quantity":2},
+{"id":25,"date":"11/22/2024","product":"Laptop","quantity":10},
+{"id":26,"date":"10/31/2024","product":"Phone","quantity":1},
+{"id":27,"date":"6/4/2024","product":"Laptop","quantity":2},
+{"id":28,"date":"11/28/2024","product":"Laptop","quantity":8},
+{"id":29,"date":"5/28/2024","product":"Phone","quantity":2},
+{"id":30,"date":"7/8/2024","product":"Laptop","quantity":6},
+{"id":31,"date":"10/12/2024","product":"Laptop","quantity":10},
+{"id":32,"date":"11/8/2024","product":"Laptop","quantity":9},
+{"id":33,"date":"4/7/2024","product":"Phone","quantity":4},
+{"id":34,"date":"3/30/2024","product":"Laptop","quantity":2},
+{"id":35,"date":"11/2/2024","product":"Laptop","quantity":8},
+{"id":36,"date":"1/20/2025","product":"Phone","quantity":5},
+{"id":37,"date":"4/21/2024","product":"Phone","quantity":1},
+{"id":38,"date":"2/3/2025","product":"Laptop","quantity":9},
+{"id":39,"date":"3/24/2024","product":"Phone","quantity":3},
+{"id":40,"date":"8/14/2024","product":"Phone","quantity":5},
+{"id":41,"date":"9/5/2024","product":"Phone","quantity":5},
+{"id":42,"date":"7/9/2024","product":"Laptop","quantity":2},
+{"id":43,"date":"12/22/2024","product":"Laptop","quantity":4},
+{"id":44,"date":"5/23/2024","product":"Laptop","quantity":4},
+{"id":45,"date":"9/7/2024","product":"Laptop","quantity":9},
+{"id":46,"date":"6/29/2024","product":"Laptop","quantity":6},
+{"id":47,"date":"11/25/2024","product":"Phone","quantity":3},
+{"id":48,"date":"6/13/2024","product":"Phone","quantity":4},
+{"id":49,"date":"4/18/2024","product":"Laptop","quantity":6},
+{"id":50,"date":"10/26/2024","product":"Laptop","quantity":6},
+{"id":51,"date":"6/26/2024","product":"Laptop","quantity":10},
+{"id":52,"date":"10/12/2024","product":"Phone","quantity":10},
+{"id":53,"date":"6/16/2024","product":"Phone","quantity":9},
+{"id":54,"date":"5/17/2024","product":"Phone","quantity":8},
+{"id":55,"date":"11/23/2024","product":"Phone","quantity":9},
+{"id":56,"date":"1/12/2025","product":"Phone","quantity":10},
+{"id":57,"date":"10/11/2024","product":"Laptop","quantity":10},
+{"id":58,"date":"11/21/2024","product":"Laptop","quantity":1},
+{"id":59,"date":"6/29/2024","product":"Phone","quantity":6},
+{"id":60,"date":"5/1/2024","product":"Laptop","quantity":6},
+{"id":61,"date":"2/8/2025","product":"Phone","quantity":5},
+{"id":62,"date":"7/29/2024","product":"Laptop","quantity":7},
+{"id":63,"date":"4/14/2024","product":"Laptop","quantity":4},
+{"id":64,"date":"9/18/2024","product":"Phone","quantity":6},
+{"id":65,"date":"4/27/2024","product":"Laptop","quantity":5},
+{"id":66,"date":"2/6/2025","product":"Laptop","quantity":5},
+{"id":67,"date":"11/29/2024","product":"Phone","quantity":10},
+{"id":68,"date":"10/2/2024","product":"Laptop","quantity":4},
+{"id":69,"date":"2/9/2025","product":"Phone","quantity":7},
+{"id":70,"date":"10/30/2024","product":"Laptop","quantity":3},
+{"id":71,"date":"3/21/2024","product":"Phone","quantity":2},
+{"id":72,"date":"9/22/2024","product":"Phone","quantity":9},
+{"id":73,"date":"8/19/2024","product":"Laptop","quantity":8},
+{"id":74,"date":"11/20/2024","product":"Phone","quantity":7},
+{"id":75,"date":"5/26/2024","product":"Phone","quantity":7},
+{"id":76,"date":"3/19/2025","product":"Laptop","quantity":7},
+{"id":77,"date":"2/20/2025","product":"Laptop","quantity":6},
+{"id":78,"date":"6/1/2024","product":"Laptop","quantity":3},
+{"id":79,"date":"7/22/2024","product":"Laptop","quantity":8},
+{"id":80,"date":"5/1/2024","product":"Laptop","quantity":10},
+{"id":81,"date":"9/29/2024","product":"Laptop","quantity":1},
+{"id":82,"date":"3/6/2025","product":"Phone","quantity":4},
+{"id":83,"date":"6/30/2024","product":"Laptop","quantity":5},
+{"id":84,"date":"10/24/2024","product":"Phone","quantity":7},
+{"id":85,"date":"12/22/2024","product":"Phone","quantity":7},
+{"id":86,"date":"12/9/2024","product":"Phone","quantity":2},
+{"id":87,"date":"12/4/2024","product":"Laptop","quantity":7},
+{"id":88,"date":"7/13/2024","product":"Phone","quantity":7},
+{"id":89,"date":"9/30/2024","product":"Phone","quantity":4},
+{"id":90,"date":"1/25/2025","product":"Phone","quantity":5},
+{"id":91,"date":"9/1/2024","product":"Phone","quantity":6},
+{"id":92,"date":"9/21/2024","product":"Laptop","quantity":8},
+{"id":93,"date":"2/13/2025","product":"Laptop","quantity":3},
+{"id":94,"date":"1/31/2025","product":"Phone","quantity":8},
+{"id":95,"date":"11/7/2024","product":"Laptop","quantity":2},
+{"id":96,"date":"7/7/2024","product":"Phone","quantity":7},
+{"id":97,"date":"12/13/2024","product":"Laptop","quantity":8},
+{"id":98,"date":"9/16/2024","product":"Laptop","quantity":6},
+{"id":99,"date":"7/14/2024","product":"Phone","quantity":1},
+{"id":100,"date":"9/23/2024","product":"Laptop","quantity":8},
+{"id":101,"date":"1/18/2025","product":"Laptop","quantity":3},
+{"id":102,"date":"2/17/2025","product":"Laptop","quantity":5},
+{"id":103,"date":"8/21/2024","product":"Laptop","quantity":6},
+{"id":104,"date":"12/15/2024","product":"Phone","quantity":3},
+{"id":105,"date":"3/10/2025","product":"Laptop","quantity":1},
+{"id":106,"date":"11/10/2024","product":"Laptop","quantity":5},
+{"id":107,"date":"9/4/2024","product":"Laptop","quantity":1},
+{"id":108,"date":"6/16/2024","product":"Laptop","quantity":9},
+{"id":109,"date":"6/16/2024","product":"Laptop","quantity":6},
+{"id":110,"date":"3/22/2024","product":"Phone","quantity":8},
+{"id":111,"date":"7/4/2024","product":"Phone","quantity":2},
+{"id":112,"date":"7/11/2024","product":"Laptop","quantity":6},
+{"id":113,"date":"6/9/2024","product":"Phone","quantity":9},
+{"id":114,"date":"7/30/2024","product":"Phone","quantity":8},
+{"id":115,"date":"3/3/2025","product":"Laptop","quantity":4},
+{"id":116,"date":"3/23/2024","product":"Laptop","quantity":5},
+{"id":117,"date":"12/29/2024","product":"Laptop","quantity":4},
+{"id":118,"date":"3/16/2025","product":"Phone","quantity":6},
+{"id":119,"date":"11/25/2024","product":"Laptop","quantity":7},
+{"id":120,"date":"6/26/2024","product":"Laptop","quantity":3},
+{"id":121,"date":"6/9/2024","product":"Laptop","quantity":6},
+{"id":122,"date":"7/2/2024","product":"Laptop","quantity":2},
+{"id":123,"date":"12/2/2024","product":"Laptop","quantity":1},
+{"id":124,"date":"7/12/2024","product":"Laptop","quantity":6},
+{"id":125,"date":"2/18/2025","product":"Laptop","quantity":6},
+{"id":126,"date":"5/29/2024","product":"Phone","quantity":8},
+{"id":127,"date":"1/28/2025","product":"Laptop","quantity":8},
+{"id":128,"date":"9/14/2024","product":"Phone","quantity":4},
+{"id":129,"date":"4/8/2024","product":"Laptop","quantity":7},
+{"id":130,"date":"4/7/2024","product":"Laptop","quantity":6},
+{"id":131,"date":"10/19/2024","product":"Laptop","quantity":10},
+{"id":132,"date":"2/12/2025","product":"Laptop","quantity":5},
+{"id":133,"date":"4/19/2024","product":"Phone","quantity":5},
+{"id":134,"date":"2/25/2025","product":"Phone","quantity":8},
+{"id":135,"date":"6/16/2024","product":"Laptop","quantity":3},
+{"id":136,"date":"9/25/2024","product":"Phone","quantity":9},
+{"id":137,"date":"12/13/2024","product":"Phone","quantity":9},
+{"id":138,"date":"3/21/2024","product":"Laptop","quantity":7},
+{"id":139,"date":"4/16/2024","product":"Phone","quantity":3},
+{"id":140,"date":"7/4/2024","product":"Phone","quantity":10},
+{"id":141,"date":"12/19/2024","product":"Phone","quantity":4},
+{"id":142,"date":"8/22/2024","product":"Laptop","quantity":1},
+{"id":143,"date":"11/7/2024","product":"Laptop","quantity":7},
+{"id":144,"date":"8/30/2024","product":"Phone","quantity":8},
+{"id":145,"date":"9/23/2024","product":"Phone","quantity":4},
+{"id":146,"date":"6/17/2024","product":"Phone","quantity":3},
+{"id":147,"date":"5/14/2024","product":"Laptop","quantity":9},
+{"id":148,"date":"9/19/2024","product":"Phone","quantity":8},
+{"id":149,"date":"8/13/2024","product":"Laptop","quantity":6},
+{"id":150,"date":"4/24/2024","product":"Phone","quantity":3},
+{"id":151,"date":"10/16/2024","product":"Laptop","quantity":9},
+{"id":152,"date":"2/3/2025","product":"Laptop","quantity":9},
+{"id":153,"date":"4/10/2024","product":"Phone","quantity":8},
+{"id":154,"date":"12/27/2024","product":"Laptop","quantity":4},
+{"id":155,"date":"3/14/2025","product":"Laptop","quantity":5},
+{"id":156,"date":"6/7/2024","product":"Laptop","quantity":9},
+{"id":157,"date":"11/2/2024","product":"Laptop","quantity":8},
+{"id":158,"date":"8/25/2024","product":"Laptop","quantity":3},
+{"id":159,"date":"8/17/2024","product":"Phone","quantity":3},
+{"id":160,"date":"12/31/2024","product":"Phone","quantity":8},
+{"id":161,"date":"2/28/2025","product":"Laptop","quantity":1},
+{"id":162,"date":"7/22/2024","product":"Phone","quantity":6},
+{"id":163,"date":"8/29/2024","product":"Phone","quantity":4},
+{"id":164,"date":"10/24/2024","product":"Laptop","quantity":6},
+{"id":165,"date":"1/12/2025","product":"Phone","quantity":2},
+{"id":166,"date":"4/14/2024","product":"Phone","quantity":10},
+{"id":167,"date":"5/8/2024","product":"Laptop","quantity":3},
+{"id":168,"date":"2/27/2025","product":"Phone","quantity":4},
+{"id":169,"date":"10/13/2024","product":"Laptop","quantity":8},
+{"id":170,"date":"11/12/2024","product":"Laptop","quantity":8},
+{"id":171,"date":"11/16/2024","product":"Laptop","quantity":2},
+{"id":172,"date":"9/10/2024","product":"Phone","quantity":10},
+{"id":173,"date":"8/2/2024","product":"Laptop","quantity":9},
+{"id":174,"date":"2/19/2025","product":"Phone","quantity":9},
+{"id":175,"date":"3/19/2025","product":"Laptop","quantity":10},
+{"id":176,"date":"7/29/2024","product":"Laptop","quantity":9},
+{"id":177,"date":"3/31/2024","product":"Laptop","quantity":8},
+{"id":178,"date":"6/27/2024","product":"Phone","quantity":10},
+{"id":179,"date":"9/7/2024","product":"Phone","quantity":1},
+{"id":180,"date":"6/13/2024","product":"Laptop","quantity":10},
+{"id":181,"date":"1/3/2025","product":"Laptop","quantity":3},
+{"id":182,"date":"10/31/2024","product":"Phone","quantity":3},
+{"id":183,"date":"2/23/2025","product":"Phone","quantity":2},
+{"id":184,"date":"2/26/2025","product":"Phone","quantity":1},
+{"id":185,"date":"10/21/2024","product":"Laptop","quantity":4},
+{"id":186,"date":"2/6/2025","product":"Phone","quantity":7},
+{"id":187,"date":"1/2/2025","product":"Laptop","quantity":1},
+{"id":188,"date":"2/12/2025","product":"Phone","quantity":8},
+{"id":189,"date":"3/12/2025","product":"Phone","quantity":4},
+{"id":190,"date":"1/21/2025","product":"Phone","quantity":5},
+{"id":191,"date":"10/6/2024","product":"Phone","quantity":4},
+{"id":192,"date":"4/26/2024","product":"Laptop","quantity":7},
+{"id":193,"date":"8/13/2024","product":"Laptop","quantity":2},
+{"id":194,"date":"6/5/2024","product":"Laptop","quantity":2},
+{"id":195,"date":"3/5/2025","product":"Phone","quantity":2},
+{"id":196,"date":"7/12/2024","product":"Phone","quantity":8},
+{"id":197,"date":"8/23/2024","product":"Phone","quantity":10},
+{"id":198,"date":"11/17/2024","product":"Phone","quantity":9},
+{"id":199,"date":"6/10/2024","product":"Laptop","quantity":2},
+{"id":200,"date":"2/11/2025","product":"Phone","quantity":5}])
+{
+    '141': ObjectId('67dd889b947f3d305ad35ddc'),
+    '142': ObjectId('67dd889b947f3d305ad35ddd'),
+    '143': ObjectId('67dd889b947f3d305ad35dde'),
+    '144': ObjectId('67dd889b947f3d305ad35ddf'),
+    '145': ObjectId('67dd889b947f3d305ad35de0'),
+    '146': ObjectId('67dd889b947f3d305ad35de1'),
+    '147': ObjectId('67dd889b947f3d305ad35de2'),
+    '148': ObjectId('67dd889b947f3d305ad35de3'),
+    '149': ObjectId('67dd889b947f3d305ad35de4'),
+    '150': ObjectId('67dd889b947f3d305ad35de5'),
+    '151': ObjectId('67dd889b947f3d305ad35de6'),
+    '152': ObjectId('67dd889b947f3d305ad35de7'),
+    '153': ObjectId('67dd889b947f3d305ad35de8'),
+    '154': ObjectId('67dd889b947f3d305ad35de9'),
+    '155': ObjectId('67dd889b947f3d305ad35dea'),
+    '156': ObjectId('67dd889b947f3d305ad35deb'),
+    '157': ObjectId('67dd889b947f3d305ad35dec'),
+    '158': ObjectId('67dd889b947f3d305ad35ded'),
+    '159': ObjectId('67dd889b947f3d305ad35dee'),
+    '160': ObjectId('67dd889b947f3d305ad35def'),
+    '161': ObjectId('67dd889b947f3d305ad35df0'),
+    '162': ObjectId('67dd889b947f3d305ad35df1'),
+    '163': ObjectId('67dd889b947f3d305ad35df2'),
+    '164': ObjectId('67dd889b947f3d305ad35df3'),
+    '165': ObjectId('67dd889b947f3d305ad35df4'),
+    '166': ObjectId('67dd889b947f3d305ad35df5'),
+    '167': ObjectId('67dd889b947f3d305ad35df6'),
+    '168': ObjectId('67dd889b947f3d305ad35df7'),
+    '169': ObjectId('67dd889b947f3d305ad35df8'),
+    '170': ObjectId('67dd889b947f3d305ad35df9'),
+    '171': ObjectId('67dd889b947f3d305ad35dfa'),
+    '172': ObjectId('67dd889b947f3d305ad35dfb'),
+    '173': ObjectId('67dd889b947f3d305ad35dfc'),
+    '174': ObjectId('67dd889b947f3d305ad35dfd'),
+    '175': ObjectId('67dd889b947f3d305ad35dfe'),
+    '176': ObjectId('67dd889b947f3d305ad35dff'),
+    '177': ObjectId('67dd889b947f3d305ad35e00'),
+    '178': ObjectId('67dd889b947f3d305ad35e01'),
+    '179': ObjectId('67dd889b947f3d305ad35e02'),
+    '180': ObjectId('67dd889b947f3d305ad35e03'),
+    '181': ObjectId('67dd889b947f3d305ad35e04'),
+    '182': ObjectId('67dd889b947f3d305ad35e05'),
+    '183': ObjectId('67dd889b947f3d305ad35e06'),
+    '184': ObjectId('67dd889b947f3d305ad35e07'),
+    '185': ObjectId('67dd889b947f3d305ad35e08'),
+    '186': ObjectId('67dd889b947f3d305ad35e09'),
+    '187': ObjectId('67dd889b947f3d305ad35e0a'),
+    '188': ObjectId('67dd889b947f3d305ad35e0b'),
+    '189': ObjectId('67dd889b947f3d305ad35e0c'),
+    '190': ObjectId('67dd889b947f3d305ad35e0d'),
+    '191': ObjectId('67dd889b947f3d305ad35e0e'),
+    '192': ObjectId('67dd889b947f3d305ad35e0f'),
+    '193': ObjectId('67dd889b947f3d305ad35e10'),
+    '194': ObjectId('67dd889b947f3d305ad35e11'),
+    '195': ObjectId('67dd889b947f3d305ad35e12'),
+    '196': ObjectId('67dd889b947f3d305ad35e13'),
+    '197': ObjectId('67dd889b947f3d305ad35e14'),
+    '198': ObjectId('67dd889b947f3d305ad35e15'),
+    '199': ObjectId('67dd889b947f3d305ad35e16')
+  }
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$date",
+            total_quantity: { $sum: "$quantity" }
+        }
+    },
+    { $sort: { _id: 1 } }
+])
+{
+  _id: '1/1/2025',
+  total_quantity: 9
+}
+{
+  _id: '1/10/2025',
+  total_quantity: 7
+}
+{
+  _id: '1/12/2025',
+  total_quantity: 18
+}
+{
+  _id: '1/13/2025',
+  total_quantity: 6
+}
+{
+  _id: '1/15/2025',
+  total_quantity: 2
+}
+{
+  _id: '1/16/2025',
+  total_quantity: 9
+}
+{
+  _id: '1/17/2025',
+  total_quantity: 4
+}
+{
+  _id: '1/18/2025',
+  total_quantity: 7
+}
+{
+  _id: '1/19/2025',
+  total_quantity: 9
+}
+{
+  _id: '1/2/2025',
+  total_quantity: 1
+}
+{
+  _id: '1/20/2025',
+  total_quantity: 5
+}
+{
+  _id: '1/21/2025',
+  total_quantity: 22
+}
+{
+  _id: '1/23/2025',
+  total_quantity: 19
+}
+{
+  _id: '1/25/2025',
+  total_quantity: 10
+}
+{
+  _id: '1/28/2025',
+  total_quantity: 16
+}
+{
+  _id: '1/3/2025',
+  total_quantity: 6
+}
+{
+  _id: '1/30/2025',
+  total_quantity: 7
+}
+{
+  _id: '1/31/2025',
+  total_quantity: 8
+}
+{
+  _id: '1/7/2025',
+  total_quantity: 5
+}
+{
+  _id: '1/9/2025',
+  total_quantity: 2
+}
+Type "it" for more
+db.sales.aggregate([
+    {
+        $group: {
+            _id: { date: "$date", product: "$product" },
+            total_quantity: { $sum: "$quantity" }
+        }
+    },
+    {
+        $sort: { "_id.date": 1, total_quantity: -1 }
+    },
+    {
+        $group: {
+            _id: "$_id.date",
+            best_selling_product: { $first: "$_id.product" },
+            quantity: { $first: "$total_quantity" }
+        }
+    },
+    { $sort: { _id: 1 } }
+])
+{
+  _id: '1/1/2025',
+  best_selling_product: 'Table Cloth 62x114 Colour',
+  quantity: 9
+}
+{
+  _id: '1/10/2025',
+  best_selling_product: 'Laptop',
+  quantity: 7
+}
+{
+  _id: '1/12/2025',
+  best_selling_product: 'Phone',
+  quantity: 18
+}
+{
+  _id: '1/13/2025',
+  best_selling_product: 'Trueblue - Blueberry Cranberry',
+  quantity: 6
+}
+{
+  _id: '1/15/2025',
+  best_selling_product: 'Phone',
+  quantity: 2
+}
+{
+  _id: '1/16/2025',
+  best_selling_product: 'Wonton Wrappers',
+  quantity: 9
+}
+{
+  _id: '1/17/2025',
+  best_selling_product: 'Pasta - Canelloni, Single Serve',
+  quantity: 4
+}
+{
+  _id: '1/18/2025',
+  best_selling_product: 'Phone',
+  quantity: 4
+}
+{
+  _id: '1/19/2025',
+  best_selling_product: 'Shrimp - 16/20, Iqf, Shell On',
+  quantity: 6
+}
+{
+  _id: '1/2/2025',
+  best_selling_product: 'Laptop',
+  quantity: 1
+}
+{
+  _id: '1/20/2025',
+  best_selling_product: 'Phone',
+  quantity: 5
+}
+{
+  _id: '1/21/2025',
+  best_selling_product: 'Walkers Special Old Whiskey',
+  quantity: 10
+}
+{
+  _id: '1/23/2025',
+  best_selling_product: 'Spoon - Soup, Plastic',
+  quantity: 7
+}
+{
+  _id: '1/25/2025',
+  best_selling_product: 'Pork - European Side Bacon',
+  quantity: 5
+}
+{
+  _id: '1/28/2025',
+  best_selling_product: 'Country Roll',
+  quantity: 8
+}
+{
+  _id: '1/3/2025',
+  best_selling_product: 'Laptop',
+  quantity: 3
+}
+{
+  _id: '1/30/2025',
+  best_selling_product: 'Laptop',
+  quantity: 7
+}
+{
+  _id: '1/31/2025',
+  best_selling_product: 'Phone',
+  quantity: 8
+}
+{
+  _id: '1/7/2025',
+  best_selling_product: 'Liners - Baking Cups',
+  quantity: 5
+}
+{
+  _id: '1/9/2025',
+  best_selling_product: 'Tart - Raisin And Pecan',
+  quantity: 2
+}
+Type "it" for more
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$product",
+            total_quantity: { $sum: "$quantity" }
+        }
+    },
+    { $sort: { total_quantity: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: 'Laptop',
+  total_quantity: 621
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$date",
+            total_quantity: { $sum: "$quantity" }
+        }
+    },
+    { $sort: { total_quantity: -1 } }
+])
+{
+  _id: '5/1/2024',
+  total_quantity: 31
+}
+{
+  _id: '6/29/2024',
+  total_quantity: 30
+}
+{
+  _id: '10/21/2024',
+  total_quantity: 30
+}
+{
+  _id: '7/29/2024',
+  total_quantity: 29
+}
+{
+  _id: '6/16/2024',
+  total_quantity: 27
+}
+{
+  _id: '10/12/2024',
+  total_quantity: 27
+}
+{
+  _id: '12/13/2024',
+  total_quantity: 24
+}
+{
+  _id: '9/10/2024',
+  total_quantity: 23
+}
+{
+  _id: '1/21/2025',
+  total_quantity: 22
+}
+{
+  _id: '3/19/2025',
+  total_quantity: 21
+}
+{
+  _id: '10/19/2024',
+  total_quantity: 20
+}
+{
+  _id: '12/22/2024',
+  total_quantity: 19
+}
+{
+  _id: '11/29/2024',
+  total_quantity: 19
+}
+{
+  _id: '1/23/2025',
+  total_quantity: 19
+}
+{
+  _id: '11/5/2024',
+  total_quantity: 19
+}
+{
+  _id: '2/1/2025',
+  total_quantity: 19
+}
+{
+  _id: '4/14/2024',
+  total_quantity: 19
+}
+{
+  _id: '7/22/2024',
+  total_quantity: 18
+}
+{
+  _id: '1/12/2025',
+  total_quantity: 18
+}
+{
+  _id: '2/3/2025',
+  total_quantity: 18
+}
+Type "it" for more
+db.sales.aggregate([
+    {
+        $group: {
+            _id: { date: "$date", product: "$product" },
+            total_quantity: { $sum: "$quantity" }
+        }
+    },
+    {
+        $sort: { "_id.date": 1, total_quantity: -1 }
+    },
+    {
+        $group: {
+            _id: "$_id.date",
+            product: { $first: "$_id.product" },
+            quantity: { $first: "$total_quantity" }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            date: "$_id",
+            best_selling_product: "$product",
+            quantity: 1
+        }
+    },
+    { $sort: { date: 1 } }
+])
+{
+  quantity: 9,
+  date: '1/1/2025',
+  best_selling_product: 'Table Cloth 62x114 Colour'
+}
+{
+  quantity: 7,
+  date: '1/10/2025',
+  best_selling_product: 'Laptop'
+}
+{
+  quantity: 18,
+  date: '1/12/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 6,
+  date: '1/13/2025',
+  best_selling_product: 'Trueblue - Blueberry Cranberry'
+}
+{
+  quantity: 2,
+  date: '1/15/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 9,
+  date: '1/16/2025',
+  best_selling_product: 'Wonton Wrappers'
+}
+{
+  quantity: 4,
+  date: '1/17/2025',
+  best_selling_product: 'Pasta - Canelloni, Single Serve'
+}
+{
+  quantity: 4,
+  date: '1/18/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 6,
+  date: '1/19/2025',
+  best_selling_product: 'Shrimp - 16/20, Iqf, Shell On'
+}
+{
+  quantity: 1,
+  date: '1/2/2025',
+  best_selling_product: 'Laptop'
+}
+{
+  quantity: 5,
+  date: '1/20/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 10,
+  date: '1/21/2025',
+  best_selling_product: 'Walkers Special Old Whiskey'
+}
+{
+  quantity: 7,
+  date: '1/23/2025',
+  best_selling_product: 'Spoon - Soup, Plastic'
+}
+{
+  quantity: 5,
+  date: '1/25/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 8,
+  date: '1/28/2025',
+  best_selling_product: 'Country Roll'
+}
+{
+  quantity: 3,
+  date: '1/3/2025',
+  best_selling_product: 'Laptop'
+}
+{
+  quantity: 7,
+  date: '1/30/2025',
+  best_selling_product: 'Laptop'
+}
+{
+  quantity: 8,
+  date: '1/31/2025',
+  best_selling_product: 'Phone'
+}
+{
+  quantity: 5,
+  date: '1/7/2025',
+  best_selling_product: 'Liners - Baking Cups'
+}
+{
+  quantity: 2,
+  date: '1/9/2025',
+  best_selling_product: 'Tart - Raisin And Pecan'
+}
+Type "it" for more

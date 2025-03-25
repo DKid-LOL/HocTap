@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trò chơi đoán số</title>
+</head>
+<body>
+    <h1>Trò chơi đoán số</h1>
+    <p>Tôi đã chọn một số từ 1 đến 100. Hãy cố gắng đoán số đó!</p>
+    <input type="text" id="guessField">
+    <input type="submit" value="Đoán" id="guessSubmit">
+    <p id="message"></p>
+    
+    <script>
+        // Tạo số ngẫu nhiên từ 1 đến 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        
+        // Lấy các phần tử từ HTML
+        const guessField = document.getElementById('guessField');
+        const guessSubmit = document.getElementById('guessSubmit');
+        const message = document.getElementById('message');
+        
+        let guessCount = 0;
+        let isGameOver = false;
+
+        guessSubmit.addEventListener('click', checkGuess);
+
+        function checkGuess() {
+            if (isGameOver) {
+                return;
+            }
+
+            const userGuess = parseInt(guessField.value);
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                message.textContent = 'Hãy nhập một số từ 1 đến 10.';
+                return;
+            }
+
+            guessCount++;
+
+            if (userGuess === randomNumber) {
+                message.textContent = `Chúc mừng! Bạn đã đoán đúng số ${randomNumber} sau ${guessCount} lần đoán.`;
+                isGameOver = true;
+            } else if (userGuess < randomNumber) {
+                message.textContent = 'Số bạn đoán nhỏ hơn số đã chọn.';
+            } else {
+                message.textContent = 'Số bạn đoán lớn hơn số đã chọn.';
+            }
+
+            guessField.value = '';
+            guessField.focus();
+        }
+    </script>
+</body>
+</html>

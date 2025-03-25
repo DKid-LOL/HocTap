@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vẽ hình tam giác</title>
+</head>
+<body>
+    <script>
+        // Số lượng hàng của tam giác
+        var x = 5;
+        var d = (x-1)*2;
+        var space = ' ';
+        for (var i = 0; i <=x-1; i++) {
+            var line = '';
+            for(var k=1; k<=d; k++) {
+                line += space;
+            }
+            d-=2;
+            for (var j = 1; j <= i*2+1; j++) {
+                line += '* ';
+            }
+            console.log(line);
+        }
+    </script>
+</body>
+</html>

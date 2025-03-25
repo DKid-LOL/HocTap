@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid grey"></canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx1 = canvas.getContext("2d");
+
+
+
+ctx1.moveTo(0, 0);
+ctx1.lineTo(200, 400);
+ctx1.strokeStyle = "red";
+ctx1.stroke();
+
+const ctx2 = canvas.getContext("2d");
+
+ctx2.moveTo(200, 400);
+ctx2.lineTo(400 , 0);
+ctx2.strokeStyle = "blue";
+ctx2.stroke();
+
+const ctx3 = canvas.getContext("2d");
+
+ctx3.moveTo(400, 0);
+ctx3.lineTo(0 , 0);
+ctx3.strokeStyle = "yellow";
+ctx3.stroke();
+
+</script>
+
+</body>
+</html>

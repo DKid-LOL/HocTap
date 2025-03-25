@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "productName": "Laptop Dell XPS",
+            "productCode": "LTXP123",
+            "price": 25000000,
+            "quantity": 10,
+            "category": "Máy tính",
+            "entryDate": "2024-03-10"
+        },
+        {
+            "productName": "Chuột Logitech",
+            "productCode": "MOUSE456",
+            "price": 550000,
+            "quantity": 50,
+            "category": "Phụ kiện",
+            "entryDate": "2024-02-15"
+        },
+        {
+            "productName": "Bàn phím cơ Razer",
+            "productCode": "KB789",
+            "price": 2000000,
+            "quantity": 30,
+            "category": "Phụ kiện",
+            "entryDate": "2024-01-20"
+        }
+    ]
+}

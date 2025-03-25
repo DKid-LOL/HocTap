@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xslt"?>
+<Employees>
+    <Employee>
+        <ID>1</ID>
+        <Name>PHA</Name>
+        <Position>IT</Position>
+        <Salary>20000000</Salary>
+    </Employee>
+    <Employee>
+        <ID>2</ID>
+        <Name>PHB</Name>
+        <Position>IT</Position>
+        <Salary>15000000</Salary>
+    </Employee>
+    <Employee>
+        <ID>3</ID>
+        <Name>PHC</Name>
+        <Position>IT</Position>
+        <Salary>9000000</Salary>
+    </Employee>
+</Employees>

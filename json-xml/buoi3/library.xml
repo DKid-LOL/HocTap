@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="library.xsd">
+
+    <Book>
+        <ID>1</ID>
+        <Title>Đắc Nhân Tâm</Title>
+        <Author>Dale Carnegie</Author>
+        <PublicationYear>1936</PublicationYear>
+        <Category>Tâm lý học</Category>
+        <ISBN>9786044424190</ISBN>
+        <Price>150000</Price>
+        <Available>true</Available>
+        <Website>https://example.com/dac-nhan-tam</Website>
+        <Chapters>
+            <Chapter>
+                <ChapterTitle>Giới thiệu</ChapterTitle>
+                <ChapterNumber>1</ChapterNumber>
+                <Pages>10</Pages>
+            </Chapter>
+            <Chapter>
+                <ChapterTitle>Nguyên tắc vàng</ChapterTitle>
+                <ChapterNumber>2</ChapterNumber>
+                <Pages>25</Pages>
+            </Chapter>
+        </Chapters>
+    </Book>
+
+    <Book>
+        <ID>2</ID>
+        <Title>Lược sử thời gian</Title>
+        <Author>Stephen Hawking</Author>
+        <PublicationYear>1988</PublicationYear>
+        <Category>Khoa học</Category>
+        <ISBN>9786043126370</ISBN>
+        <Price>200000</Price>
+        <Available>false</Available>
+        <Chapters>
+            <Chapter>
+                <ChapterTitle>Vũ trụ là gì?</ChapterTitle>
+                <ChapterNumber>1</ChapterNumber>
+                <Pages>30</Pages>
+            </Chapter>
+            <Chapter>
+                <ChapterTitle>Hố đen</ChapterTitle>
+                <ChapterNumber>2</ChapterNumber>
+                <Pages>40</Pages>
+            </Chapter>
+        </Chapters>
+    </Book>
+
+</Library>

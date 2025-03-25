@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Students SYSTEM "students.dtd">
+<Students xmlns="http://example.com/students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          
+    <Student>
+        <ID>1</ID>
+        <FullName>PHA</FullName>
+        <BirthDate>2001-05-15</BirthDate>
+        <Major>Code</Major>
+    </Student>
+
+    <Student>
+        <ID>2</ID>
+        <FullName>PHB</FullName>
+        <BirthDate>2001-09-20</BirthDate>
+        <Major>Code</Major>
+    </Student>
+
+</Students>

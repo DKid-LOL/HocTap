@@ -1,0 +1,562 @@
+use school
+
+db.students.insertMany([
+  { name: "Nguyen Van A", age: 20, class: "12A1", scores:8.5},
+  { name: "Tran Thi B", age: 19, class: "12A2", scores: 6.7},
+  { name: "Le Van C", age: 18, class: "12A1", scores: 7.5 },
+  { name: "Pham Thi D", age: 17, class: "12A3", scores: 4.8 },
+  { name: "Hoang Van E", age: 18, class: "12A2", scores: 9.2 }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67d82891080cfd8ae1328149'),
+    '1': ObjectId('67d82891080cfd8ae132814a'),
+    '2': ObjectId('67d82891080cfd8ae132814b'),
+    '3': ObjectId('67d82891080cfd8ae132814c'),
+    '4': ObjectId('67d82891080cfd8ae132814d')
+  }
+}
+db.students,find()
+ReferenceError: find is not defined
+db.students.find()
+{
+  _id: ObjectId('67d82891080cfd8ae1328149'),
+  name: 'Nguyen Van A',
+  age: 20,
+  class: '12A1',
+  scores: 8.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814a'),
+  name: 'Tran Thi B',
+  age: 19,
+  class: '12A2',
+  scores: 6.7
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814b'),
+  name: 'Le Van C',
+  age: 18,
+  class: '12A1',
+  scores: 7.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814c'),
+  name: 'Pham Thi D',
+  age: 17,
+  class: '12A3',
+  scores: 4.8
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814d'),
+  name: 'Hoang Van E',
+  age: 18,
+  class: '12A2',
+  scores: 9.2
+}
+db.students.find().pretty()
+{
+  _id: ObjectId('67d82891080cfd8ae1328149'),
+  name: 'Nguyen Van A',
+  age: 20,
+  class: '12A1',
+  scores: 8.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814a'),
+  name: 'Tran Thi B',
+  age: 19,
+  class: '12A2',
+  scores: 6.7
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814b'),
+  name: 'Le Van C',
+  age: 18,
+  class: '12A1',
+  scores: 7.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814c'),
+  name: 'Pham Thi D',
+  age: 17,
+  class: '12A3',
+  scores: 4.8
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814d'),
+  name: 'Hoang Van E',
+  age: 18,
+  class: '12A2',
+  scores: 9.2
+}
+db.students.find({ scores: { $gt: 7.0 } })
+{
+  _id: ObjectId('67d82891080cfd8ae1328149'),
+  name: 'Nguyen Van A',
+  age: 20,
+  class: '12A1',
+  scores: 8.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814b'),
+  name: 'Le Van C',
+  age: 18,
+  class: '12A1',
+  scores: 7.5
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814d'),
+  name: 'Hoang Van E',
+  age: 18,
+  class: '12A2',
+  scores: 9.2
+}
+db.students.deleteMany({ scores: { $lt: 5.0 } })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.students.updateOne({ name: "Nguyen Van A" }, {$set: {age: 21 } })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.students.deleteMany({ class: "12A1" })
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+db.students.find().pretty()
+{
+  _id: ObjectId('67d82891080cfd8ae132814a'),
+  name: 'Tran Thi B',
+  age: 19,
+  class: '12A2',
+  scores: 6.7
+}
+{
+  _id: ObjectId('67d82891080cfd8ae132814d'),
+  name: 'Hoang Van E',
+  age: 18,
+  class: '12A2',
+  scores: 9.2
+}
+use test
+switched to db test
+use store
+switched to db store
+db.products.insertMany([
+  { name: "Laptop", price: 15000000, quantity: 5, category: "Electronics" },
+  { name: "Smartphone", price: 8000000, quantity: 12, category: "Electronics" },
+  { name: "T-Shirt", price: 250000, quantity: 20, category: "Clothing" },
+  { name: "Jeans", price: 600000, quantity: 15, category: "Clothing" },
+  { name: "Bread", price: 20000, quantity: 0, category: "Food" },
+  { name: "Milk", price: 35000, quantity: 8, category: "Food" }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67d82b02080cfd8ae132814e'),
+    '1': ObjectId('67d82b02080cfd8ae132814f'),
+    '2': ObjectId('67d82b02080cfd8ae1328150'),
+    '3': ObjectId('67d82b02080cfd8ae1328151'),
+    '4': ObjectId('67d82b02080cfd8ae1328152'),
+    '5': ObjectId('67d82b02080cfd8ae1328153')
+  }
+}
+db.products.find().pretty()
+{
+  _id: ObjectId('67d82b02080cfd8ae132814e'),
+  name: 'Laptop',
+  price: 15000000,
+  quantity: 5,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae132814f'),
+  name: 'Smartphone',
+  price: 8000000,
+  quantity: 12,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328150'),
+  name: 'T-Shirt',
+  price: 250000,
+  quantity: 20,
+  category: 'Clothing'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328151'),
+  name: 'Jeans',
+  price: 600000,
+  quantity: 15,
+  category: 'Clothing'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328152'),
+  name: 'Bread',
+  price: 20000,
+  quantity: 0,
+  category: 'Food'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328153'),
+  name: 'Milk',
+  price: 35000,
+  quantity: 8,
+  category: 'Food'
+}
+db.products.find({ price: { $gt: 500000 } }).pretty()
+{
+  _id: ObjectId('67d82b02080cfd8ae132814e'),
+  name: 'Laptop',
+  price: 15000000,
+  quantity: 5,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae132814f'),
+  name: 'Smartphone',
+  price: 8000000,
+  quantity: 12,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328151'),
+  name: 'Jeans',
+  price: 600000,
+  quantity: 15,
+  category: 'Clothing'
+}
+db.products.find({ category: "Electronics", quantity: { $lt: 10 } }).pretty()
+{
+  _id: ObjectId('67d82b02080cfd8ae132814e'),
+  name: 'Laptop',
+  price: 15000000,
+  quantity: 5,
+  category: 'Electronics'
+}
+db.products.updateMany(
+  { category: "Clothing" },
+  { $mul: { price: 0.9 } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.products.deleteMany({ quantity: 0 })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.products.deleteMany({ category: "Food" })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.products.find().pretty()
+{
+  _id: ObjectId('67d82b02080cfd8ae132814e'),
+  name: 'Laptop',
+  price: 15000000,
+  quantity: 5,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae132814f'),
+  name: 'Smartphone',
+  price: 8000000,
+  quantity: 12,
+  category: 'Electronics'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328150'),
+  name: 'T-Shirt',
+  price: 225000,
+  quantity: 20,
+  category: 'Clothing'
+}
+{
+  _id: ObjectId('67d82b02080cfd8ae1328151'),
+  name: 'Jeans',
+  price: 540000,
+  quantity: 15,
+  category: 'Clothing'
+}
+use test
+switched to db test
+use shop
+switched to db shop
+db.orders.insertMany([
+  { 
+    order_id: 1001, 
+    customer_name: "Nguyen Van A", 
+    total: 1500000, 
+    status: "Pending", 
+    items: [
+      { product_name: "Laptop", quantity: 1, price: 1500000 }
+    ] 
+  },
+  { 
+    order_id: 1002, 
+    customer_name: "Tran Thi B", 
+    total: 750000, 
+    status: "Shipped", 
+    items: [
+      { product_name: "Smartphone", quantity: 1, price: 750000 }
+    ] 
+  },
+  { 
+    order_id: 1003, 
+    customer_name: "Le Van C", 
+    total: 2200000, 
+    status: "Delivered", 
+    items: [
+      { product_name: "Laptop", quantity: 1, price: 1500000 },
+      { product_name: "Smartwatch", quantity: 1, price: 700000 }
+    ] 
+  },
+  { 
+    order_id: 1004, 
+    customer_name: "Pham Thi D", 
+    total: 180000, 
+    status: "Cancelled", 
+    items: [
+      { product_name: "Headphones", quantity: 1, price: 180000 }
+    ] 
+  },
+  { 
+    order_id: 1005, 
+    customer_name: "Hoang Van E", 
+    total: 120000, 
+    status: "Pending", 
+    items: [
+      { product_name: "USB Drive", quantity: 2, price: 60000 }
+    ] 
+  }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67d82bb0080cfd8ae1328154'),
+    '1': ObjectId('67d82bb0080cfd8ae1328155'),
+    '2': ObjectId('67d82bb0080cfd8ae1328156'),
+    '3': ObjectId('67d82bb0080cfd8ae1328157'),
+    '4': ObjectId('67d82bb0080cfd8ae1328158')
+  }
+}
+db.orders.find()
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328154'),
+  order_id: 1001,
+  customer_name: 'Nguyen Van A',
+  total: 1500000,
+  status: 'Pending',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328155'),
+  order_id: 1002,
+  customer_name: 'Tran Thi B',
+  total: 750000,
+  status: 'Shipped',
+  items: [
+    {
+      product_name: 'Smartphone',
+      quantity: 1,
+      price: 750000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328156'),
+  order_id: 1003,
+  customer_name: 'Le Van C',
+  total: 2200000,
+  status: 'Delivered',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    },
+    {
+      product_name: 'Smartwatch',
+      quantity: 1,
+      price: 700000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328157'),
+  order_id: 1004,
+  customer_name: 'Pham Thi D',
+  total: 180000,
+  status: 'Cancelled',
+  items: [
+    {
+      product_name: 'Headphones',
+      quantity: 1,
+      price: 180000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328158'),
+  order_id: 1005,
+  customer_name: 'Hoang Van E',
+  total: 120000,
+  status: 'Pending',
+  items: [
+    {
+      product_name: 'USB Drive',
+      quantity: 2,
+      price: 60000
+    }
+  ]
+}
+db.orders.find({ total: { $gt: 1000000 } }).pretty()
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328154'),
+  order_id: 1001,
+  customer_name: 'Nguyen Van A',
+  total: 1500000,
+  status: 'Pending',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328156'),
+  order_id: 1003,
+  customer_name: 'Le Van C',
+  total: 2200000,
+  status: 'Delivered',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    },
+    {
+      product_name: 'Smartwatch',
+      quantity: 1,
+      price: 700000
+    }
+  ]
+}
+db.orders.find({ status: "Pending" }).pretty()
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328154'),
+  order_id: 1001,
+  customer_name: 'Nguyen Van A',
+  total: 1500000,
+  status: 'Pending',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328158'),
+  order_id: 1005,
+  customer_name: 'Hoang Van E',
+  total: 120000,
+  status: 'Pending',
+  items: [
+    {
+      product_name: 'USB Drive',
+      quantity: 2,
+      price: 60000
+    }
+  ]
+}
+db.orders.updateOne({ order_id: 1001 }, { $set: { status: "Shipped" } })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.orders.deleteMany({ status: "Cancelled" })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.orders.deleteMany({ total: { $lt: 200000 } })
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.orders.find().pretty()
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328154'),
+  order_id: 1001,
+  customer_name: 'Nguyen Van A',
+  total: 1500000,
+  status: 'Shipped',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328155'),
+  order_id: 1002,
+  customer_name: 'Tran Thi B',
+  total: 750000,
+  status: 'Shipped',
+  items: [
+    {
+      product_name: 'Smartphone',
+      quantity: 1,
+      price: 750000
+    }
+  ]
+}
+{
+  _id: ObjectId('67d82bb0080cfd8ae1328156'),
+  order_id: 1003,
+  customer_name: 'Le Van C',
+  total: 2200000,
+  status: 'Delivered',
+  items: [
+    {
+      product_name: 'Laptop',
+      quantity: 1,
+      price: 1500000
+    },
+    {
+      product_name: 'Smartwatch',
+      quantity: 1,
+      price: 700000
+    }
+  ]
+}
+use test

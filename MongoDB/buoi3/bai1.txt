@@ -1,0 +1,615 @@
+use sales
+switched to db sales
+db.sales.insertMany([{"id":1,"product":"Juice - Lagoon Mango","category":"mystery","price":158,"quantity":7,"date":"4/2/2024"},
+{"id":2,"product":"Pears - Anjou","category":"romance","price":562,"quantity":6,"date":"1/23/2025"},
+{"id":3,"product":"Mountain Dew","category":"fantasy","price":990,"quantity":4,"date":"3/28/2024"},
+{"id":4,"product":"Muffin - Blueberry Individual","category":"biography","price":292,"quantity":9,"date":"8/17/2024"},
+{"id":5,"product":"Walkers Special Old Whiskey","category":"biography","price":11,"quantity":10,"date":"1/21/2025"},
+{"id":6,"product":"Plastic Arrow Stir Stick","category":"science fiction","price":635,"quantity":1,"date":"8/8/2024"},
+{"id":7,"product":"Stock - Veal, White","category":"non-fiction","price":265,"quantity":5,"date":"8/8/2024"},
+{"id":8,"product":"Urban Zen Drinks","category":"romance","price":188,"quantity":3,"date":"10/15/2024"},
+{"id":9,"product":"Shrimp - 16/20, Iqf, Shell On","category":"mystery","price":972,"quantity":6,"date":"1/19/2025"},
+{"id":10,"product":"Muffin - Blueberry Individual","category":"mystery","price":434,"quantity":5,"date":"5/1/2024"},
+{"id":11,"product":"Spice - Montreal Steak Spice","category":"non-fiction","price":996,"quantity":4,"date":"8/16/2024"},
+{"id":12,"product":"Pork Ham Prager","category":"fiction","price":299,"quantity":10,"date":"5/15/2024"},
+{"id":13,"product":"White Fish - Filets","category":"fiction","price":262,"quantity":10,"date":"3/29/2024"},
+{"id":14,"product":"Tofu - Soft","category":"fantasy","price":24,"quantity":4,"date":"4/13/2024"},
+{"id":15,"product":"Beef - Rib Roast, Cap On","category":"fantasy","price":781,"quantity":1,"date":"2/20/2025"},
+{"id":16,"product":"Wine - Lou Black Shiraz","category":"fiction","price":225,"quantity":9,"date":"12/30/2024"},
+{"id":17,"product":"Apricots Fresh","category":"fantasy","price":944,"quantity":6,"date":"10/7/2024"},
+{"id":18,"product":"Calypso - Black Cherry Lemonade","category":"fantasy","price":394,"quantity":1,"date":"4/22/2024"},
+{"id":19,"product":"French Pastries","category":"biography","price":662,"quantity":6,"date":"3/10/2025"},
+{"id":20,"product":"V8 - Berry Blend","category":"romance","price":740,"quantity":1,"date":"12/12/2024"},
+{"id":21,"product":"Crush - Orange, 355ml","category":"biography","price":803,"quantity":5,"date":"8/30/2024"},
+{"id":22,"product":"Honey - Comb","category":"romance","price":535,"quantity":7,"date":"7/15/2024"},
+{"id":23,"product":"Bread - Kimel Stick Poly","category":"non-fiction","price":952,"quantity":6,"date":"5/15/2024"},
+{"id":24,"product":"Trout - Smoked","category":"history","price":131,"quantity":10,"date":"7/2/2024"},
+{"id":25,"product":"Soup - Campbells Mushroom","category":"non-fiction","price":92,"quantity":6,"date":"7/31/2024"},
+{"id":26,"product":"Liners - Baking Cups","category":"history","price":583,"quantity":5,"date":"1/7/2025"},
+{"id":27,"product":"Cookies - Amaretto","category":"fantasy","price":245,"quantity":7,"date":"8/25/2024"},
+{"id":28,"product":"Dasheen","category":"fantasy","price":99,"quantity":7,"date":"10/12/2024"},
+{"id":29,"product":"Wine - Redchard Merritt","category":"non-fiction","price":903,"quantity":1,"date":"9/9/2024"},
+{"id":30,"product":"Tart Shells - Sweet, 4","category":"romance","price":491,"quantity":3,"date":"11/6/2024"},
+{"id":31,"product":"Wine - Casillero Del Diablo","category":"non-fiction","price":4,"quantity":7,"date":"5/6/2024"},
+{"id":32,"product":"Mushroom - Lg - Cello","category":"history","price":188,"quantity":5,"date":"4/19/2024"},
+{"id":33,"product":"Rice - Long Grain","category":"fiction","price":883,"quantity":6,"date":"12/27/2024"},
+{"id":34,"product":"Spaghetti Squash","category":"fantasy","price":104,"quantity":5,"date":"6/27/2024"},
+{"id":35,"product":"Paper - Brown Paper Mini Cups","category":"mystery","price":521,"quantity":2,"date":"5/28/2024"},
+{"id":36,"product":"Vinegar - Raspberry","category":"history","price":511,"quantity":4,"date":"5/26/2024"},
+{"id":37,"product":"Pear - Halves","category":"history","price":915,"quantity":6,"date":"10/23/2024"},
+{"id":38,"product":"Doilies - 10, Paper","category":"romance","price":45,"quantity":7,"date":"10/21/2024"},
+{"id":39,"product":"Wine - Red, Colio Cabernet","category":"mystery","price":325,"quantity":8,"date":"9/7/2024"},
+{"id":40,"product":"Fond - Neutral","category":"mystery","price":853,"quantity":1,"date":"9/19/2024"},
+{"id":41,"product":"Jolt Cola","category":"fantasy","price":233,"quantity":7,"date":"7/29/2024"},
+{"id":42,"product":"Watercress","category":"science fiction","price":844,"quantity":8,"date":"11/5/2024"},
+{"id":43,"product":"Trueblue - Blueberry Cranberry","category":"mystery","price":584,"quantity":6,"date":"1/13/2025"},
+{"id":44,"product":"Tart - Raisin And Pecan","category":"romance","price":13,"quantity":2,"date":"1/9/2025"},
+{"id":45,"product":"Wine - Red, Cabernet Sauvignon","category":"history","price":734,"quantity":1,"date":"9/1/2024"},
+{"id":46,"product":"Wine - Manischewitz Concord","category":"fiction","price":674,"quantity":4,"date":"11/14/2024"},
+{"id":47,"product":"Cookie Dough - Chunky","category":"mystery","price":821,"quantity":2,"date":"12/1/2024"},
+{"id":48,"product":"Pork - European Side Bacon","category":"history","price":764,"quantity":5,"date":"1/25/2025"},
+{"id":49,"product":"Wine - Red, Cabernet Merlot","category":"fiction","price":632,"quantity":6,"date":"6/1/2024"},
+{"id":50,"product":"Potatoes - Yukon Gold, 80 Ct","category":"romance","price":681,"quantity":8,"date":"12/22/2024"},
+{"id":51,"product":"Bread Fig And Almond","category":"biography","price":872,"quantity":10,"date":"9/1/2024"},
+{"id":52,"product":"Calvados - Boulard","category":"fantasy","price":346,"quantity":1,"date":"11/22/2024"},
+{"id":53,"product":"Marjoram - Fresh","category":"non-fiction","price":957,"quantity":2,"date":"5/2/2024"},
+{"id":54,"product":"Gelatine Leaves - Bulk","category":"mystery","price":644,"quantity":8,"date":"4/16/2024"},
+{"id":55,"product":"Cognac - Courvaisier","category":"fiction","price":335,"quantity":2,"date":"4/15/2024"},
+{"id":56,"product":"Appetizer - Sausage Rolls","category":"mystery","price":736,"quantity":7,"date":"11/7/2024"},
+{"id":57,"product":"Pepper - Julienne, Frozen","category":"mystery","price":286,"quantity":4,"date":"12/17/2024"},
+{"id":58,"product":"Onion Powder","category":"non-fiction","price":253,"quantity":4,"date":"8/8/2024"},
+{"id":59,"product":"Syrup - Chocolate","category":"fantasy","price":207,"quantity":4,"date":"2/1/2025"},
+{"id":60,"product":"Pie Filling - Cherry","category":"fiction","price":328,"quantity":4,"date":"4/13/2024"},
+{"id":61,"product":"Spice - Greek 1 Step","category":"fantasy","price":800,"quantity":4,"date":"3/14/2025"},
+{"id":62,"product":"Squid - U - 10 Thailand","category":"history","price":440,"quantity":8,"date":"6/29/2024"},
+{"id":63,"product":"Wine - Bourgogne 2002, La","category":"science fiction","price":425,"quantity":2,"date":"8/30/2024"},
+{"id":64,"product":"Fiddlehead - Frozen","category":"fiction","price":543,"quantity":2,"date":"11/14/2024"},
+{"id":65,"product":"Wine - Beringer Founders Estate","category":"science fiction","price":429,"quantity":1,"date":"12/19/2024"},
+{"id":66,"product":"Pastry - Apple Large","category":"non-fiction","price":278,"quantity":8,"date":"12/1/2024"},
+{"id":67,"product":"Crab - Dungeness, Whole, live","category":"romance","price":482,"quantity":3,"date":"6/25/2024"},
+{"id":68,"product":"Sweet Pea Sprouts","category":"science fiction","price":387,"quantity":2,"date":"12/7/2024"},
+{"id":69,"product":"Bread - French Baquette","category":"romance","price":308,"quantity":2,"date":"7/9/2024"},
+{"id":70,"product":"Foam Dinner Plate","category":"romance","price":294,"quantity":4,"date":"11/6/2024"},
+{"id":71,"product":"Table Cloth 62x114 Colour","category":"mystery","price":89,"quantity":9,"date":"1/1/2025"},
+{"id":72,"product":"Alize Red Passion","category":"romance","price":622,"quantity":9,"date":"9/10/2024"},
+{"id":73,"product":"Chicken Thigh - Bone Out","category":"fiction","price":436,"quantity":1,"date":"1/3/2025"},
+{"id":74,"product":"Napkin - Beverge, White 2 - Ply","category":"mystery","price":512,"quantity":3,"date":"11/5/2024"},
+{"id":75,"product":"Cakes Assorted","category":"romance","price":24,"quantity":7,"date":"11/3/2024"},
+{"id":76,"product":"Cheese - Swiss","category":"science fiction","price":186,"quantity":8,"date":"10/9/2024"},
+{"id":77,"product":"Island Oasis - Banana Daiquiri","category":"fiction","price":531,"quantity":5,"date":"8/15/2024"},
+{"id":78,"product":"Chestnuts - Whole,canned","category":"non-fiction","price":251,"quantity":5,"date":"4/11/2024"},
+{"id":79,"product":"Wine - White, French Cross","category":"fiction","price":954,"quantity":8,"date":"2/1/2025"},
+{"id":80,"product":"Munchies Honey Sweet Trail Mix","category":"biography","price":120,"quantity":6,"date":"2/16/2025"},
+{"id":81,"product":"Milk - Condensed","category":"history","price":87,"quantity":1,"date":"10/13/2024"},
+{"id":82,"product":"Stock - Veal, White","category":"non-fiction","price":257,"quantity":9,"date":"3/13/2025"},
+{"id":83,"product":"Clam - Cherrystone","category":"science fiction","price":987,"quantity":3,"date":"5/5/2024"},
+{"id":84,"product":"Salt And Pepper Mix - Black","category":"fiction","price":201,"quantity":5,"date":"10/7/2024"},
+{"id":85,"product":"Juice - Pineapple, 48 Oz","category":"fantasy","price":317,"quantity":6,"date":"7/14/2024"},
+{"id":86,"product":"Pasta - Canelloni, Single Serve","category":"fiction","price":44,"quantity":4,"date":"1/17/2025"},
+{"id":87,"product":"Tomato Puree","category":"non-fiction","price":419,"quantity":2,"date":"9/26/2024"},
+{"id":88,"product":"Thyme - Dried","category":"non-fiction","price":45,"quantity":8,"date":"11/21/2024"},
+{"id":89,"product":"Chips Potato Salt Vinegar 43g","category":"science fiction","price":555,"quantity":7,"date":"7/16/2024"},
+{"id":90,"product":"Tea - Herbal Sweet Dreams","category":"fantasy","price":837,"quantity":3,"date":"3/4/2025"},
+{"id":91,"product":"Spoon - Soup, Plastic","category":"fantasy","price":661,"quantity":7,"date":"1/23/2025"},
+{"id":92,"product":"Dawn Professionl Pot And Pan","category":"mystery","price":832,"quantity":2,"date":"2/1/2025"},
+{"id":93,"product":"Dried Apple","category":"romance","price":588,"quantity":5,"date":"5/6/2024"},
+{"id":94,"product":"Sugar - Monocystal / Rock","category":"science fiction","price":646,"quantity":2,"date":"11/11/2024"},
+{"id":95,"product":"Bread - White Epi Baguette","category":"romance","price":64,"quantity":4,"date":"4/20/2024"},
+{"id":96,"product":"Country Roll","category":"science fiction","price":353,"quantity":8,"date":"1/28/2025"},
+{"id":97,"product":"Cornflakes","category":"history","price":151,"quantity":3,"date":"10/5/2024"},
+{"id":98,"product":"Hog / Sausage Casing - Pork","category":"non-fiction","price":274,"quantity":4,"date":"8/16/2024"},
+{"id":99,"product":"Shrimp - Black Tiger 8 - 12","category":"science fiction","price":299,"quantity":5,"date":"4/14/2024"},
+{"id":100,"product":"Wine - Manischewitz Concord","category":"science fiction","price":815,"quantity":1,"date":"7/23/2024"},
+{"id":101,"product":"Soup - Campbells, Cream Of","category":"fantasy","price":537,"quantity":7,"date":"2/27/2025"},
+{"id":102,"product":"Pernod","category":"biography","price":661,"quantity":1,"date":"10/2/2024"},
+{"id":103,"product":"Chips - Assorted","category":"fantasy","price":953,"quantity":7,"date":"7/21/2024"},
+{"id":104,"product":"Wine - Port Late Bottled Vintage","category":"fantasy","price":744,"quantity":6,"date":"1/23/2025"},
+{"id":105,"product":"Sage Ground Wiberg","category":"non-fiction","price":938,"quantity":1,"date":"7/20/2024"},
+{"id":106,"product":"Tart - Raisin And Pecan","category":"biography","price":710,"quantity":4,"date":"2/17/2025"},
+{"id":107,"product":"Trout - Rainbow, Fresh","category":"biography","price":367,"quantity":9,"date":"10/21/2024"},
+{"id":108,"product":"Bread - White Mini Epi","category":"mystery","price":830,"quantity":1,"date":"6/25/2024"},
+{"id":109,"product":"Shrimp - 16/20, Iqf, Shell On","category":"history","price":532,"quantity":5,"date":"4/2/2024"},
+{"id":110,"product":"Beef - Baby, Liver","category":"mystery","price":89,"quantity":3,"date":"4/27/2024"},
+{"id":111,"product":"Kale - Red","category":"biography","price":318,"quantity":9,"date":"12/21/2024"},
+{"id":112,"product":"Wine - Cava Aria Estate Brut","category":"science fiction","price":981,"quantity":1,"date":"12/8/2024"},
+{"id":113,"product":"Wine - Cave Springs Dry Riesling","category":"science fiction","price":942,"quantity":3,"date":"4/8/2024"},
+{"id":114,"product":"Juice - Pineapple, 341 Ml","category":"fiction","price":403,"quantity":2,"date":"7/6/2024"},
+{"id":115,"product":"Oil - Olive","category":"fiction","price":215,"quantity":4,"date":"4/17/2024"},
+{"id":116,"product":"Chinese Lemon Pork","category":"fiction","price":878,"quantity":6,"date":"7/29/2024"},
+{"id":117,"product":"Steel Wool S.o.s","category":"mystery","price":199,"quantity":6,"date":"10/13/2024"},
+{"id":118,"product":"Cake - Night And Day Choclate","category":"romance","price":75,"quantity":3,"date":"8/6/2024"},
+{"id":119,"product":"Amarula Cream","category":"biography","price":889,"quantity":10,"date":"12/4/2024"},
+{"id":120,"product":"Flower - Daisies","category":"biography","price":880,"quantity":2,"date":"12/6/2024"},
+{"id":121,"product":"Flour - Buckwheat, Dark","category":"fiction","price":712,"quantity":7,"date":"11/11/2024"},
+{"id":122,"product":"Coffee - Flavoured","category":"biography","price":506,"quantity":4,"date":"6/25/2024"},
+{"id":123,"product":"Muffin - Mix - Bran And Maple 15l","category":"fantasy","price":666,"quantity":4,"date":"3/19/2025"},
+{"id":124,"product":"Wine - Cotes Du Rhone Parallele","category":"biography","price":595,"quantity":9,"date":"9/9/2024"},
+{"id":125,"product":"Mushrooms - Black, Dried","category":"fantasy","price":648,"quantity":3,"date":"3/14/2025"},
+{"id":126,"product":"Chocolate - Mi - Amere Semi","category":"fiction","price":125,"quantity":2,"date":"7/31/2024"},
+{"id":127,"product":"Garbage Bag - Clear","category":"mystery","price":123,"quantity":2,"date":"12/3/2024"},
+{"id":128,"product":"Wine - Bouchard La Vignee Pinot","category":"non-fiction","price":82,"quantity":7,"date":"7/17/2024"},
+{"id":129,"product":"Ham - Black Forest","category":"science fiction","price":913,"quantity":8,"date":"4/28/2024"},
+{"id":130,"product":"Tomatoes - Diced, Canned","category":"romance","price":139,"quantity":10,"date":"6/29/2024"},
+{"id":131,"product":"Dc - Frozen Momji","category":"fiction","price":706,"quantity":6,"date":"7/7/2024"},
+{"id":132,"product":"Longos - Assorted Sandwich","category":"fantasy","price":227,"quantity":4,"date":"2/14/2025"},
+{"id":133,"product":"Wine - Toasted Head","category":"science fiction","price":647,"quantity":5,"date":"6/24/2024"},
+{"id":134,"product":"Cherries - Maraschino,jar","category":"science fiction","price":638,"quantity":1,"date":"6/7/2024"},
+{"id":135,"product":"Ostrich - Fan Fillet","category":"biography","price":408,"quantity":8,"date":"12/29/2024"},
+{"id":136,"product":"Wine - Segura Viudas Aria Brut","category":"science fiction","price":403,"quantity":7,"date":"1/21/2025"},
+{"id":137,"product":"Tomatoes - Vine Ripe, Yellow","category":"mystery","price":433,"quantity":5,"date":"12/29/2024"},
+{"id":138,"product":"Tabasco Sauce, 2 Oz","category":"history","price":856,"quantity":7,"date":"4/20/2024"},
+{"id":139,"product":"Tart Shells - Barquettes, Savory","category":"science fiction","price":123,"quantity":10,"date":"3/25/2024"},
+{"id":140,"product":"Cheese - Goat With Herbs","category":"science fiction","price":303,"quantity":6,"date":"3/7/2025"},
+{"id":141,"product":"Lambcasing","category":"mystery","price":56,"quantity":3,"date":"8/24/2024"},
+{"id":142,"product":"Berry Brulee","category":"mystery","price":974,"quantity":1,"date":"4/3/2024"},
+{"id":143,"product":"Southern Comfort","category":"biography","price":139,"quantity":5,"date":"4/9/2024"},
+{"id":144,"product":"Shrimp - 150 - 250","category":"fiction","price":130,"quantity":2,"date":"9/3/2024"},
+{"id":145,"product":"Turkey - Breast, Bone - In","category":"mystery","price":311,"quantity":2,"date":"8/1/2024"},
+{"id":146,"product":"Tea - English Breakfast","category":"non-fiction","price":988,"quantity":2,"date":"10/18/2024"},
+{"id":147,"product":"Tomatoes","category":"history","price":543,"quantity":3,"date":"12/7/2024"},
+{"id":148,"product":"Crush - Orange, 355ml","category":"romance","price":367,"quantity":1,"date":"9/6/2024"},
+{"id":149,"product":"Appetizer - Chicken Satay","category":"history","price":105,"quantity":5,"date":"6/25/2024"},
+{"id":150,"product":"Bagel - Sesame Seed Presliced","category":"history","price":336,"quantity":10,"date":"5/21/2024"},
+{"id":151,"product":"Eggplant - Regular","category":"fantasy","price":484,"quantity":9,"date":"11/29/2024"},
+{"id":152,"product":"Yucca","category":"history","price":512,"quantity":3,"date":"12/20/2024"},
+{"id":153,"product":"Amaretto","category":"fiction","price":814,"quantity":4,"date":"7/13/2024"},
+{"id":154,"product":"Onions - Red Pearl","category":"fiction","price":570,"quantity":2,"date":"1/3/2025"},
+{"id":155,"product":"Soup Knorr Chili With Beans","category":"mystery","price":730,"quantity":8,"date":"2/13/2025"},
+{"id":156,"product":"Bacardi Breezer - Strawberry","category":"non-fiction","price":632,"quantity":3,"date":"7/11/2024"},
+{"id":157,"product":"Soup - Cream Of Potato / Leek","category":"history","price":402,"quantity":2,"date":"1/19/2025"},
+{"id":158,"product":"Cheese - Cheddar, Mild","category":"non-fiction","price":953,"quantity":2,"date":"10/31/2024"},
+{"id":159,"product":"Tuna - Yellowfin","category":"non-fiction","price":459,"quantity":4,"date":"4/16/2024"},
+{"id":160,"product":"Coke - Classic, 355 Ml","category":"fantasy","price":51,"quantity":8,"date":"5/17/2024"},
+{"id":161,"product":"Peppercorns - Green","category":"romance","price":984,"quantity":3,"date":"8/26/2024"},
+{"id":162,"product":"Bread Crumbs - Panko","category":"fiction","price":367,"quantity":4,"date":"12/19/2024"},
+{"id":163,"product":"Carbonated Water - Strawberry","category":"history","price":547,"quantity":5,"date":"2/5/2025"},
+{"id":164,"product":"Chevril","category":"history","price":720,"quantity":3,"date":"6/5/2024"},
+{"id":165,"product":"Rabbit - Saddles","category":"romance","price":510,"quantity":10,"date":"4/12/2024"},
+{"id":166,"product":"Iced Tea - Lemon, 340ml","category":"biography","price":634,"quantity":8,"date":"5/9/2024"},
+{"id":167,"product":"Chocolate - Semi Sweet, Calets","category":"fantasy","price":115,"quantity":9,"date":"5/25/2024"},
+{"id":168,"product":"Mushroom - Chanterelle, Dry","category":"mystery","price":746,"quantity":6,"date":"12/23/2024"},
+{"id":169,"product":"Veal - Inside, Choice","category":"science fiction","price":686,"quantity":4,"date":"8/11/2024"},
+{"id":170,"product":"Cheese - Cheddarsliced","category":"mystery","price":970,"quantity":4,"date":"10/19/2024"},
+{"id":171,"product":"Russian Prince","category":"non-fiction","price":612,"quantity":10,"date":"8/16/2024"},
+{"id":172,"product":"Beer - Muskoka Cream Ale","category":"fiction","price":798,"quantity":7,"date":"12/13/2024"},
+{"id":173,"product":"Lettuce - Treviso","category":"fantasy","price":993,"quantity":3,"date":"6/15/2024"},
+{"id":174,"product":"Sauce - Sesame Thai Dressing","category":"mystery","price":40,"quantity":3,"date":"11/27/2024"},
+{"id":175,"product":"Wonton Wrappers","category":"non-fiction","price":200,"quantity":9,"date":"1/16/2025"},
+{"id":176,"product":"Cheese - Stilton","category":"romance","price":404,"quantity":3,"date":"3/28/2024"},
+{"id":177,"product":"Coffee - Flavoured","category":"non-fiction","price":8,"quantity":5,"date":"2/1/2025"},
+{"id":178,"product":"Chicken - Livers","category":"science fiction","price":253,"quantity":8,"date":"11/3/2024"},
+{"id":179,"product":"Bread Fig And Almond","category":"non-fiction","price":78,"quantity":8,"date":"8/13/2024"},
+{"id":180,"product":"Mustard - Dijon","category":"biography","price":729,"quantity":8,"date":"5/19/2024"},
+{"id":181,"product":"Aspic - Light","category":"history","price":286,"quantity":6,"date":"8/26/2024"},
+{"id":182,"product":"Juice - Orange 1.89l","category":"mystery","price":628,"quantity":10,"date":"9/28/2024"},
+{"id":183,"product":"Cheese - Brie, Cups 125g","category":"romance","price":292,"quantity":5,"date":"11/16/2024"},
+{"id":184,"product":"Bread - Raisin","category":"mystery","price":641,"quantity":2,"date":"4/16/2024"},
+{"id":185,"product":"Chef Hat 25cm","category":"romance","price":274,"quantity":6,"date":"10/19/2024"},
+{"id":186,"product":"Bread - Pullman, Sliced","category":"romance","price":544,"quantity":9,"date":"4/27/2024"},
+{"id":187,"product":"Wine - Red, Metus Rose","category":"biography","price":337,"quantity":4,"date":"8/20/2024"},
+{"id":188,"product":"Prunes - Pitted","category":"science fiction","price":500,"quantity":10,"date":"5/30/2024"},
+{"id":189,"product":"Pie Shell - 5","category":"mystery","price":551,"quantity":1,"date":"6/6/2024"},
+{"id":190,"product":"Beans - Black Bean, Preserved","category":"biography","price":562,"quantity":1,"date":"1/19/2025"},
+{"id":191,"product":"Vaccum Bag 10x13","category":"romance","price":415,"quantity":8,"date":"2/21/2025"},
+{"id":192,"product":"Wine - Casablanca Valley","category":"fantasy","price":781,"quantity":6,"date":"12/9/2024"},
+{"id":193,"product":"Calvados - Boulard","category":"non-fiction","price":146,"quantity":4,"date":"3/15/2025"},
+{"id":194,"product":"Lettuce - Escarole","category":"mystery","price":382,"quantity":4,"date":"11/14/2024"},
+{"id":195,"product":"Cookie Dough - Chunky","category":"non-fiction","price":683,"quantity":6,"date":"11/14/2024"},
+{"id":196,"product":"Kiwano","category":"science fiction","price":269,"quantity":1,"date":"8/15/2024"},
+{"id":197,"product":"Appetizer - Escargot Puff","category":"biography","price":780,"quantity":9,"date":"3/12/2025"},
+{"id":198,"product":"Gelatine Leaves - Bulk","category":"history","price":348,"quantity":6,"date":"8/18/2024"},
+{"id":199,"product":"Bananas","category":"non-fiction","price":739,"quantity":6,"date":"9/18/2024"},
+{"id":200,"product":"Lighter - Bbq","category":"biography","price":120,"quantity":7,"date":"10/20/2024"}]);
+{
+    '137': ObjectId('67dd67b0fea9f024f6bb3ae6'),
+    '138': ObjectId('67dd67b0fea9f024f6bb3ae7'),
+    '139': ObjectId('67dd67b0fea9f024f6bb3ae8'),
+    '140': ObjectId('67dd67b0fea9f024f6bb3ae9'),
+    '141': ObjectId('67dd67b0fea9f024f6bb3aea'),
+    '142': ObjectId('67dd67b0fea9f024f6bb3aeb'),
+    '143': ObjectId('67dd67b0fea9f024f6bb3aec'),
+    '144': ObjectId('67dd67b0fea9f024f6bb3aed'),
+    '145': ObjectId('67dd67b0fea9f024f6bb3aee'),
+    '146': ObjectId('67dd67b0fea9f024f6bb3aef'),
+    '147': ObjectId('67dd67b0fea9f024f6bb3af0'),
+    '148': ObjectId('67dd67b0fea9f024f6bb3af1'),
+    '149': ObjectId('67dd67b0fea9f024f6bb3af2'),
+    '150': ObjectId('67dd67b0fea9f024f6bb3af3'),
+    '151': ObjectId('67dd67b0fea9f024f6bb3af4'),
+    '152': ObjectId('67dd67b0fea9f024f6bb3af5'),
+    '153': ObjectId('67dd67b0fea9f024f6bb3af6'),
+    '154': ObjectId('67dd67b0fea9f024f6bb3af7'),
+    '155': ObjectId('67dd67b0fea9f024f6bb3af8'),
+    '156': ObjectId('67dd67b0fea9f024f6bb3af9'),
+    '157': ObjectId('67dd67b0fea9f024f6bb3afa'),
+    '158': ObjectId('67dd67b0fea9f024f6bb3afb'),
+    '159': ObjectId('67dd67b0fea9f024f6bb3afc'),
+    '160': ObjectId('67dd67b0fea9f024f6bb3afd'),
+    '161': ObjectId('67dd67b0fea9f024f6bb3afe'),
+    '162': ObjectId('67dd67b0fea9f024f6bb3aff'),
+    '163': ObjectId('67dd67b0fea9f024f6bb3b00'),
+    '164': ObjectId('67dd67b0fea9f024f6bb3b01'),
+    '165': ObjectId('67dd67b0fea9f024f6bb3b02'),
+    '166': ObjectId('67dd67b0fea9f024f6bb3b03'),
+    '167': ObjectId('67dd67b0fea9f024f6bb3b04'),
+    '168': ObjectId('67dd67b0fea9f024f6bb3b05'),
+    '169': ObjectId('67dd67b0fea9f024f6bb3b06'),
+    '170': ObjectId('67dd67b0fea9f024f6bb3b07'),
+    '171': ObjectId('67dd67b0fea9f024f6bb3b08'),
+    '172': ObjectId('67dd67b0fea9f024f6bb3b09'),
+    '173': ObjectId('67dd67b0fea9f024f6bb3b0a'),
+    '174': ObjectId('67dd67b0fea9f024f6bb3b0b'),
+    '175': ObjectId('67dd67b0fea9f024f6bb3b0c'),
+    '176': ObjectId('67dd67b0fea9f024f6bb3b0d'),
+    '177': ObjectId('67dd67b0fea9f024f6bb3b0e'),
+    '178': ObjectId('67dd67b0fea9f024f6bb3b0f'),
+    '179': ObjectId('67dd67b0fea9f024f6bb3b10'),
+    '180': ObjectId('67dd67b0fea9f024f6bb3b11'),
+    '181': ObjectId('67dd67b0fea9f024f6bb3b12'),
+    '182': ObjectId('67dd67b0fea9f024f6bb3b13'),
+    '183': ObjectId('67dd67b0fea9f024f6bb3b14'),
+    '184': ObjectId('67dd67b0fea9f024f6bb3b15'),
+    '185': ObjectId('67dd67b0fea9f024f6bb3b16'),
+    '186': ObjectId('67dd67b0fea9f024f6bb3b17'),
+    '187': ObjectId('67dd67b0fea9f024f6bb3b18'),
+    '188': ObjectId('67dd67b0fea9f024f6bb3b19'),
+    '189': ObjectId('67dd67b0fea9f024f6bb3b1a'),
+    '190': ObjectId('67dd67b0fea9f024f6bb3b1b'),
+    '191': ObjectId('67dd67b0fea9f024f6bb3b1c'),
+    '192': ObjectId('67dd67b0fea9f024f6bb3b1d'),
+    '193': ObjectId('67dd67b0fea9f024f6bb3b1e'),
+    '194': ObjectId('67dd67b0fea9f024f6bb3b1f'),
+    '195': ObjectId('67dd67b0fea9f024f6bb3b20'),
+    '196': ObjectId('67dd67b0fea9f024f6bb3b21'),
+    '197': ObjectId('67dd67b0fea9f024f6bb3b22'),
+    '198': ObjectId('67dd67b0fea9f024f6bb3b23'),
+    '199': ObjectId('67dd67b0fea9f024f6bb3b24')
+  }
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }
+        }
+    }
+])
+{
+  _id: 'biography',
+  totalRevenue: 72493
+}
+{
+  _id: 'fiction',
+  totalRevenue: 62507
+}
+{
+  _id: 'fantasy',
+  totalRevenue: 62742
+}
+{
+  _id: 'science fiction',
+  totalRevenue: 55090
+}
+{
+  _id: 'mystery',
+  totalRevenue: 64621
+}
+{
+  _id: 'history',
+  totalRevenue: 46518
+}
+{
+  _id: 'romance',
+  totalRevenue: 50449
+}
+{
+  _id: 'non-fiction',
+  totalRevenue: 50342
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalQuantity: { $sum: "$quantity" }
+        }
+    }
+])
+{
+  _id: 'romance',
+  totalQuantity: 129
+}
+{
+  _id: 'non-fiction',
+  totalQuantity: 138
+}
+{
+  _id: 'mystery',
+  totalQuantity: 131
+}
+{
+  _id: 'science fiction',
+  totalQuantity: 112
+}
+{
+  _id: 'history',
+  totalQuantity: 103
+}
+{
+  _id: 'fiction',
+  totalQuantity: 122
+}
+{
+  _id: 'fantasy',
+  totalQuantity: 133
+}
+{
+  _id: 'biography',
+  totalQuantity: 144
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }
+        }
+    },
+    { $sort: { totalRevenue: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: 'biography',
+  totalRevenue: 72493
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalQuantity: { $sum: "$quantity" }
+        }
+    },
+    { $sort: { totalQuantity: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: 'biography',
+  totalQuantity: 144
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$date",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }
+        }
+    }
+])
+{
+  _id: '8/8/2024',
+  totalRevenue: 2972
+}
+{
+  _id: '10/9/2024',
+  totalRevenue: 1488
+}
+{
+  _id: '3/29/2024',
+  totalRevenue: 2620
+}
+{
+  _id: '6/6/2024',
+  totalRevenue: 551
+}
+{
+  _id: '3/25/2024',
+  totalRevenue: 1230
+}
+{
+  _id: '5/9/2024',
+  totalRevenue: 5072
+}
+{
+  _id: '6/29/2024',
+  totalRevenue: 4910
+}
+{
+  _id: '7/15/2024',
+  totalRevenue: 3745
+}
+{
+  _id: '6/25/2024',
+  totalRevenue: 4825
+}
+{
+  _id: '8/6/2024',
+  totalRevenue: 225
+}
+{
+  _id: '7/29/2024',
+  totalRevenue: 6899
+}
+{
+  _id: '2/21/2025',
+  totalRevenue: 3320
+}
+{
+  _id: '3/7/2025',
+  totalRevenue: 1818
+}
+{
+  _id: '10/31/2024',
+  totalRevenue: 1906
+}
+{
+  _id: '11/22/2024',
+  totalRevenue: 346
+}
+{
+  _id: '12/3/2024',
+  totalRevenue: 246
+}
+{
+  _id: '4/2/2024',
+  totalRevenue: 3766
+}
+{
+  _id: '4/9/2024',
+  totalRevenue: 695
+}
+{
+  _id: '8/20/2024',
+  totalRevenue: 1348
+}
+{
+  _id: '5/1/2024',
+  totalRevenue: 2170
+}
+Type "it" for more
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$date",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }
+        }
+    },
+    { $match: { totalRevenue: { $gt: 2000 } } }
+])
+{
+  _id: '12/27/2024',
+  totalRevenue: 5298
+}
+{
+  _id: '7/13/2024',
+  totalRevenue: 3256
+}
+{
+  _id: '6/5/2024',
+  totalRevenue: 2160
+}
+{
+  _id: '3/12/2025',
+  totalRevenue: 7020
+}
+{
+  _id: '1/23/2025',
+  totalRevenue: 12463
+}
+{
+  _id: '4/20/2024',
+  totalRevenue: 6248
+}
+{
+  _id: '10/7/2024',
+  totalRevenue: 6669
+}
+{
+  _id: '5/5/2024',
+  totalRevenue: 2961
+}
+{
+  _id: '8/8/2024',
+  totalRevenue: 2972
+}
+{
+  _id: '3/29/2024',
+  totalRevenue: 2620
+}
+{
+  _id: '1/7/2025',
+  totalRevenue: 2915
+}
+{
+  _id: '11/29/2024',
+  totalRevenue: 4356
+}
+{
+  _id: '8/17/2024',
+  totalRevenue: 2628
+}
+{
+  _id: '7/7/2024',
+  totalRevenue: 4236
+}
+{
+  _id: '11/14/2024',
+  totalRevenue: 9408
+}
+{
+  _id: '6/1/2024',
+  totalRevenue: 3792
+}
+{
+  _id: '2/1/2025',
+  totalRevenue: 10164
+}
+{
+  _id: '7/21/2024',
+  totalRevenue: 6671
+}
+{
+  _id: '11/6/2024',
+  totalRevenue: 2649
+}
+{
+  _id: '5/6/2024',
+  totalRevenue: 2968
+}
+Type "it" for more
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } },
+            totalQuantity: { $sum: "$quantity" }
+        }
+    },
+    { $sort: { totalRevenue: -1 } }
+])
+{
+  _id: 'biography',
+  totalRevenue: 72493,
+  totalQuantity: 144
+}
+{
+  _id: 'mystery',
+  totalRevenue: 64621,
+  totalQuantity: 131
+}
+{
+  _id: 'fantasy',
+  totalRevenue: 62742,
+  totalQuantity: 133
+}
+{
+  _id: 'fiction',
+  totalRevenue: 62507,
+  totalQuantity: 122
+}
+{
+  _id: 'science fiction',
+  totalRevenue: 55090,
+  totalQuantity: 112
+}
+{
+  _id: 'romance',
+  totalRevenue: 50449,
+  totalQuantity: 129
+}
+{
+  _id: 'non-fiction',
+  totalRevenue: 50342,
+  totalQuantity: 138
+}
+{
+  _id: 'history',
+  totalRevenue: 46518,
+  totalQuantity: 103
+}
+db.sales.aggregate([
+    {
+        $group: {
+            _id: "$category",
+            totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } },
+            totalQuantity: { $sum: "$quantity" }
+        }
+    },
+    { $project: { _id: 0, category: "$_id", totalRevenue: 1, totalQuantity: 1 } }
+])

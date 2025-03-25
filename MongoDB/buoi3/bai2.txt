@@ -1,0 +1,1138 @@
+db.employees.insertMany([{"id":1,"name":"Sylvester Ormes","department":"Product Management","salary":5156,"bonus":647,"join_date":"4/18/2023"},
+{"id":2,"name":"Nichol Sterland","department":"Support","salary":4657,"bonus":433,"join_date":"4/9/2023"},
+{"id":3,"name":"Tamma Tarquinio","department":"Support","salary":1883,"bonus":288,"join_date":"3/11/2025"},
+{"id":4,"name":"Neilla Fosh","department":"Research and Development","salary":5809,"bonus":544,"join_date":"11/2/2024"},
+{"id":5,"name":"Bailey Ivory","department":"Support","salary":1328,"bonus":289,"join_date":"7/24/2024"},
+{"id":6,"name":"Rosabelle McKeurton","department":"Marketing","salary":2535,"bonus":600,"join_date":"9/10/2024"},
+{"id":7,"name":"Edik Dudbridge","department":"Training","salary":5807,"bonus":472,"join_date":"12/2/2024"},
+{"id":8,"name":"Jazmin Hanster","department":"Training","salary":3882,"bonus":366,"join_date":"5/29/2022"},
+{"id":9,"name":"Ronni Siddall","department":"Marketing","salary":2342,"bonus":591,"join_date":"2/10/2025"},
+{"id":10,"name":"Sheffy Pelosi","department":"Human Resources","salary":4518,"bonus":560,"join_date":"10/8/2022"},
+{"id":11,"name":"Papagena Yuryatin","department":"Support","salary":4420,"bonus":380,"join_date":"9/30/2022"},
+{"id":12,"name":"Niccolo Duffit","department":"Product Management","salary":3415,"bonus":183,"join_date":"5/13/2024"},
+{"id":13,"name":"Lenci Morant","department":"Training","salary":5113,"bonus":493,"join_date":"7/13/2022"},
+{"id":14,"name":"Iago Bernardeau","department":"Human Resources","salary":4697,"bonus":199,"join_date":"8/6/2023"},
+{"id":15,"name":"Brinn Hindenburg","department":"Product Management","salary":3239,"bonus":641,"join_date":"12/11/2023"},
+{"id":16,"name":"Holmes Smaile","department":"Legal","salary":4686,"bonus":464,"join_date":"5/23/2023"},
+{"id":17,"name":"Rhianna Tiron","department":"Sales","salary":4171,"bonus":291,"join_date":"1/9/2025"},
+{"id":18,"name":"Merlina Gawthorpe","department":"Engineering","salary":3397,"bonus":468,"join_date":"10/25/2022"},
+{"id":19,"name":"Alix Hamblett","department":"Human Resources","salary":1505,"bonus":322,"join_date":"9/18/2023"},
+{"id":20,"name":"Bessy Saint","department":"Legal","salary":1240,"bonus":283,"join_date":"4/15/2023"},
+{"id":21,"name":"Eb Roch","department":"Business Development","salary":2693,"bonus":139,"join_date":"9/3/2022"},
+{"id":22,"name":"Martelle Warratt","department":"Accounting","salary":1629,"bonus":624,"join_date":"10/29/2024"},
+{"id":23,"name":"Damiano Stanners","department":"Product Management","salary":1657,"bonus":522,"join_date":"1/29/2025"},
+{"id":24,"name":"Hashim Bradman","department":"Services","salary":2849,"bonus":370,"join_date":"10/14/2024"},
+{"id":25,"name":"Suzann Kubin","department":"Marketing","salary":5417,"bonus":415,"join_date":"10/28/2023"},
+{"id":26,"name":"Lockwood Room","department":"Services","salary":2460,"bonus":248,"join_date":"1/29/2025"},
+{"id":27,"name":"Mable Mecchi","department":"Accounting","salary":5748,"bonus":334,"join_date":"10/8/2024"},
+{"id":28,"name":"Sadella Dagleas","department":"Business Development","salary":3920,"bonus":658,"join_date":"8/20/2024"},
+{"id":29,"name":"Brent Harnetty","department":"Legal","salary":2247,"bonus":282,"join_date":"11/13/2024"},
+{"id":30,"name":"Oberon Picheford","department":"Human Resources","salary":4579,"bonus":445,"join_date":"1/29/2023"},
+{"id":31,"name":"Jeromy Chirm","department":"Accounting","salary":3272,"bonus":649,"join_date":"12/5/2024"},
+{"id":32,"name":"Marlin Betteridge","department":"Research and Development","salary":5614,"bonus":617,"join_date":"11/27/2022"},
+{"id":33,"name":"Ivy Aldous","department":"Training","salary":3629,"bonus":469,"join_date":"3/24/2023"},
+{"id":34,"name":"Aile Grabiec","department":"Services","salary":1244,"bonus":248,"join_date":"4/11/2024"},
+{"id":35,"name":"Paolina McMackin","department":"Support","salary":4617,"bonus":324,"join_date":"11/9/2024"},
+{"id":36,"name":"Leese Buck","department":"Services","salary":5201,"bonus":330,"join_date":"11/26/2022"},
+{"id":37,"name":"Lotti Hogbin","department":"Services","salary":1600,"bonus":611,"join_date":"9/5/2024"},
+{"id":38,"name":"Nikki Faye","department":"Marketing","salary":1939,"bonus":547,"join_date":"4/9/2024"},
+{"id":39,"name":"Rosina Mellows","department":"Human Resources","salary":3848,"bonus":368,"join_date":"12/6/2022"},
+{"id":40,"name":"Addie Marham","department":"Human Resources","salary":2545,"bonus":381,"join_date":"8/17/2023"},
+{"id":41,"name":"Kirbie Jorgesen","department":"Accounting","salary":3799,"bonus":518,"join_date":"6/10/2024"},
+{"id":42,"name":"Tiffani McGinty","department":"Business Development","salary":2660,"bonus":400,"join_date":"7/3/2022"},
+{"id":43,"name":"Valentine Darracott","department":"Accounting","salary":1021,"bonus":471,"join_date":"7/29/2024"},
+{"id":44,"name":"Debor Yoodall","department":"Product Management","salary":5256,"bonus":682,"join_date":"10/17/2023"},
+{"id":45,"name":"Kalindi Longhorne","department":"Product Management","salary":2601,"bonus":224,"join_date":"2/10/2024"},
+{"id":46,"name":"Roi Durdy","department":"Human Resources","salary":4395,"bonus":483,"join_date":"6/11/2023"},
+{"id":47,"name":"Katerine Alchin","department":"Training","salary":1077,"bonus":539,"join_date":"10/4/2023"},
+{"id":48,"name":"Saraann Maunton","department":"Sales","salary":4903,"bonus":689,"join_date":"5/21/2022"},
+{"id":49,"name":"Emilie Killingbeck","department":"Business Development","salary":3117,"bonus":690,"join_date":"7/13/2022"},
+{"id":50,"name":"Panchito Goddman","department":"Support","salary":2699,"bonus":588,"join_date":"7/20/2024"},
+{"id":51,"name":"Augie Bromage","department":"Training","salary":4718,"bonus":472,"join_date":"12/12/2023"},
+{"id":52,"name":"Inessa Meineck","department":"Research and Development","salary":1601,"bonus":496,"join_date":"10/21/2022"},
+{"id":53,"name":"Petey Dominick","department":"Training","salary":1375,"bonus":451,"join_date":"1/1/2023"},
+{"id":54,"name":"Chelsie Hindenburg","department":"Legal","salary":2793,"bonus":155,"join_date":"3/2/2024"},
+{"id":55,"name":"Ida Bris","department":"Business Development","salary":4140,"bonus":632,"join_date":"10/18/2022"},
+{"id":56,"name":"Hillier Leask","department":"Business Development","salary":2742,"bonus":255,"join_date":"12/6/2022"},
+{"id":57,"name":"Glynda Kee","department":"Sales","salary":1980,"bonus":563,"join_date":"12/30/2023"},
+{"id":58,"name":"Kurt Olin","department":"Accounting","salary":5152,"bonus":499,"join_date":"3/16/2023"},
+{"id":59,"name":"Emerson Bridgen","department":"Business Development","salary":3901,"bonus":632,"join_date":"11/12/2024"},
+{"id":60,"name":"Linzy Izsak","department":"Business Development","salary":5508,"bonus":230,"join_date":"12/11/2022"},
+{"id":61,"name":"Jephthah Tomaszewski","department":"Marketing","salary":1013,"bonus":487,"join_date":"10/31/2023"},
+{"id":62,"name":"Dick Petche","department":"Sales","salary":2827,"bonus":598,"join_date":"10/11/2023"},
+{"id":63,"name":"Harry Burgan","department":"Product Management","salary":5485,"bonus":546,"join_date":"12/15/2023"},
+{"id":64,"name":"Marcellus Kierans","department":"Legal","salary":1700,"bonus":164,"join_date":"10/19/2023"},
+{"id":65,"name":"Sybille Biddle","department":"Accounting","salary":5865,"bonus":223,"join_date":"12/26/2024"},
+{"id":66,"name":"Sheree Ibbitt","department":"Accounting","salary":5227,"bonus":132,"join_date":"10/17/2024"},
+{"id":67,"name":"Kelci Copestake","department":"Accounting","salary":2013,"bonus":678,"join_date":"1/20/2025"},
+{"id":68,"name":"Marv Fattori","department":"Sales","salary":2523,"bonus":696,"join_date":"1/4/2025"},
+{"id":69,"name":"Andrei Comford","department":"Services","salary":4932,"bonus":622,"join_date":"1/9/2023"},
+{"id":70,"name":"Locke Beranek","department":"Research and Development","salary":1116,"bonus":335,"join_date":"11/29/2024"},
+{"id":71,"name":"Berti Shenfisch","department":"Human Resources","salary":5461,"bonus":337,"join_date":"1/15/2024"},
+{"id":72,"name":"Fania Bree","department":"Legal","salary":3797,"bonus":285,"join_date":"3/20/2025"},
+{"id":73,"name":"Chet Wolfe","department":"Engineering","salary":1751,"bonus":108,"join_date":"10/24/2022"},
+{"id":74,"name":"Filia Wheeler","department":"Accounting","salary":1355,"bonus":453,"join_date":"2/18/2023"},
+{"id":75,"name":"Ashly Aylin","department":"Business Development","salary":4888,"bonus":486,"join_date":"12/1/2023"},
+{"id":76,"name":"Averil Vidloc","department":"Training","salary":4504,"bonus":269,"join_date":"8/11/2024"},
+{"id":77,"name":"Christian Dranfield","department":"Engineering","salary":2806,"bonus":366,"join_date":"7/23/2022"},
+{"id":78,"name":"Murdoch Sher","department":"Research and Development","salary":5324,"bonus":330,"join_date":"4/8/2024"},
+{"id":79,"name":"Lionel Febvre","department":"Sales","salary":3671,"bonus":280,"join_date":"8/14/2022"},
+{"id":80,"name":"Athene Prestage","department":"Marketing","salary":4590,"bonus":199,"join_date":"2/27/2023"},
+{"id":81,"name":"Delcine Thaxton","department":"Services","salary":1143,"bonus":258,"join_date":"11/17/2024"},
+{"id":82,"name":"Beverley Sergeaunt","department":"Legal","salary":4722,"bonus":681,"join_date":"11/6/2023"},
+{"id":83,"name":"Ibrahim Grieve","department":"Marketing","salary":2836,"bonus":318,"join_date":"7/3/2024"},
+{"id":84,"name":"Zonnya Egle","department":"Business Development","salary":5114,"bonus":310,"join_date":"5/28/2023"},
+{"id":85,"name":"Bogart Lelievre","department":"Research and Development","salary":1701,"bonus":382,"join_date":"3/19/2025"},
+{"id":86,"name":"Yevette Arlott","department":"Business Development","salary":2614,"bonus":260,"join_date":"6/10/2024"},
+{"id":87,"name":"Becca Deetlof","department":"Marketing","salary":5625,"bonus":130,"join_date":"11/4/2024"},
+{"id":88,"name":"Joye O'Currane","department":"Research and Development","salary":4715,"bonus":395,"join_date":"2/2/2023"},
+{"id":89,"name":"Joey Catherick","department":"Business Development","salary":1655,"bonus":636,"join_date":"4/29/2024"},
+{"id":90,"name":"Gabi Aidler","department":"Engineering","salary":2115,"bonus":402,"join_date":"11/6/2024"},
+{"id":91,"name":"Brose Sibbit","department":"Services","salary":1831,"bonus":493,"join_date":"9/9/2022"},
+{"id":92,"name":"Brittan Skipsea","department":"Business Development","salary":4858,"bonus":647,"join_date":"12/3/2023"},
+{"id":93,"name":"North Haygreen","department":"Services","salary":4364,"bonus":483,"join_date":"5/3/2024"},
+{"id":94,"name":"Corri Barbrick","department":"Support","salary":2747,"bonus":494,"join_date":"6/10/2023"},
+{"id":95,"name":"Corilla Freear","department":"Research and Development","salary":5840,"bonus":146,"join_date":"7/24/2023"},
+{"id":96,"name":"Xaviera Ivakhno","department":"Human Resources","salary":2314,"bonus":156,"join_date":"5/29/2022"},
+{"id":97,"name":"Haroun England","department":"Training","salary":3042,"bonus":315,"join_date":"1/30/2024"},
+{"id":98,"name":"Zorah Jindacek","department":"Training","salary":3351,"bonus":334,"join_date":"1/29/2025"},
+{"id":99,"name":"Marlow Rolin","department":"Product Management","salary":4779,"bonus":338,"join_date":"6/30/2024"},
+{"id":100,"name":"Lance Pashba","department":"Support","salary":4861,"bonus":121,"join_date":"10/1/2024"},
+{"id":101,"name":"Nanice Nelm","department":"Sales","salary":3243,"bonus":265,"join_date":"1/21/2024"},
+{"id":102,"name":"Kylynn St Ange","department":"Support","salary":5223,"bonus":163,"join_date":"8/26/2022"},
+{"id":103,"name":"Tera Yegorshin","department":"Legal","salary":2133,"bonus":304,"join_date":"11/10/2022"},
+{"id":104,"name":"Wandis Barrar","department":"Sales","salary":5735,"bonus":511,"join_date":"4/11/2023"},
+{"id":105,"name":"Davey Garbutt","department":"Legal","salary":2818,"bonus":367,"join_date":"4/24/2023"},
+{"id":106,"name":"Nathanial Bamlett","department":"Product Management","salary":5156,"bonus":380,"join_date":"8/15/2024"},
+{"id":107,"name":"Jonathon Goodey","department":"Research and Development","salary":5437,"bonus":611,"join_date":"11/11/2024"},
+{"id":108,"name":"Bette-ann Lossman","department":"Sales","salary":1674,"bonus":320,"join_date":"4/6/2024"},
+{"id":109,"name":"Parry Marley","department":"Product Management","salary":2364,"bonus":662,"join_date":"2/28/2024"},
+{"id":110,"name":"Swen Ferraro","department":"Legal","salary":2669,"bonus":645,"join_date":"9/8/2023"},
+{"id":111,"name":"Caron McCaig","department":"Business Development","salary":3793,"bonus":218,"join_date":"8/15/2022"},
+{"id":112,"name":"Octavius Neads","department":"Sales","salary":3780,"bonus":640,"join_date":"12/7/2023"},
+{"id":113,"name":"Kira Marner","department":"Product Management","salary":3217,"bonus":592,"join_date":"6/5/2023"},
+{"id":114,"name":"Phip Sone","department":"Human Resources","salary":2437,"bonus":626,"join_date":"2/13/2023"},
+{"id":115,"name":"Freedman Tristram","department":"Accounting","salary":4480,"bonus":532,"join_date":"10/31/2023"},
+{"id":116,"name":"Cosmo Huard","department":"Research and Development","salary":4047,"bonus":330,"join_date":"1/16/2023"},
+{"id":117,"name":"Meredith Fury","department":"Training","salary":5636,"bonus":575,"join_date":"2/24/2024"},
+{"id":118,"name":"Frank Sleeford","department":"Sales","salary":4569,"bonus":588,"join_date":"4/17/2023"},
+{"id":119,"name":"Stacy Masterton","department":"Legal","salary":4039,"bonus":209,"join_date":"9/28/2024"},
+{"id":120,"name":"Iolande McBeath","department":"Accounting","salary":2510,"bonus":317,"join_date":"9/25/2023"},
+{"id":121,"name":"Joshuah Reims","department":"Business Development","salary":2383,"bonus":345,"join_date":"12/17/2023"},
+{"id":122,"name":"Sylvester Horsfield","department":"Business Development","salary":2216,"bonus":293,"join_date":"2/27/2024"},
+{"id":123,"name":"Felita Carnock","department":"Sales","salary":5175,"bonus":222,"join_date":"12/28/2022"},
+{"id":124,"name":"Cherin Quiddington","department":"Research and Development","salary":1860,"bonus":310,"join_date":"4/30/2024"},
+{"id":125,"name":"Bartolemo Djurevic","department":"Engineering","salary":5720,"bonus":235,"join_date":"10/24/2024"},
+{"id":126,"name":"Gretal Leivers","department":"Human Resources","salary":2935,"bonus":191,"join_date":"1/31/2024"},
+{"id":127,"name":"Jania Tregale","department":"Services","salary":2238,"bonus":631,"join_date":"5/2/2024"},
+{"id":128,"name":"Reidar Gerritzen","department":"Engineering","salary":3502,"bonus":506,"join_date":"10/8/2022"},
+{"id":129,"name":"Jehu Laughnan","department":"Engineering","salary":4358,"bonus":142,"join_date":"7/4/2022"},
+{"id":130,"name":"Donny Salzberg","department":"Support","salary":2651,"bonus":469,"join_date":"1/22/2023"},
+{"id":131,"name":"Alleyn Holdall","department":"Human Resources","salary":5359,"bonus":477,"join_date":"1/25/2023"},
+{"id":132,"name":"Patrica Martinovic","department":"Sales","salary":1446,"bonus":415,"join_date":"8/21/2023"},
+{"id":133,"name":"Roi Spikeings","department":"Services","salary":4963,"bonus":626,"join_date":"11/21/2023"},
+{"id":134,"name":"Phylis Kield","department":"Legal","salary":1833,"bonus":620,"join_date":"1/15/2023"},
+{"id":135,"name":"Shalna Withams","department":"Services","salary":4189,"bonus":373,"join_date":"3/6/2025"},
+{"id":136,"name":"Finn Culham","department":"Sales","salary":3836,"bonus":692,"join_date":"7/14/2023"},
+{"id":137,"name":"Hilly Lorincz","department":"Research and Development","salary":4118,"bonus":491,"join_date":"3/6/2025"},
+{"id":138,"name":"Isabelita Lagneaux","department":"Research and Development","salary":5264,"bonus":111,"join_date":"7/25/2022"},
+{"id":139,"name":"Bonnibelle Losano","department":"Business Development","salary":3006,"bonus":382,"join_date":"2/5/2025"},
+{"id":140,"name":"Babbette Maiklem","department":"Engineering","salary":4671,"bonus":297,"join_date":"4/17/2024"},
+{"id":141,"name":"Siffre Aggott","department":"Sales","salary":2611,"bonus":158,"join_date":"9/22/2022"},
+{"id":142,"name":"Ed Alred","department":"Research and Development","salary":5461,"bonus":405,"join_date":"2/15/2024"},
+{"id":143,"name":"Luise Petters","department":"Engineering","salary":1283,"bonus":298,"join_date":"1/31/2023"},
+{"id":144,"name":"Faythe Gaskamp","department":"Human Resources","salary":3689,"bonus":135,"join_date":"5/14/2024"},
+{"id":145,"name":"Anne-marie Bysh","department":"Engineering","salary":2526,"bonus":329,"join_date":"6/27/2024"},
+{"id":146,"name":"Gordon Gallon","department":"Accounting","salary":5001,"bonus":411,"join_date":"1/10/2025"},
+{"id":147,"name":"Brandon Grigoryev","department":"Support","salary":3933,"bonus":571,"join_date":"10/7/2022"},
+{"id":148,"name":"Abner Rogliero","department":"Research and Development","salary":3733,"bonus":220,"join_date":"1/24/2025"},
+{"id":149,"name":"Georges Hymans","department":"Business Development","salary":5194,"bonus":449,"join_date":"2/21/2023"},
+{"id":150,"name":"Krystyna Pullen","department":"Research and Development","salary":2013,"bonus":500,"join_date":"3/2/2023"},
+{"id":151,"name":"Dunc Beeby","department":"Product Management","salary":3295,"bonus":284,"join_date":"2/13/2025"},
+{"id":152,"name":"Karly Whitcombe","department":"Product Management","salary":4830,"bonus":128,"join_date":"9/26/2024"},
+{"id":153,"name":"Nilson Mac Geaney","department":"Marketing","salary":4117,"bonus":470,"join_date":"5/27/2023"},
+{"id":154,"name":"Franni Griffitts","department":"Support","salary":3072,"bonus":512,"join_date":"5/3/2024"},
+{"id":155,"name":"Clement Deluze","department":"Business Development","salary":2616,"bonus":243,"join_date":"1/22/2024"},
+{"id":156,"name":"Kirby Fain","department":"Training","salary":4868,"bonus":562,"join_date":"2/14/2025"},
+{"id":157,"name":"Pearl Ascrofte","department":"Sales","salary":4037,"bonus":104,"join_date":"10/23/2023"},
+{"id":158,"name":"Tito Haydney","department":"Human Resources","salary":3486,"bonus":446,"join_date":"7/14/2024"},
+{"id":159,"name":"Katusha Donke","department":"Engineering","salary":5473,"bonus":326,"join_date":"4/10/2023"},
+{"id":160,"name":"Josefina Jammet","department":"Services","salary":5098,"bonus":580,"join_date":"1/4/2024"},
+{"id":161,"name":"Delmore Laflin","department":"Training","salary":2905,"bonus":446,"join_date":"9/10/2024"},
+{"id":162,"name":"Ephrem Kybbye","department":"Human Resources","salary":4270,"bonus":147,"join_date":"2/22/2024"},
+{"id":163,"name":"Ara Core","department":"Engineering","salary":3348,"bonus":401,"join_date":"9/6/2022"},
+{"id":164,"name":"Evyn Bugdall","department":"Product Management","salary":2509,"bonus":678,"join_date":"5/28/2023"},
+{"id":165,"name":"Dan Kerne","department":"Support","salary":1370,"bonus":653,"join_date":"4/3/2023"},
+{"id":166,"name":"Fawnia Bandy","department":"Legal","salary":2027,"bonus":113,"join_date":"3/20/2024"},
+{"id":167,"name":"Whitby Bartoshevich","department":"Research and Development","salary":2824,"bonus":632,"join_date":"1/24/2023"},
+{"id":168,"name":"Tyne Pooly","department":"Business Development","salary":4275,"bonus":367,"join_date":"7/28/2022"},
+{"id":169,"name":"Thomasin Gatrill","department":"Business Development","salary":1179,"bonus":295,"join_date":"1/25/2024"},
+{"id":170,"name":"Fidela Bart","department":"Product Management","salary":2802,"bonus":396,"join_date":"8/4/2024"},
+{"id":171,"name":"Florinda Folbige","department":"Support","salary":4548,"bonus":657,"join_date":"3/25/2023"},
+{"id":172,"name":"Waverly Marchington","department":"Training","salary":2053,"bonus":296,"join_date":"3/12/2024"},
+{"id":173,"name":"Brenden Standish","department":"Support","salary":3208,"bonus":197,"join_date":"9/14/2022"},
+{"id":174,"name":"Andeee Gowry","department":"Engineering","salary":3306,"bonus":235,"join_date":"9/2/2023"},
+{"id":175,"name":"Jerrold Swepson","department":"Marketing","salary":4708,"bonus":542,"join_date":"8/20/2023"},
+{"id":176,"name":"Dionysus Chattock","department":"Product Management","salary":2278,"bonus":613,"join_date":"2/5/2023"},
+{"id":177,"name":"Berget Margrett","department":"Legal","salary":3908,"bonus":407,"join_date":"11/23/2023"},
+{"id":178,"name":"Sula Wethey","department":"Training","salary":1826,"bonus":629,"join_date":"10/11/2023"},
+{"id":179,"name":"Lettie Chatenet","department":"Support","salary":2175,"bonus":196,"join_date":"8/4/2022"},
+{"id":180,"name":"Kimmy Tupling","department":"Support","salary":2503,"bonus":346,"join_date":"9/11/2024"},
+{"id":181,"name":"Basil Peerman","department":"Product Management","salary":3194,"bonus":529,"join_date":"9/24/2024"},
+{"id":182,"name":"Karita Worstall","department":"Accounting","salary":4324,"bonus":494,"join_date":"9/28/2024"},
+{"id":183,"name":"Gawain McIan","department":"Services","salary":3068,"bonus":346,"join_date":"11/15/2024"},
+{"id":184,"name":"Maurizia Vivians","department":"Human Resources","salary":2033,"bonus":200,"join_date":"5/7/2024"},
+{"id":185,"name":"Fraze Epperson","department":"Research and Development","salary":4382,"bonus":622,"join_date":"11/24/2023"},
+{"id":186,"name":"Nicolette Scarlet","department":"Training","salary":3213,"bonus":297,"join_date":"9/4/2022"},
+{"id":187,"name":"Keane Bellwood","department":"Business Development","salary":2142,"bonus":121,"join_date":"2/11/2024"},
+{"id":188,"name":"Jerri Byforth","department":"Marketing","salary":1492,"bonus":409,"join_date":"10/23/2023"},
+{"id":189,"name":"Benedetto Yexley","department":"Legal","salary":5977,"bonus":544,"join_date":"12/2/2024"},
+{"id":190,"name":"De witt Vinsen","department":"Training","salary":3319,"bonus":555,"join_date":"5/30/2023"},
+{"id":191,"name":"Sher Rhelton","department":"Business Development","salary":2900,"bonus":587,"join_date":"12/16/2022"},
+{"id":192,"name":"Bobby Allitt","department":"Services","salary":5861,"bonus":665,"join_date":"2/4/2023"},
+{"id":193,"name":"Petronia Tuxsell","department":"Support","salary":4487,"bonus":582,"join_date":"2/2/2025"},
+{"id":194,"name":"Dawna Hazeley","department":"Product Management","salary":3834,"bonus":171,"join_date":"8/9/2022"},
+{"id":195,"name":"Lanae Howlin","department":"Sales","salary":2034,"bonus":338,"join_date":"4/18/2024"},
+{"id":196,"name":"Dosi Antecki","department":"Marketing","salary":1906,"bonus":460,"join_date":"5/27/2022"},
+{"id":197,"name":"Andris Yoselevitch","department":"Engineering","salary":5947,"bonus":278,"join_date":"9/17/2022"},
+{"id":198,"name":"Brenden Skotcher","department":"Training","salary":5794,"bonus":502,"join_date":"2/3/2024"},
+{"id":199,"name":"Gavin Haselhurst","department":"Human Resources","salary":5107,"bonus":204,"join_date":"10/23/2022"},
+{"id":200,"name":"Dasie Wolseley","department":"Training","salary":5885,"bonus":588,"join_date":"11/17/2022"}])
+{
+    '144': ObjectId('67dd6f5068c83f46dc9ec237'),
+    '145': ObjectId('67dd6f5068c83f46dc9ec238'),
+    '146': ObjectId('67dd6f5068c83f46dc9ec239'),
+    '147': ObjectId('67dd6f5068c83f46dc9ec23a'),
+    '148': ObjectId('67dd6f5068c83f46dc9ec23b'),
+    '149': ObjectId('67dd6f5068c83f46dc9ec23c'),
+    '150': ObjectId('67dd6f5068c83f46dc9ec23d'),
+    '151': ObjectId('67dd6f5068c83f46dc9ec23e'),
+    '152': ObjectId('67dd6f5068c83f46dc9ec23f'),
+    '153': ObjectId('67dd6f5068c83f46dc9ec240'),
+    '154': ObjectId('67dd6f5068c83f46dc9ec241'),
+    '155': ObjectId('67dd6f5068c83f46dc9ec242'),
+    '156': ObjectId('67dd6f5068c83f46dc9ec243'),
+    '157': ObjectId('67dd6f5068c83f46dc9ec244'),
+    '158': ObjectId('67dd6f5068c83f46dc9ec245'),
+    '159': ObjectId('67dd6f5068c83f46dc9ec246'),
+    '160': ObjectId('67dd6f5068c83f46dc9ec247'),
+    '161': ObjectId('67dd6f5068c83f46dc9ec248'),
+    '162': ObjectId('67dd6f5068c83f46dc9ec249'),
+    '163': ObjectId('67dd6f5068c83f46dc9ec24a'),
+    '164': ObjectId('67dd6f5068c83f46dc9ec24b'),
+    '165': ObjectId('67dd6f5068c83f46dc9ec24c'),
+    '166': ObjectId('67dd6f5068c83f46dc9ec24d'),
+    '167': ObjectId('67dd6f5068c83f46dc9ec24e'),
+    '168': ObjectId('67dd6f5068c83f46dc9ec24f'),
+    '169': ObjectId('67dd6f5068c83f46dc9ec250'),
+    '170': ObjectId('67dd6f5068c83f46dc9ec251'),
+    '171': ObjectId('67dd6f5068c83f46dc9ec252'),
+    '172': ObjectId('67dd6f5068c83f46dc9ec253'),
+    '173': ObjectId('67dd6f5068c83f46dc9ec254'),
+    '174': ObjectId('67dd6f5068c83f46dc9ec255'),
+    '175': ObjectId('67dd6f5068c83f46dc9ec256'),
+    '176': ObjectId('67dd6f5068c83f46dc9ec257'),
+    '177': ObjectId('67dd6f5068c83f46dc9ec258'),
+    '178': ObjectId('67dd6f5068c83f46dc9ec259'),
+    '179': ObjectId('67dd6f5068c83f46dc9ec25a'),
+    '180': ObjectId('67dd6f5068c83f46dc9ec25b'),
+    '181': ObjectId('67dd6f5068c83f46dc9ec25c'),
+    '182': ObjectId('67dd6f5068c83f46dc9ec25d'),
+    '183': ObjectId('67dd6f5068c83f46dc9ec25e'),
+    '184': ObjectId('67dd6f5068c83f46dc9ec25f'),
+    '185': ObjectId('67dd6f5068c83f46dc9ec260'),
+    '186': ObjectId('67dd6f5068c83f46dc9ec261'),
+    '187': ObjectId('67dd6f5068c83f46dc9ec262'),
+    '188': ObjectId('67dd6f5068c83f46dc9ec263'),
+    '189': ObjectId('67dd6f5068c83f46dc9ec264'),
+    '190': ObjectId('67dd6f5068c83f46dc9ec265'),
+    '191': ObjectId('67dd6f5068c83f46dc9ec266'),
+    '192': ObjectId('67dd6f5068c83f46dc9ec267'),
+    '193': ObjectId('67dd6f5068c83f46dc9ec268'),
+    '194': ObjectId('67dd6f5068c83f46dc9ec269'),
+    '195': ObjectId('67dd6f5068c83f46dc9ec26a'),
+    '196': ObjectId('67dd6f5068c83f46dc9ec26b'),
+    '197': ObjectId('67dd6f5068c83f46dc9ec26c'),
+    '198': ObjectId('67dd6f5068c83f46dc9ec26d'),
+    '199': ObjectId('67dd6f5068c83f46dc9ec26e')
+  }
+}
+db.employees.aggregate([
+    {
+        $group: {
+            _id: "$department",
+            totalSalary: { $sum: "$salary" }
+        }
+    }
+])
+{
+  _id: 'Marketing',
+  totalSalary: 38520
+}
+{
+  _id: 'Legal',
+  totalSalary: 46589
+}
+{
+  _id: 'Human Resources',
+  totalSalary: 63178
+}
+{
+  _id: 'Product Management',
+  totalSalary: 65067
+}
+{
+  _id: 'Training',
+  totalSalary: 71997
+}
+{
+  _id: 'Sales',
+  totalSalary: 58215
+}
+{
+  _id: 'Business Development',
+  totalSalary: 77514
+}
+{
+  _id: 'Services',
+  totalSalary: 51041
+}
+{
+  _id: 'Engineering',
+  totalSalary: 50203
+}
+{
+  _id: 'Support',
+  totalSalary: 60382
+}
+{
+  _id: 'Accounting',
+  totalSalary: 51396
+}
+{
+  _id: 'Research and Development',
+  totalSalary: 70859
+}
+db.employees.aggregate([
+    {
+        $addFields: {
+            totalIncome: { $sum: ["$salary", "$bonus"] }
+        }
+    },
+    { $sort: { totalIncome: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec266'),
+  id: 192,
+  name: 'Bobby Allitt',
+  department: 'Services',
+  salary: 5861,
+  bonus: 665,
+  join_date: '2/4/2023',
+  totalIncome: 6526
+}
+db.employees.aggregate([
+    {
+        $group: {
+            _id: "$department",
+            avgSalary: { $avg: "$salary" }
+        }
+    }
+])
+{
+  _id: 'Engineering',
+  avgSalary: 3585.9285714285716
+}
+{
+  _id: 'Support',
+  avgSalary: 3354.5555555555557
+}
+{
+  _id: 'Accounting',
+  avgSalary: 3671.1428571428573
+}
+{
+  _id: 'Human Resources',
+  avgSalary: 3716.3529411764707
+}
+{
+  _id: 'Research and Development',
+  avgSalary: 3936.6111111111113
+}
+{
+  _id: 'Marketing',
+  avgSalary: 3210
+}
+{
+  _id: 'Legal',
+  avgSalary: 3105.9333333333334
+}
+{
+  _id: 'Product Management',
+  avgSalary: 3614.8333333333335
+}
+{
+  _id: 'Sales',
+  avgSalary: 3424.4117647058824
+}
+{
+  _id: 'Training',
+  avgSalary: 3789.315789473684
+}
+{
+  _id: 'Business Development',
+  avgSalary: 3370.1739130434785
+}
+{
+  _id: 'Services',
+  avgSalary: 3402.733333333333
+}
+db.employees.aggregate([
+    {
+        $addFields: {
+            yearsWorked: {
+                $dateDiff: {
+                    startDate: { $toDate: "$join_date" },
+                    endDate: { $toDate: new Date() },
+                    unit: "year"
+                }
+            }
+        }
+    },
+    { $match: { yearsWorked: { $gt: 3 } } }
+])
+db.employees.aggregate([
+    {
+        $addFields: {
+            yearsWorked: {
+                $dateDiff: {
+                    startDate: { $toDate: "$join_date" },
+                    endDate: { $toDate: new Date() },
+                    unit: "year"
+                }
+            }
+        }
+    },
+    { $match: { yearsWorked: { $gt: 1 } } }
+])
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1a7'),
+  id: 1,
+  name: 'Sylvester Ormes',
+  department: 'Product Management',
+  salary: 5156,
+  bonus: 647,
+  join_date: '4/18/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1a8'),
+  id: 2,
+  name: 'Nichol Sterland',
+  department: 'Support',
+  salary: 4657,
+  bonus: 433,
+  join_date: '4/9/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ae'),
+  id: 8,
+  name: 'Jazmin Hanster',
+  department: 'Training',
+  salary: 3882,
+  bonus: 366,
+  join_date: '5/29/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b0'),
+  id: 10,
+  name: 'Sheffy Pelosi',
+  department: 'Human Resources',
+  salary: 4518,
+  bonus: 560,
+  join_date: '10/8/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b1'),
+  id: 11,
+  name: 'Papagena Yuryatin',
+  department: 'Support',
+  salary: 4420,
+  bonus: 380,
+  join_date: '9/30/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b3'),
+  id: 13,
+  name: 'Lenci Morant',
+  department: 'Training',
+  salary: 5113,
+  bonus: 493,
+  join_date: '7/13/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b4'),
+  id: 14,
+  name: 'Iago Bernardeau',
+  department: 'Human Resources',
+  salary: 4697,
+  bonus: 199,
+  join_date: '8/6/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b5'),
+  id: 15,
+  name: 'Brinn Hindenburg',
+  department: 'Product Management',
+  salary: 3239,
+  bonus: 641,
+  join_date: '12/11/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b6'),
+  id: 16,
+  name: 'Holmes Smaile',
+  department: 'Legal',
+  salary: 4686,
+  bonus: 464,
+  join_date: '5/23/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b8'),
+  id: 18,
+  name: 'Merlina Gawthorpe',
+  department: 'Engineering',
+  salary: 3397,
+  bonus: 468,
+  join_date: '10/25/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b9'),
+  id: 19,
+  name: 'Alix Hamblett',
+  department: 'Human Resources',
+  salary: 1505,
+  bonus: 322,
+  join_date: '9/18/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ba'),
+  id: 20,
+  name: 'Bessy Saint',
+  department: 'Legal',
+  salary: 1240,
+  bonus: 283,
+  join_date: '4/15/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1bb'),
+  id: 21,
+  name: 'Eb Roch',
+  department: 'Business Development',
+  salary: 2693,
+  bonus: 139,
+  join_date: '9/3/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1bf'),
+  id: 25,
+  name: 'Suzann Kubin',
+  department: 'Marketing',
+  salary: 5417,
+  bonus: 415,
+  join_date: '10/28/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c4'),
+  id: 30,
+  name: 'Oberon Picheford',
+  department: 'Human Resources',
+  salary: 4579,
+  bonus: 445,
+  join_date: '1/29/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c6'),
+  id: 32,
+  name: 'Marlin Betteridge',
+  department: 'Research and Development',
+  salary: 5614,
+  bonus: 617,
+  join_date: '11/27/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c7'),
+  id: 33,
+  name: 'Ivy Aldous',
+  department: 'Training',
+  salary: 3629,
+  bonus: 469,
+  join_date: '3/24/2023',
+  yearsWorked: 2
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ca'),
+  id: 36,
+  name: 'Leese Buck',
+  department: 'Services',
+  salary: 5201,
+  bonus: 330,
+  join_date: '11/26/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1cd'),
+  id: 39,
+  name: 'Rosina Mellows',
+  department: 'Human Resources',
+  salary: 3848,
+  bonus: 368,
+  join_date: '12/6/2022',
+  yearsWorked: 3
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ce'),
+  id: 40,
+  name: 'Addie Marham',
+  department: 'Human Resources',
+  salary: 2545,
+  bonus: 381,
+  join_date: '8/17/2023',
+  yearsWorked: 2
+}
+Type "it" for more
+db.employees.aggregate([
+    {
+        $group: {
+            _id: null,
+            totalExpense: { $sum: { $add: ["$salary", "$bonus"] } }
+        }
+    }
+])
+{
+  _id: null,
+  totalExpense: 787170
+}
+db.employees.aggregate([
+    {
+        $addFields: {
+            totalIncome: { $sum: ["$salary", "$bonus"] }
+        }
+    },
+    { $sort: { totalIncome: -1 } }
+])
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec266'),
+  id: 192,
+  name: 'Bobby Allitt',
+  department: 'Services',
+  salary: 5861,
+  bonus: 665,
+  join_date: '2/4/2023',
+  totalIncome: 6526
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec263'),
+  id: 189,
+  name: 'Benedetto Yexley',
+  department: 'Legal',
+  salary: 5977,
+  bonus: 544,
+  join_date: '12/2/2024',
+  totalIncome: 6521
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec26e'),
+  id: 200,
+  name: 'Dasie Wolseley',
+  department: 'Training',
+  salary: 5885,
+  bonus: 588,
+  join_date: '11/17/2022',
+  totalIncome: 6473
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1aa'),
+  id: 4,
+  name: 'Neilla Fosh',
+  department: 'Research and Development',
+  salary: 5809,
+  bonus: 544,
+  join_date: '11/2/2024',
+  totalIncome: 6353
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec26c'),
+  id: 198,
+  name: 'Brenden Skotcher',
+  department: 'Training',
+  salary: 5794,
+  bonus: 502,
+  join_date: '2/3/2024',
+  totalIncome: 6296
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ad'),
+  id: 7,
+  name: 'Edik Dudbridge',
+  department: 'Training',
+  salary: 5807,
+  bonus: 472,
+  join_date: '12/2/2024',
+  totalIncome: 6279
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec20e'),
+  id: 104,
+  name: 'Wandis Barrar',
+  department: 'Sales',
+  salary: 5735,
+  bonus: 511,
+  join_date: '4/11/2023',
+  totalIncome: 6246
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c6'),
+  id: 32,
+  name: 'Marlin Betteridge',
+  department: 'Research and Development',
+  salary: 5614,
+  bonus: 617,
+  join_date: '11/27/2022',
+  totalIncome: 6231
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec26b'),
+  id: 197,
+  name: 'Andris Yoselevitch',
+  department: 'Engineering',
+  salary: 5947,
+  bonus: 278,
+  join_date: '9/17/2022',
+  totalIncome: 6225
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec21b'),
+  id: 117,
+  name: 'Meredith Fury',
+  department: 'Training',
+  salary: 5636,
+  bonus: 575,
+  join_date: '2/24/2024',
+  totalIncome: 6211
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1e7'),
+  id: 65,
+  name: 'Sybille Biddle',
+  department: 'Accounting',
+  salary: 5865,
+  bonus: 223,
+  join_date: '12/26/2024',
+  totalIncome: 6088
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c1'),
+  id: 27,
+  name: 'Mable Mecchi',
+  department: 'Accounting',
+  salary: 5748,
+  bonus: 334,
+  join_date: '10/8/2024',
+  totalIncome: 6082
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec211'),
+  id: 107,
+  name: 'Jonathon Goodey',
+  department: 'Research and Development',
+  salary: 5437,
+  bonus: 611,
+  join_date: '11/11/2024',
+  totalIncome: 6048
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1e5'),
+  id: 63,
+  name: 'Harry Burgan',
+  department: 'Product Management',
+  salary: 5485,
+  bonus: 546,
+  join_date: '12/15/2023',
+  totalIncome: 6031
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec205'),
+  id: 95,
+  name: 'Corilla Freear',
+  department: 'Research and Development',
+  salary: 5840,
+  bonus: 146,
+  join_date: '7/24/2023',
+  totalIncome: 5986
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec223'),
+  id: 125,
+  name: 'Bartolemo Djurevic',
+  department: 'Engineering',
+  salary: 5720,
+  bonus: 235,
+  join_date: '10/24/2024',
+  totalIncome: 5955
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d2'),
+  id: 44,
+  name: 'Debor Yoodall',
+  department: 'Product Management',
+  salary: 5256,
+  bonus: 682,
+  join_date: '10/17/2023',
+  totalIncome: 5938
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec234'),
+  id: 142,
+  name: 'Ed Alred',
+  department: 'Research and Development',
+  salary: 5461,
+  bonus: 405,
+  join_date: '2/15/2024',
+  totalIncome: 5866
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec229'),
+  id: 131,
+  name: 'Alleyn Holdall',
+  department: 'Human Resources',
+  salary: 5359,
+  bonus: 477,
+  join_date: '1/25/2023',
+  totalIncome: 5836
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1bf'),
+  id: 25,
+  name: 'Suzann Kubin',
+  department: 'Marketing',
+  salary: 5417,
+  bonus: 415,
+  join_date: '10/28/2023',
+  totalIncome: 5832
+}
+Type "it" for more
+db.employees.find({ bonus: { $gt: 500 } })
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1a7'),
+  id: 1,
+  name: 'Sylvester Ormes',
+  department: 'Product Management',
+  salary: 5156,
+  bonus: 647,
+  join_date: '4/18/2023'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1aa'),
+  id: 4,
+  name: 'Neilla Fosh',
+  department: 'Research and Development',
+  salary: 5809,
+  bonus: 544,
+  join_date: '11/2/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1ac'),
+  id: 6,
+  name: 'Rosabelle McKeurton',
+  department: 'Marketing',
+  salary: 2535,
+  bonus: 600,
+  join_date: '9/10/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1af'),
+  id: 9,
+  name: 'Ronni Siddall',
+  department: 'Marketing',
+  salary: 2342,
+  bonus: 591,
+  join_date: '2/10/2025'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b0'),
+  id: 10,
+  name: 'Sheffy Pelosi',
+  department: 'Human Resources',
+  salary: 4518,
+  bonus: 560,
+  join_date: '10/8/2022'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1b5'),
+  id: 15,
+  name: 'Brinn Hindenburg',
+  department: 'Product Management',
+  salary: 3239,
+  bonus: 641,
+  join_date: '12/11/2023'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1bc'),
+  id: 22,
+  name: 'Martelle Warratt',
+  department: 'Accounting',
+  salary: 1629,
+  bonus: 624,
+  join_date: '10/29/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1bd'),
+  id: 23,
+  name: 'Damiano Stanners',
+  department: 'Product Management',
+  salary: 1657,
+  bonus: 522,
+  join_date: '1/29/2025'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c2'),
+  id: 28,
+  name: 'Sadella Dagleas',
+  department: 'Business Development',
+  salary: 3920,
+  bonus: 658,
+  join_date: '8/20/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c5'),
+  id: 31,
+  name: 'Jeromy Chirm',
+  department: 'Accounting',
+  salary: 3272,
+  bonus: 649,
+  join_date: '12/5/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1c6'),
+  id: 32,
+  name: 'Marlin Betteridge',
+  department: 'Research and Development',
+  salary: 5614,
+  bonus: 617,
+  join_date: '11/27/2022'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1cb'),
+  id: 37,
+  name: 'Lotti Hogbin',
+  department: 'Services',
+  salary: 1600,
+  bonus: 611,
+  join_date: '9/5/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1cc'),
+  id: 38,
+  name: 'Nikki Faye',
+  department: 'Marketing',
+  salary: 1939,
+  bonus: 547,
+  join_date: '4/9/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1cf'),
+  id: 41,
+  name: 'Kirbie Jorgesen',
+  department: 'Accounting',
+  salary: 3799,
+  bonus: 518,
+  join_date: '6/10/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d2'),
+  id: 44,
+  name: 'Debor Yoodall',
+  department: 'Product Management',
+  salary: 5256,
+  bonus: 682,
+  join_date: '10/17/2023'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d5'),
+  id: 47,
+  name: 'Katerine Alchin',
+  department: 'Training',
+  salary: 1077,
+  bonus: 539,
+  join_date: '10/4/2023'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d6'),
+  id: 48,
+  name: 'Saraann Maunton',
+  department: 'Sales',
+  salary: 4903,
+  bonus: 689,
+  join_date: '5/21/2022'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d7'),
+  id: 49,
+  name: 'Emilie Killingbeck',
+  department: 'Business Development',
+  salary: 3117,
+  bonus: 690,
+  join_date: '7/13/2022'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1d8'),
+  id: 50,
+  name: 'Panchito Goddman',
+  department: 'Support',
+  salary: 2699,
+  bonus: 588,
+  join_date: '7/20/2024'
+}
+{
+  _id: ObjectId('67dd6f5068c83f46dc9ec1dd'),
+  id: 55,
+  name: 'Ida Bris',
+  department: 'Business Development',
+  salary: 4140,
+  bonus: 632,
+  join_date: '10/18/2022'
+}
+Type "it" for more
+db.employees.aggregate([
+    {
+        $addFields: {
+            totalIncome: { $sum: ["$salary", "$bonus"] }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            name: 1,
+            department: 1,
+            totalIncome: 1
+        }
+    }
+])
+{
+  name: 'Sylvester Ormes',
+  department: 'Product Management',
+  totalIncome: 5803
+}
+{
+  name: 'Nichol Sterland',
+  department: 'Support',
+  totalIncome: 5090
+}
+{
+  name: 'Tamma Tarquinio',
+  department: 'Support',
+  totalIncome: 2171
+}
+{
+  name: 'Neilla Fosh',
+  department: 'Research and Development',
+  totalIncome: 6353
+}
+{
+  name: 'Bailey Ivory',
+  department: 'Support',
+  totalIncome: 1617
+}
+{
+  name: 'Rosabelle McKeurton',
+  department: 'Marketing',
+  totalIncome: 3135
+}
+{
+  name: 'Edik Dudbridge',
+  department: 'Training',
+  totalIncome: 6279
+}
+{
+  name: 'Jazmin Hanster',
+  department: 'Training',
+  totalIncome: 4248
+}
+{
+  name: 'Ronni Siddall',
+  department: 'Marketing',
+  totalIncome: 2933
+}
+{
+  name: 'Sheffy Pelosi',
+  department: 'Human Resources',
+  totalIncome: 5078
+}
+{
+  name: 'Papagena Yuryatin',
+  department: 'Support',
+  totalIncome: 4800
+}
+{
+  name: 'Niccolo Duffit',
+  department: 'Product Management',
+  totalIncome: 3598
+}
+{
+  name: 'Lenci Morant',
+  department: 'Training',
+  totalIncome: 5606
+}
+{
+  name: 'Iago Bernardeau',
+  department: 'Human Resources',
+  totalIncome: 4896
+}
+{
+  name: 'Brinn Hindenburg',
+  department: 'Product Management',
+  totalIncome: 3880
+}
+{
+  name: 'Holmes Smaile',
+  department: 'Legal',
+  totalIncome: 5150
+}
+{
+  name: 'Rhianna Tiron',
+  department: 'Sales',
+  totalIncome: 4462
+}
+{
+  name: 'Merlina Gawthorpe',
+  department: 'Engineering',
+  totalIncome: 3865
+}
+{
+  name: 'Alix Hamblett',
+  department: 'Human Resources',
+  totalIncome: 1827
+}
+{
+  name: 'Bessy Saint',
+  department: 'Legal',
+  totalIncome: 1523
+}
+Type "it" for more

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Book>
+        <ID>1</ID>
+        <Title>Đắc Nhân Tâm</Title>
+        <Author>Dale Carnegie</Author>
+        <PublicationYear>1936</PublicationYear>
+        <Category>Tâm lý học</Category>
+    </Book>
+
+    <Book>
+        <ID>2</ID>
+        <Title>Lược sử thời gian</Title>
+        <Author>Stephen Hawking</Author>
+        <PublicationYear>1988</PublicationYear>
+        <Category>Khoa học</Category>
+    </Book>
+
+    <Book>
+        <ID>3</ID>
+        <Title>Java Programming</Title>
+        <Author>John Doe</Author>
+        <PublicationYear>2020</PublicationYear>
+        <Category>Công nghệ</Category>
+    </Book>
+</Book>

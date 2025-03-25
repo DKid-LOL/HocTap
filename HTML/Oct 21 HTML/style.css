@@ -1,0 +1,33 @@
+* {
+    margin: 0 auto;
+}
+h1 {
+    font-size: 500%;
+    color: #BD2363FF;
+    text-align: center
+}
+ul {
+    font-size: 200%;
+    list-style-type: square;
+
+}
+
+h3 {
+    font-size: 300%;
+    color: white;
+    background-color: #EC0965FF;
+    display: inline;
+}
+#a {
+    margin-right: 50px;
+    font-size: 200%;
+    list-style-type: circle;
+}
+img {
+
+    float: left;
+    margin-right: 60px;
+}
+p {
+    font-size: 200%;
+}

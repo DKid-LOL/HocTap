@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Next Page</title>
+    <link rel="stylesheet" href="mysite.css" />
+    <script type="text/javascript" src="myscript.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="main-content">
+          <form>
+            <h2>Student management</h2>
+            <table>
+              <tr>
+                <td class="right">Student name:</td>
+                <td>
+                  <input id="studentName" type="text" placeholder="Input student name" required/>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Student DOB:</td>
+                <td>
+                  <input id="studentDOB" type="date" placeholder="mm/dd/yyyy" required/>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Student Gender:</td>
+                <td>
+                  <input type="radio" id="rbMale" value="Male" name="rbGender" />
+                  <label for="rbMale">Male</label>
+                  <input type="radio" id="rbFemale" value="Female" name="rbGender" checked/>
+                  <label for="rbFemale">Female</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Student Language:</td>
+                <td>
+                  <input type="checkbox" id="ckbEnglish" value="English" name="ckbLanguage" checked/>
+                  <label for="ckbEnglish">English</label>
+                  <input type="checkbox" id="ckbVietnamese" value="Vietnamese" name="ckbLanguage" checked/>
+                  <label for="ckbVietnamese">Vietnamese</label>
+                  <input type="checkbox" id="ckbJapanese" value="Japanese" name="ckbLanguage"/>
+                  <label for="ckbJapanese">Japanese</label>
+                  <input type="checkbox" id="ckbChinese" value="Chinese" name="ckbLanguage"/>
+                  <label for="ckbChinese">Chinese</label>
+                  <input type="checkbox" id="ckbFrench" value="French" name="ckbLanguage"/>
+                  <label for="ckbFrench">French</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Student Class:</td>
+                <td>
+                  <select id="cbClass">
+                    <option value="C1608G">C1608G</option>
+                    <option value="C2307L">C2307L</option>
+                  </select>
+                  <a href="#" onclick="onAddClass();">Add class</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="Add" onclick="onAddStudent()" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      <h2>Student List</h2>
+      <table class="table_student" id="tableStudent">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Language</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="total" id="total">Total:</div>
+    </div>
+  </body>
+</html>

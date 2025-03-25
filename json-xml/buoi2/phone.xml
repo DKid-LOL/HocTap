@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Stores SYSTEM "phone.dtd">
+<Stores>
+    <Store>
+        <Branch>Hà Nội</Branch>
+        <Phone>
+            <Brand>Apple</Brand>
+            <Model>iPhone 15 Pro</Model>
+            <Price>29990000</Price>
+            <Stock>20</Stock>
+        </Phone>
+        <Phone>
+            <Brand>Samsung</Brand>
+            <Model>Galaxy S23 Ultra</Model>
+            <Price>25990000</Price>
+            <Stock>15</Stock>
+        </Phone>
+    </Store>
+
+    <Store>
+        <Branch>Đà Nẵng</Branch>
+        <Phone>
+            <Brand>Oppo</Brand>
+            <Model>Find X5 Pro</Model>
+            <Price>18990000</Price>
+            <Stock>10</Stock>
+        </Phone>
+        <Phone>
+            <Brand>Xiaomi</Brand>
+            <Model>Mi 13 Pro</Model>
+            <Price>15990000</Price>
+            <Stock>25</Stock>
+        </Phone>
+    </Store>
+
+    <Store>
+        <Branch>HCM</Branch>
+        <Phone>
+            <Brand>Vivo</Brand>
+            <Model>Vivo X90 Pro</Model>
+            <Price>21990000</Price>
+            <Stock>18</Stock>
+        </Phone>
+        <Phone>
+            <Brand>Realme</Brand>
+            <Model>Realme GT Neo 5</Model>
+            <Price>10990000</Price>
+            <Stock>30</Stock>
+        </Phone>
+    </Store>
+</Stores>

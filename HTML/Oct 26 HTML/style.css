@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+img {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+th {
+    width: 20px;
+    height: 20px;
+}
+.bang1 {
+    background-color: blueviolet;
+    width: 1000px;
+    height: 60px;
+    float: left;
+}
+.bang2 {
+    background-color: white;
+    border:10px solid white;
+}
+.click1 {
+    color: red;
+    text-decoration: underline;
+    border:5px solid white;
+
+}

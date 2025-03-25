@@ -1,0 +1,3 @@
+Bye	Tạm Biệt
+Hello	Xin Chào
+Phone	Điện Thoại

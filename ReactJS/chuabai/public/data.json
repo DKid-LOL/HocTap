@@ -1,0 +1,21 @@
+{
+    "title" : "Sneaker Compnay",
+    "heading" : "Fall Limited Edition Sneakers",
+    "description" : "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they are built to last. The cushioned footbed and padded collar provide maximum comfort. Pair them with your favorite jeans and a tee for a laid-back look.",
+    "price" : 250,
+    "sale" : 50,
+    "array": [
+        {
+            "title": "Learn ReactJS basics",
+            "complete": true
+        },
+        {
+            "title": "Learn ReactJS advanced",
+            "complete": false
+        },
+        {
+            "title": "Build a ReactJS app",
+            "complete": false
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employees [
+    <!ELEMENT Employees (Employee*)>
+    <!ELEMENT Employee (ID, Name, BirthDate, Hometown, Position, Department, Education, Salary, Allowance, BHYT, BHXH)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT BirthDate (#PCDATA)>
+    <!ELEMENT Hometown (#PCDATA)>
+    <!ELEMENT Position (#PCDATA)>
+    <!ELEMENT Department (#PCDATA)>
+    <!ELEMENT Education (#PCDATA)>
+    <!ELEMENT Salary (#PCDATA)>
+    <!ELEMENT Allowance (#PCDATA)>
+    <!ELEMENT BHYT (#PCDATA)>
+    <!ELEMENT BHXH (#PCDATA)>
+]>
+
+<Employees>
+    <Employee>
+        <ID>33526</ID>
+        <Name>Thắm</Name>
+        <BirthDate>15/09/1996</BirthDate>
+        <Hometown>Gia Lai</Hometown>
+        <Position>Quản lý</Position>
+        <Department>Kinh doanh</Department>
+        <Education>Thạc sĩ</Education>
+        <Salary>3.2</Salary>
+        <Allowance>5%</Allowance>
+        <BHYT>50%</BHYT>
+        <BHXH>50%</BHXH>
+    </Employee>
+</Employees>

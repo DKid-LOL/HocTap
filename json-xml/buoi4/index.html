@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="employees.js"></script>
+</head>
+<body>
+    <h1>Danh sách nhân viên</h1>
+    <div id="employee-list"></div>
+
+    <script>
+        var employeeList = document.getElementById("employee-list");
+
+        employees.forEach(employee => {
+            document.write(`
+                <div class="employee-card">
+                    <img src="${employee.image}" alt="Ảnh của ${employee.name}">
+                    <h3>${employee.name}</h3>
+                    <p>Chức vụ: ${employee.position}</p>
+                    <p>Lương: ${employee.salary.toLocaleString()} VND</p>
+                </div>
+            `);
+        });
+    </script>
+</body>
+</html>

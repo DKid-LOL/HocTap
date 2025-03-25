@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students xmlns="http://example.com/students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://example.com/students students.xsd">
+
+    <Student>
+        <ID>1001</ID>
+        <FullName>PHA</FullName>
+        <BirthDate>2001-05-15</BirthDate>
+        <Gender>Nam</Gender>
+        <Email>pha@example.com</Email>
+        <Phone>0123456789</Phone>
+        <GPA>3.9</GPA>
+        <Scholarship>true</Scholarship>
+        <Website>http://pha.com</Website>
+        <Courses>
+            <Course>
+                <CourseName>Lập trình Java</CourseName>
+                <CourseCode>IT1001</CourseCode>
+                <Credits>3</Credits>
+            </Course>
+            <Course>
+                <CourseName>Cơ sở dữ liệu</CourseName>
+                <CourseCode>DB1001</CourseCode>
+                <Credits>4</Credits>
+            </Course>
+        </Courses>
+    </Student>
+
+    <Student>
+        <ID>1002</ID>
+        <FullName>PHB</FullName>
+        <BirthDate>2001-09-20</BirthDate>
+        <Gender>Nữ</Gender>
+        <Email>phb@example.com</Email>
+        <GPA>3.5</GPA>
+        <Scholarship>false</Scholarship>
+        <Courses>
+            <Course>
+                <CourseName>Trí tuệ nhân tạo</CourseName>
+                <CourseCode>AI2001</CourseCode>
+                <Credits>5</Credits>
+            </Course>
+        </Courses>
+    </Student>
+
+</Students>

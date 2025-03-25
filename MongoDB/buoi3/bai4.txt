@@ -1,0 +1,896 @@
+use transactions
+switched to db transactions
+db.transactions.insertMany([{"id":1,"month":"2024-08","revenue":6610},
+{"id":2,"month":"2024-04","revenue":4285},
+{"id":3,"month":"2024-09","revenue":6137},
+{"id":4,"month":"2024-06","revenue":3694},
+{"id":5,"month":"2024-11","revenue":1456},
+{"id":6,"month":"2025-02","revenue":7146},
+{"id":7,"month":"2024-08","revenue":4665},
+{"id":8,"month":"2024-08","revenue":3399},
+{"id":9,"month":"2025-02","revenue":4047},
+{"id":10,"month":"2024-11","revenue":3544},
+{"id":11,"month":"2024-06","revenue":6767},
+{"id":12,"month":"2024-11","revenue":7344},
+{"id":13,"month":"2024-03","revenue":6091},
+{"id":14,"month":"2024-06","revenue":7146},
+{"id":15,"month":"2024-09","revenue":3026},
+{"id":16,"month":"2024-12","revenue":2507},
+{"id":17,"month":"2025-02","revenue":1810},
+{"id":18,"month":"2025-03","revenue":7838},
+{"id":19,"month":"2024-05","revenue":1285},
+{"id":20,"month":"2024-03","revenue":1034},
+{"id":21,"month":"2025-01","revenue":1774},
+{"id":22,"month":"2024-10","revenue":7064},
+{"id":23,"month":"2024-09","revenue":1499},
+{"id":24,"month":"2025-03","revenue":7577},
+{"id":25,"month":"2024-05","revenue":7046},
+{"id":26,"month":"2024-08","revenue":3956},
+{"id":27,"month":"2024-10","revenue":4518},
+{"id":28,"month":"2024-11","revenue":2834},
+{"id":29,"month":"2024-12","revenue":6072},
+{"id":30,"month":"2024-06","revenue":4176},
+{"id":31,"month":"2024-06","revenue":5950},
+{"id":32,"month":"2024-07","revenue":2961},
+{"id":33,"month":"2025-01","revenue":1898},
+{"id":34,"month":"2024-11","revenue":6914},
+{"id":35,"month":"2024-04","revenue":5987},
+{"id":36,"month":"2024-06","revenue":5872},
+{"id":37,"month":"2024-12","revenue":7583},
+{"id":38,"month":"2024-08","revenue":2690},
+{"id":39,"month":"2024-09","revenue":2034},
+{"id":40,"month":"2024-05","revenue":5144},
+{"id":41,"month":"2024-08","revenue":6039},
+{"id":42,"month":"2024-10","revenue":2042},
+{"id":43,"month":"2024-11","revenue":1182},
+{"id":44,"month":"2024-12","revenue":2779},
+{"id":45,"month":"2024-10","revenue":5804},
+{"id":46,"month":"2024-07","revenue":4750},
+{"id":47,"month":"2024-08","revenue":3939},
+{"id":48,"month":"2025-02","revenue":1378},
+{"id":49,"month":"2024-04","revenue":7776},
+{"id":50,"month":"2024-09","revenue":4179},
+{"id":51,"month":"2024-05","revenue":2501},
+{"id":52,"month":"2024-11","revenue":2689},
+{"id":53,"month":"2025-03","revenue":5027},
+{"id":54,"month":"2024-07","revenue":6033},
+{"id":55,"month":"2024-04","revenue":2113},
+{"id":56,"month":"2024-07","revenue":6908},
+{"id":57,"month":"2024-11","revenue":6417},
+{"id":58,"month":"2024-11","revenue":4318},
+{"id":59,"month":"2024-10","revenue":3979},
+{"id":60,"month":"2024-08","revenue":2567},
+{"id":61,"month":"2024-06","revenue":1855},
+{"id":62,"month":"2024-08","revenue":5342},
+{"id":63,"month":"2024-05","revenue":6266},
+{"id":64,"month":"2024-08","revenue":7568},
+{"id":65,"month":"2024-08","revenue":7705},
+{"id":66,"month":"2024-12","revenue":2161},
+{"id":67,"month":"2025-02","revenue":3204},
+{"id":68,"month":"2024-07","revenue":2998},
+{"id":69,"month":"2024-09","revenue":2711},
+{"id":70,"month":"2024-09","revenue":7552},
+{"id":71,"month":"2024-09","revenue":5561},
+{"id":72,"month":"2024-12","revenue":5585},
+{"id":73,"month":"2024-08","revenue":1060},
+{"id":74,"month":"2024-06","revenue":3182},
+{"id":75,"month":"2024-08","revenue":4125},
+{"id":76,"month":"2024-04","revenue":1196},
+{"id":77,"month":"2025-02","revenue":2797},
+{"id":78,"month":"2025-03","revenue":2343},
+{"id":79,"month":"2025-03","revenue":4330},
+{"id":80,"month":"2024-10","revenue":1150},
+{"id":81,"month":"2025-02","revenue":3343},
+{"id":82,"month":"2025-02","revenue":6144},
+{"id":83,"month":"2025-03","revenue":2110},
+{"id":84,"month":"2024-11","revenue":2518},
+{"id":85,"month":"2024-08","revenue":5590},
+{"id":86,"month":"2024-07","revenue":2075},
+{"id":87,"month":"2025-01","revenue":6831},
+{"id":88,"month":"2024-07","revenue":2757},
+{"id":89,"month":"2024-04","revenue":6348},
+{"id":90,"month":"2025-03","revenue":4824},
+{"id":91,"month":"2024-08","revenue":3452},
+{"id":92,"month":"2025-03","revenue":5377},
+{"id":93,"month":"2024-10","revenue":5077},
+{"id":94,"month":"2024-05","revenue":1359},
+{"id":95,"month":"2024-06","revenue":4198},
+{"id":96,"month":"2024-06","revenue":1572},
+{"id":97,"month":"2025-01","revenue":5485},
+{"id":98,"month":"2024-10","revenue":7980},
+{"id":99,"month":"2024-03","revenue":1775},
+{"id":100,"month":"2025-01","revenue":5513},
+{"id":101,"month":"2024-07","revenue":3791},
+{"id":102,"month":"2024-10","revenue":2841},
+{"id":103,"month":"2024-11","revenue":6645},
+{"id":104,"month":"2024-06","revenue":5004},
+{"id":105,"month":"2024-09","revenue":4383},
+{"id":106,"month":"2024-09","revenue":4530},
+{"id":107,"month":"2025-03","revenue":6538},
+{"id":108,"month":"2024-06","revenue":1151},
+{"id":109,"month":"2024-03","revenue":5004},
+{"id":110,"month":"2024-04","revenue":3141},
+{"id":111,"month":"2025-01","revenue":7004},
+{"id":112,"month":"2024-07","revenue":6681},
+{"id":113,"month":"2024-07","revenue":5217},
+{"id":114,"month":"2024-11","revenue":5925},
+{"id":115,"month":"2025-03","revenue":1891},
+{"id":116,"month":"2024-12","revenue":1237},
+{"id":117,"month":"2024-06","revenue":2924},
+{"id":118,"month":"2025-03","revenue":7439},
+{"id":119,"month":"2024-10","revenue":6826},
+{"id":120,"month":"2024-05","revenue":4222},
+{"id":121,"month":"2024-11","revenue":3794},
+{"id":122,"month":"2024-07","revenue":6257},
+{"id":123,"month":"2024-05","revenue":3516},
+{"id":124,"month":"2025-03","revenue":1038},
+{"id":125,"month":"2024-04","revenue":1272},
+{"id":126,"month":"2025-01","revenue":3641},
+{"id":127,"month":"2025-02","revenue":6182},
+{"id":128,"month":"2024-06","revenue":3253},
+{"id":129,"month":"2024-10","revenue":3635},
+{"id":130,"month":"2024-09","revenue":5885},
+{"id":131,"month":"2024-09","revenue":7376},
+{"id":132,"month":"2024-12","revenue":4052},
+{"id":133,"month":"2024-08","revenue":4395},
+{"id":134,"month":"2024-12","revenue":2344},
+{"id":135,"month":"2025-01","revenue":6225},
+{"id":136,"month":"2025-03","revenue":6897},
+{"id":137,"month":"2024-09","revenue":4948},
+{"id":138,"month":"2024-07","revenue":4382},
+{"id":139,"month":"2025-01","revenue":7759},
+{"id":140,"month":"2025-03","revenue":2213},
+{"id":141,"month":"2025-03","revenue":1662},
+{"id":142,"month":"2025-02","revenue":2631},
+{"id":143,"month":"2024-04","revenue":5443},
+{"id":144,"month":"2024-09","revenue":2162},
+{"id":145,"month":"2024-11","revenue":2695},
+{"id":146,"month":"2024-07","revenue":3031},
+{"id":147,"month":"2024-06","revenue":2748},
+{"id":148,"month":"2024-10","revenue":6725},
+{"id":149,"month":"2024-12","revenue":7828},
+{"id":150,"month":"2024-06","revenue":1574},
+{"id":151,"month":"2024-06","revenue":3045},
+{"id":152,"month":"2024-09","revenue":1991},
+{"id":153,"month":"2024-11","revenue":5216},
+{"id":154,"month":"2024-05","revenue":5216},
+{"id":155,"month":"2024-06","revenue":5192},
+{"id":156,"month":"2024-11","revenue":7418},
+{"id":157,"month":"2025-03","revenue":3479},
+{"id":158,"month":"2025-02","revenue":6092},
+{"id":159,"month":"2024-04","revenue":1204},
+{"id":160,"month":"2024-11","revenue":2985},
+{"id":161,"month":"2024-11","revenue":1610},
+{"id":162,"month":"2024-08","revenue":5992},
+{"id":163,"month":"2025-02","revenue":1880},
+{"id":164,"month":"2024-03","revenue":4826},
+{"id":165,"month":"2024-09","revenue":2569},
+{"id":166,"month":"2025-02","revenue":5313},
+{"id":167,"month":"2024-10","revenue":3757},
+{"id":168,"month":"2024-04","revenue":3993},
+{"id":169,"month":"2024-10","revenue":3228},
+{"id":170,"month":"2025-01","revenue":2085},
+{"id":171,"month":"2024-06","revenue":6578},
+{"id":172,"month":"2024-05","revenue":6527},
+{"id":173,"month":"2024-07","revenue":3947},
+{"id":174,"month":"2024-09","revenue":6708},
+{"id":175,"month":"2024-05","revenue":4787},
+{"id":176,"month":"2024-11","revenue":1006},
+{"id":177,"month":"2024-04","revenue":6580},
+{"id":178,"month":"2024-06","revenue":4988},
+{"id":179,"month":"2024-05","revenue":7394},
+{"id":180,"month":"2024-08","revenue":5660},
+{"id":181,"month":"2025-01","revenue":1301},
+{"id":182,"month":"2024-12","revenue":5810},
+{"id":183,"month":"2025-03","revenue":1101},
+{"id":184,"month":"2024-05","revenue":4994},
+{"id":185,"month":"2024-04","revenue":2397},
+{"id":186,"month":"2024-08","revenue":6036},
+{"id":187,"month":"2024-04","revenue":7563},
+{"id":188,"month":"2024-08","revenue":6387},
+{"id":189,"month":"2024-04","revenue":1391},
+{"id":190,"month":"2025-01","revenue":2441},
+{"id":191,"month":"2024-05","revenue":7776},
+{"id":192,"month":"2024-08","revenue":4908},
+{"id":193,"month":"2024-05","revenue":3628},
+{"id":194,"month":"2025-01","revenue":5440},
+{"id":195,"month":"2024-10","revenue":1398},
+{"id":196,"month":"2024-07","revenue":5291},
+{"id":197,"month":"2024-10","revenue":5959},
+{"id":198,"month":"2025-01","revenue":2184},
+{"id":199,"month":"2024-08","revenue":1097},
+{"id":200,"month":"2024-11","revenue":6534}])
+{
+    '133': ObjectId('67dd75ffacb07b638d49358a'),
+    '134': ObjectId('67dd75ffacb07b638d49358b'),
+    '135': ObjectId('67dd75ffacb07b638d49358c'),
+    '136': ObjectId('67dd75ffacb07b638d49358d'),
+    '137': ObjectId('67dd75ffacb07b638d49358e'),
+    '138': ObjectId('67dd75ffacb07b638d49358f'),
+    '139': ObjectId('67dd75ffacb07b638d493590'),
+    '140': ObjectId('67dd75ffacb07b638d493591'),
+    '141': ObjectId('67dd75ffacb07b638d493592'),
+    '142': ObjectId('67dd75ffacb07b638d493593'),
+    '143': ObjectId('67dd75ffacb07b638d493594'),
+    '144': ObjectId('67dd75ffacb07b638d493595'),
+    '145': ObjectId('67dd75ffacb07b638d493596'),
+    '146': ObjectId('67dd75ffacb07b638d493597'),
+    '147': ObjectId('67dd75ffacb07b638d493598'),
+    '148': ObjectId('67dd75ffacb07b638d493599'),
+    '149': ObjectId('67dd75ffacb07b638d49359a'),
+    '150': ObjectId('67dd75ffacb07b638d49359b'),
+    '151': ObjectId('67dd75ffacb07b638d49359c'),
+    '152': ObjectId('67dd75ffacb07b638d49359d'),
+    '153': ObjectId('67dd75ffacb07b638d49359e'),
+    '154': ObjectId('67dd75ffacb07b638d49359f'),
+    '155': ObjectId('67dd75ffacb07b638d4935a0'),
+    '156': ObjectId('67dd75ffacb07b638d4935a1'),
+    '157': ObjectId('67dd75ffacb07b638d4935a2'),
+    '158': ObjectId('67dd75ffacb07b638d4935a3'),
+    '159': ObjectId('67dd75ffacb07b638d4935a4'),
+    '160': ObjectId('67dd75ffacb07b638d4935a5'),
+    '161': ObjectId('67dd75ffacb07b638d4935a6'),
+    '162': ObjectId('67dd75ffacb07b638d4935a7'),
+    '163': ObjectId('67dd75ffacb07b638d4935a8'),
+    '164': ObjectId('67dd75ffacb07b638d4935a9'),
+    '165': ObjectId('67dd75ffacb07b638d4935aa'),
+    '166': ObjectId('67dd75ffacb07b638d4935ab'),
+    '167': ObjectId('67dd75ffacb07b638d4935ac'),
+    '168': ObjectId('67dd75ffacb07b638d4935ad'),
+    '169': ObjectId('67dd75ffacb07b638d4935ae'),
+    '170': ObjectId('67dd75ffacb07b638d4935af'),
+    '171': ObjectId('67dd75ffacb07b638d4935b0'),
+    '172': ObjectId('67dd75ffacb07b638d4935b1'),
+    '173': ObjectId('67dd75ffacb07b638d4935b2'),
+    '174': ObjectId('67dd75ffacb07b638d4935b3'),
+    '175': ObjectId('67dd75ffacb07b638d4935b4'),
+    '176': ObjectId('67dd75ffacb07b638d4935b5'),
+    '177': ObjectId('67dd75ffacb07b638d4935b6'),
+    '178': ObjectId('67dd75ffacb07b638d4935b7'),
+    '179': ObjectId('67dd75ffacb07b638d4935b8'),
+    '180': ObjectId('67dd75ffacb07b638d4935b9'),
+    '181': ObjectId('67dd75ffacb07b638d4935ba'),
+    '182': ObjectId('67dd75ffacb07b638d4935bb'),
+    '183': ObjectId('67dd75ffacb07b638d4935bc'),
+    '184': ObjectId('67dd75ffacb07b638d4935bd'),
+    '185': ObjectId('67dd75ffacb07b638d4935be'),
+    '186': ObjectId('67dd75ffacb07b638d4935bf'),
+    '187': ObjectId('67dd75ffacb07b638d4935c0'),
+    '188': ObjectId('67dd75ffacb07b638d4935c1'),
+    '189': ObjectId('67dd75ffacb07b638d4935c2'),
+    '190': ObjectId('67dd75ffacb07b638d4935c3'),
+    '191': ObjectId('67dd75ffacb07b638d4935c4'),
+    '192': ObjectId('67dd75ffacb07b638d4935c5'),
+    '193': ObjectId('67dd75ffacb07b638d4935c6'),
+    '194': ObjectId('67dd75ffacb07b638d4935c7'),
+    '195': ObjectId('67dd75ffacb07b638d4935c8'),
+    '196': ObjectId('67dd75ffacb07b638d4935c9'),
+    '197': ObjectId('67dd75ffacb07b638d4935ca'),
+    '198': ObjectId('67dd75ffacb07b638d4935cb'),
+    '199': ObjectId('67dd75ffacb07b638d4935cc')
+  }
+}
+db.transactions.aggregate([
+    { $group: { _id: null, total_revenue: { $sum: "$revenue" } } }
+])
+{
+  _id: null,
+  total_revenue: 861678
+}
+db.transactions.aggregate([
+    {
+        $group: {
+            _id: null,
+            total_revenue: { $sum: "$revenue" }
+        }
+    },
+    {
+        $lookup: {
+            from: "transactions",
+            pipeline: [
+                {
+                    $project: {
+                        month: 1,
+                        revenue: 1,
+                        percentage: {
+                            $multiply: [
+                                { $divide: ["$revenue", "$$total_revenue"] },
+                                100
+                            ]
+                        }
+                    }
+                }
+            ],
+            as: "monthly_percentage"
+        }
+    },
+    { $unwind: "$monthly_percentage" },
+    {
+        $replaceRoot: { newRoot: "$monthly_percentage" }
+    }
+])
+MongoServerError[Location17276]: Invalid $project :: caused by :: Use of undefined variable: total_revenue
+db.transactions.aggregate([
+    {
+        $group: {
+            _id: null,
+            total_revenue: { $sum: "$revenue" }
+        }
+    },
+    {
+        $lookup: {
+            from: "transactions",
+            pipeline: [
+                {
+                    $addFields: {
+                        total_revenue: "$$total_revenue"
+                    }
+                },
+                {
+                    $project: {
+                        _id: 0,
+                        month: 1,
+                        revenue: 1,
+                        percentage: {
+                            $multiply: [
+                                { $divide: ["$revenue", "$$total_revenue"] },
+                                100
+                            ]
+                        }
+                    }
+                }
+            ],
+            let: { total_revenue: "$total_revenue" },
+            as: "monthly_percentage"
+        }
+    },
+    { $unwind: "$monthly_percentage" },
+    {
+        $replaceRoot: { newRoot: "$monthly_percentage" }
+    }
+])
+{
+  month: '2024-08',
+  revenue: 6610,
+  percentage: 0.7671078987742521
+}
+{
+  month: '2024-04',
+  revenue: 4285,
+  percentage: 0.4972855289330817
+}
+{
+  month: '2024-09',
+  revenue: 6137,
+  percentage: 0.7122150037485
+}
+{
+  month: '2024-06',
+  revenue: 3694,
+  percentage: 0.42869842330893904
+}
+{
+  month: '2024-11',
+  revenue: 1456,
+  percentage: 0.168972632468277
+}
+{
+  month: '2025-02',
+  revenue: 7146,
+  percentage: 0.8293121096279585
+}
+{
+  month: '2024-08',
+  revenue: 4665,
+  percentage: 0.541385529165187
+}
+{
+  month: '2024-08',
+  revenue: 3399,
+  percentage: 0.39446289681296265
+}
+{
+  month: '2025-02',
+  revenue: 4047,
+  percentage: 0.46966500247192106
+}
+{
+  month: '2024-11',
+  revenue: 3544,
+  percentage: 0.4112905284804765
+}
+{
+  month: '2024-06',
+  revenue: 6767,
+  percentage: 0.785328162028043
+}
+{
+  month: '2024-11',
+  revenue: 7344,
+  percentage: 0.8522905308015292
+}
+{
+  month: '2024-03',
+  revenue: 6091,
+  percentage: 0.7068765826677715
+}
+{
+  month: '2024-06',
+  revenue: 7146,
+  percentage: 0.8293121096279585
+}
+{
+  month: '2024-09',
+  revenue: 3026,
+  percentage: 0.35117526500618557
+}
+{
+  month: '2024-12',
+  revenue: 2507,
+  percentage: 0.290943948899705
+}
+{
+  month: '2025-02',
+  revenue: 1810,
+  percentage: 0.21005526426344875
+}
+{
+  month: '2025-03',
+  revenue: 7838,
+  percentage: 0.9096205311032659
+}
+{
+  month: '2024-05',
+  revenue: 1285,
+  percentage: 0.14912763236382964
+}
+{
+  month: '2024-03',
+  revenue: 1034,
+  percentage: 0.11999842168420223
+}
+Type "it" for more
+db.transactions.aggregate([
+    { $sort: { revenue: -1 } },
+    { $limit: 1 }
+])
+{
+  _id: ObjectId('67dd75ffacb07b638d493566'),
+  id: 98,
+  month: '2024-10',
+  revenue: 7980
+}
+db.transactions.aggregate([
+    { $sort: { revenue: 1 } },
+    { $limit: 1 }
+])
+{
+  _id: ObjectId('67dd75ffacb07b638d4935b4'),
+  id: 176,
+  month: '2024-11',
+  revenue: 1006
+}
+db.transactions.aggregate([
+    { $group: { _id: null, avg_revenue: { $avg: "$revenue" } } }
+])
+{
+  _id: null,
+  avg_revenue: 4308.39
+}
+db.transactions.find({ revenue: { $gt: 6500 } })
+{
+  _id: ObjectId('67dd75ffacb07b638d493505'),
+  id: 1,
+  month: '2024-08',
+  revenue: 6610
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49350a'),
+  id: 6,
+  month: '2025-02',
+  revenue: 7146
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49350f'),
+  id: 11,
+  month: '2024-06',
+  revenue: 6767
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493510'),
+  id: 12,
+  month: '2024-11',
+  revenue: 7344
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493512'),
+  id: 14,
+  month: '2024-06',
+  revenue: 7146
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493516'),
+  id: 18,
+  month: '2025-03',
+  revenue: 7838
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49351a'),
+  id: 22,
+  month: '2024-10',
+  revenue: 7064
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49351c'),
+  id: 24,
+  month: '2025-03',
+  revenue: 7577
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49351d'),
+  id: 25,
+  month: '2024-05',
+  revenue: 7046
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493526'),
+  id: 34,
+  month: '2024-11',
+  revenue: 6914
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493529'),
+  id: 37,
+  month: '2024-12',
+  revenue: 7583
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493535'),
+  id: 49,
+  month: '2024-04',
+  revenue: 7776
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49353c'),
+  id: 56,
+  month: '2024-07',
+  revenue: 6908
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493544'),
+  id: 64,
+  month: '2024-08',
+  revenue: 7568
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493545'),
+  id: 65,
+  month: '2024-08',
+  revenue: 7705
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49354a'),
+  id: 70,
+  month: '2024-09',
+  revenue: 7552
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49355b'),
+  id: 87,
+  month: '2025-01',
+  revenue: 6831
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493566'),
+  id: 98,
+  month: '2024-10',
+  revenue: 7980
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49356b'),
+  id: 103,
+  month: '2024-11',
+  revenue: 6645
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49356f'),
+  id: 107,
+  month: '2025-03',
+  revenue: 6538
+}
+Type "it" for more
+db.transactions.aggregate([
+    { $sort: { revenue: -1 } }
+])
+{
+  _id: ObjectId('67dd75ffacb07b638d493566'),
+  id: 98,
+  month: '2024-10',
+  revenue: 7980
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493516'),
+  id: 18,
+  month: '2025-03',
+  revenue: 7838
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493599'),
+  id: 149,
+  month: '2024-12',
+  revenue: 7828
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d4935c3'),
+  id: 191,
+  month: '2024-05',
+  revenue: 7776
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493535'),
+  id: 49,
+  month: '2024-04',
+  revenue: 7776
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49358f'),
+  id: 139,
+  month: '2025-01',
+  revenue: 7759
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493545'),
+  id: 65,
+  month: '2024-08',
+  revenue: 7705
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493529'),
+  id: 37,
+  month: '2024-12',
+  revenue: 7583
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49351c'),
+  id: 24,
+  month: '2025-03',
+  revenue: 7577
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493544'),
+  id: 64,
+  month: '2024-08',
+  revenue: 7568
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d4935bf'),
+  id: 187,
+  month: '2024-04',
+  revenue: 7563
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49354a'),
+  id: 70,
+  month: '2024-09',
+  revenue: 7552
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49357a'),
+  id: 118,
+  month: '2025-03',
+  revenue: 7439
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d4935a0'),
+  id: 156,
+  month: '2024-11',
+  revenue: 7418
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d4935b7'),
+  id: 179,
+  month: '2024-05',
+  revenue: 7394
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493587'),
+  id: 131,
+  month: '2024-09',
+  revenue: 7376
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493510'),
+  id: 12,
+  month: '2024-11',
+  revenue: 7344
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d493512'),
+  id: 14,
+  month: '2024-06',
+  revenue: 7146
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49350a'),
+  id: 6,
+  month: '2025-02',
+  revenue: 7146
+}
+{
+  _id: ObjectId('67dd75ffacb07b638d49351a'),
+  id: 22,
+  month: '2024-10',
+  revenue: 7064
+}
+Type "it" for more
+db.transactions.aggregate([
+    {
+        $group: {
+            _id: null,
+            total_revenue: { $sum: "$revenue" }
+        }
+    },
+    {
+        $lookup: {
+            from: "transactions",
+            pipeline: [
+                {
+                    $project: {
+                        _id: 0,
+                        month: 1,
+                        revenue: 1,
+                        percentage: {
+                            $multiply: [
+                                { $divide: ["$revenue", "$$total_revenue"] },
+                                100
+                            ]
+                        }
+                    }
+                }
+            ],
+            as: "monthly_data"
+        }
+    },
+    { $unwind: "$monthly_data" },
+    {
+        $replaceRoot: { newRoot: "$monthly_data" }
+    },
+    { $sort: { revenue: -1 } }
+])
+MongoServerError[Location17276]: Invalid $project :: caused by :: Use of undefined variable: total_revenue
+db.transactions.aggregate([
+    {
+        $group: {
+            _id: null,
+            total_revenue: { $sum: "$revenue" }
+        }
+    },
+    {
+        $lookup: {
+            from: "transactions",
+            let: { total_revenue: "$total_revenue" },  // ✅ Truyền biến vào lookup
+            pipeline: [
+                {
+                    $project: {
+                        _id: 0,
+                        month: 1,
+                        revenue: 1,
+                        percentage: {
+                            $multiply: [
+                                { $divide: ["$revenue", "$$total_revenue"] },
+                                100
+                            ]
+                        }
+                    }
+                }
+            ],
+            as: "monthly_data"
+        }
+    },
+    { $unwind: "$monthly_data" },
+    {
+        $replaceRoot: { newRoot: "$monthly_data" }
+    },
+    { $sort: { revenue: -1 } }
+])
+{
+  month: '2024-10',
+  revenue: 7980,
+  percentage: 0.9261000048742106
+}
+{
+  month: '2025-03',
+  revenue: 7838,
+  percentage: 0.9096205311032659
+}
+{
+  month: '2024-12',
+  revenue: 7828,
+  percentage: 0.9084600047813686
+}
+{
+  month: '2024-05',
+  revenue: 7776,
+  percentage: 0.9024252679075015
+}
+{
+  month: '2024-04',
+  revenue: 7776,
+  percentage: 0.9024252679075015
+}
+{
+  month: '2025-01',
+  revenue: 7759,
+  percentage: 0.9004523731602756
+}
+{
+  month: '2024-08',
+  revenue: 7705,
+  percentage: 0.894185531022029
+}
+{
+  month: '2024-12',
+  revenue: 7583,
+  percentage: 0.8800271098948795
+}
+{
+  month: '2025-03',
+  revenue: 7577,
+  percentage: 0.879330794101741
+}
+{
+  month: '2024-08',
+  revenue: 7568,
+  percentage: 0.8782863204120331
+}
+{
+  month: '2024-04',
+  revenue: 7563,
+  percentage: 0.8777060572510845
+}
+{
+  month: '2024-09',
+  revenue: 7552,
+  percentage: 0.8764294782969972
+}
+{
+  month: '2025-03',
+  revenue: 7439,
+  percentage: 0.8633155308595554
+}
+{
+  month: '2024-11',
+  revenue: 7418,
+  percentage: 0.8608784255835706
+}
+{
+  month: '2024-05',
+  revenue: 7394,
+  percentage: 0.8580931624110166
+}
+{
+  month: '2024-09',
+  revenue: 7376,
+  percentage: 0.8560042150316012
+}
+{
+  month: '2024-11',
+  revenue: 7344,
+  percentage: 0.8522905308015292
+}
+{
+  month: '2024-06',
+  revenue: 7146,
+  percentage: 0.8293121096279585
+}
+{
+  month: '2025-02',
+  revenue: 7146,
+  percentage: 0.8293121096279585
+}
+{
+  month: '2024-10',
+  revenue: 7064,
+  percentage: 0.819795793788399
+}
+Type "it" for more

@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "productName": "Laptop Dell XPS",
+            "productCode": "LTXP123",
+            "price": 25000000,
+            "quantity": 10
+        },
+        {
+            "productName": "Chuột Logitech",
+            "productCode": "MOUSE123",
+            "price": 550000,
+            "quantity": 50
+        },
+        {
+            "productName": "Bàn phím cơ Razer",
+            "productCode": "KB123",
+            "price": 2000000,
+            "quantity": 30
+        }
+    ]
+}
